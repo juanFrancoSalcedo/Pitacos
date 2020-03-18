@@ -6,16 +6,30 @@ using TMPro;
 
 public class InputFieldController : MonoBehaviour
 {
+
+    public static InputFieldController Instance;
     public TMP_InputField xInputField;
     public TMP_InputField yInputField;
     [SerializeField] private Button startPathButton;
     public CharacterController currentChar;
-
     [SerializeField] private GridManger grid;
+    public TMP_InputField auxiliarTest;
+
+    public int xCoordinate { get; set; } = 0;
+    public int yCoordinate { get; set; } = 0;
+
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
 
     void Start()
     {
-        startPathButton.onClick.AddListener(StartPath);
+        startPathButton.onClick.AddListener(ButtonAction);
         startPathButton.onClick.AddListener(InsertCoordinates);
 
         xInputField.onEndEdit.AddListener(InsertCoordinates);
@@ -24,42 +38,50 @@ public class InputFieldController : MonoBehaviour
 
     private void InsertCoordinates()
     {
-        int xCoordinate = 0;
-        int yCoordinate = 0;
-
         xCoordinate = (xInputField.text.Equals("")) ? 0 : int.Parse(xInputField.text);
         yCoordinate = (yInputField.text.Equals("")) ? 0 : int.Parse(yInputField.text);
-        
-        currentChar.targetX = XLimitTargets(xCoordinate);
-        currentChar.targetY = YLimitTargets(yCoordinate);
-        
     }
 
     private void InsertCoordinates(string valueNull)
     {
-        int xCoordinate = 0;
-        int yCoordinate = 0;
-        
         xCoordinate = (xInputField.text.Equals("")) ? 0 : int.Parse(xInputField.text);
         yCoordinate = (yInputField.text.Equals("")) ? 0 : int.Parse(yInputField.text);
-
-        currentChar.targetX = XLimitTargets(xCoordinate);
-        currentChar.targetY = YLimitTargets(yCoordinate);
-
     }
+
+    private void ButtonAction()
+    {
+        switch (AnswerManager.Instance.answerType)
+        {
+            case TypeAnswer.Arrive:
+                StartPath();
+                break;
+
+            case TypeAnswer.QuestionTest:
+                SendAnswer();
+                break;
+        }
+    }
+
 
     public void StartPath()
     {
+        currentChar.targetX = XLimitTargets(xCoordinate);
+        currentChar.targetY = YLimitTargets(yCoordinate);
         currentChar.StartCoroutine(currentChar.Move());
     //    ActiveButtons(false);
     }
 
-    //public void ActiveButtons(bool enabled)
-    //{
-    //    startPathButton.gameObject.SetActive(enabled);
-    //    xInputField.gameObject.SetActive(enabled);
-    //    yInputField.gameObject.SetActive(enabled);
-    //}
+    private void SendAnswer()
+    {
+        AnswerManager.Instance.SolveEquation(auxiliarTest.text);
+    }
+
+    public void ActiveButtons(bool enabled)
+    {
+        startPathButton.gameObject.SetActive(enabled);
+        xInputField.gameObject.SetActive(enabled);
+        yInputField.gameObject.SetActive(enabled);
+    }
 
     public int XLimitTargets(int coordinate)
     {

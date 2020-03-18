@@ -5,6 +5,7 @@ using TMPro;
 
 public class TurnsManager : MonoBehaviour
 {
+    public static TurnsManager Instance;
     [SerializeField] private TextMeshProUGUI textTimer;
     public Timer timer;
     [SerializeField] private InputFieldController inputContol;
@@ -15,6 +16,15 @@ public class TurnsManager : MonoBehaviour
     public event System.Action<CharacterController> OnPlayerSelected;
 
     private float bufferTime;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
+
 
     private void Start()
     {

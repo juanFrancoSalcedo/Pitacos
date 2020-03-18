@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class GridManger : MonoBehaviour
 {
-
-
     //TODO singleton this;
 
     [SerializeField] private Quad prefabTile;

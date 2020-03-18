@@ -41,7 +41,7 @@ public class AnimationUIController : MonoBehaviour
         switch (animationType)
         {
             case TypeAnimation.Move:
-                rectTransform.DOMove(targetPosition, timeAnimation,false).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
+                rectTransform.DOAnchorPos(targetPosition, timeAnimation,false).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
                 break;
 
             case TypeAnimation.MoveReturnOrigin:

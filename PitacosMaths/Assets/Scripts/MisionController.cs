@@ -5,7 +5,7 @@ using UnityEngine;
 public class MisionController : MonoBehaviour
 {
     public TurnsManager turnsManager;
-    [SerializeField] private GameObject mision;
+    public GameObject mision;
     [SerializeField] private Transform gridPosition;
     public event System.Action<TypeEmotion,CharacterController> OnPlayerMisionFinished;
 
@@ -18,14 +18,20 @@ public class MisionController : MonoBehaviour
         turnsManager.OnPlayerSelected += DistributeMision;
         turnsManager.player1.OnArrived += CompareArrive;
         turnsManager.player2.OnArrived += CompareArrive;
+
+        tag = "MisionController";
     }
     
-    private void DistributeMision( CharacterController playerArg)
+    private void DistributeMision(CharacterController playerArg)
     {
         Vector3 misionPos = playerArg.transform.position ;
 
-        misionPos.y = Random.Range(playerArg.limits.lowerY, playerArg.limits.upperY) + gridPosition.position.y;
-        misionPos.x = Random.Range(playerArg.limits.lowerX, playerArg.limits.upperX) + gridPosition.position.x;
+        while (misionPos == playerArg.transform.position)
+        {
+            misionPos.y = Random.Range(playerArg.limits.lowerY, playerArg.limits.upperY) + gridPosition.position.y;
+            misionPos.x = Random.Range(playerArg.limits.lowerX, playerArg.limits.upperX) + gridPosition.position.x;
+        }
+
         mision.transform.position = misionPos;
     }
 
