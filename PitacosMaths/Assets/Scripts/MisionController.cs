@@ -10,8 +10,8 @@ public class MisionController : MonoBehaviour
     public event System.Action<TypeEmotion,CharacterController> OnPlayerMisionFinished;
 
     [Header("~~~~~~~~~~ Animation Outputs ~~~~~~~~~~~~")]
-    [SerializeField] private AnimationUIController popUpWin;
-    [SerializeField] private AnimationTextController failText;
+    public AnimationUIController popUpWin;
+    public AnimationTextController failText;
     
     private void OnEnable()
     {

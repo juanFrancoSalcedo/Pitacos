@@ -52,6 +52,14 @@ public class CharacterController : MonoBehaviour
 
         }
         OnArrived?.Invoke(this);
+        //AnswerManager.Instance.SumQuestion();
+    }
+
+    public void MoveSnaping()
+    {
+        transform.position = new Vector3(targetX, targetY, transform.position.z);
+        OnArrived?.Invoke(this);
+        //AnswerManager.Instance.SumQuestion();
     }
 }
 

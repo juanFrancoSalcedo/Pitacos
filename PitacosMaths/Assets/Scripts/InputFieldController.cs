@@ -50,7 +50,7 @@ public class InputFieldController : MonoBehaviour
 
     private void ButtonAction()
     {
-        switch (AnswerManager.Instance.answerType)
+        switch (AnswerManager.Instance.questionList[AnswerManager.Instance.indexQuestion])
         {
             case TypeAnswer.Arrive:
                 StartPath();
@@ -61,7 +61,6 @@ public class InputFieldController : MonoBehaviour
                 break;
         }
     }
-
 
     public void StartPath()
     {
@@ -74,6 +73,7 @@ public class InputFieldController : MonoBehaviour
     private void SendAnswer()
     {
         AnswerManager.Instance.SolveEquation(auxiliarTest.text);
+        auxiliarTest.text = "";
     }
 
     public void ActiveButtons(bool enabled)
@@ -83,31 +83,30 @@ public class InputFieldController : MonoBehaviour
         yInputField.gameObject.SetActive(enabled);
     }
 
+    public void ActiveInputsfields(bool enabled)
+    {
+        xInputField.gameObject.SetActive(enabled);
+        yInputField.gameObject.SetActive(enabled);
+    }
+
     public int XLimitTargets(int coordinate)
     {
         if (coordinate <= currentChar.limits.lowerX + (int)grid.transform.position.x)
-        {
-            return currentChar.limits.lowerX + (int)grid.transform.position.x; ;
-        }
+        { return currentChar.limits.lowerX + (int)grid.transform.position.x; ;}
 
         if (coordinate >= currentChar.limits.upperX + (int)grid.transform.position.x)
-        {
-            return currentChar.limits.upperX + (int)grid.transform.position.x;
-        }
+        {return currentChar.limits.upperX + (int)grid.transform.position.x;}
+
         return coordinate+ (int)grid.transform.position.x;
     }
 
     public int YLimitTargets(int coordinate)
     {
         if (coordinate<= currentChar.limits.lowerY + (int)grid.transform.position.y)
-        {
-            return currentChar.limits.lowerY + (int)grid.transform.position.y;
-        }
+        { return currentChar.limits.lowerY + (int)grid.transform.position.y;}
 
         if (coordinate >= currentChar.limits.upperY+(int)grid.transform.position.y)
-        {
-            return currentChar.limits.upperY + (int)grid.transform.position.y ;
-        }
+        {return currentChar.limits.upperY + (int)grid.transform.position.y ;}
 
         return coordinate + (int)grid.transform.position.y ;
     }

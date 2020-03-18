@@ -5,14 +5,19 @@ using UnityEngine;
 public class AnswerManager : MonoBehaviour
 {
     public static AnswerManager Instance;
-    public TypeAnswer answerType;
     private MisionController misionController;
-    public float correctAnswer;
+    [SerializeField] private float correctAnswer;
+
+    public List<TypeAnswer> questionList = new List<TypeAnswer>();
+    public int indexQuestion { get; set; } = 0;
 
 
     [Header("~~~~~~~ UI Elements ~~~~~~~")]
     [SerializeField] private Canvas loseCanvas;
-    
+
+    private TMPro.TextMeshProUGUI textQuestion;
+
+
     void Awake()
     {
         if (Instance == null)
@@ -21,7 +26,6 @@ public class AnswerManager : MonoBehaviour
         }
     }
 
-
     private void Start()
     {
         TurnsManager.Instance.OnPlayerSelected += PoseChallenge;
@@ -29,7 +33,24 @@ public class AnswerManager : MonoBehaviour
 
     private void PoseChallenge(CharacterController character)
     {
-        AskEquation(character.transform.position);
+        if (indexQuestion >= questionList.Count)
+        {
+            InputFieldController.Instance.ActiveButtons(false);
+            print("Fin de la partida");
+            return;
+        }
+        
+        switch (questionList[indexQuestion])
+        {
+            case TypeAnswer.QuestionTest:
+                InputFieldController.Instance.ActiveInputsfields(false);
+                AskEquation(character.transform.position);
+                break;
+            case TypeAnswer.Arrive:
+                InputFieldController.Instance.ActiveInputsfields(true);
+                SolveArrive();
+                break;
+        }
     }
 
     public void Lose()
@@ -44,38 +65,78 @@ public class AnswerManager : MonoBehaviour
             misionController = GameObject.FindGameObjectWithTag("MisionController").GetComponent<MisionController>();
         }
 
-        TMPro.TextMeshProUGUI textQuestion = GameObject.FindGameObjectWithTag("QuestionPopUp").transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>(); ;
+        textQuestion = GameObject.FindGameObjectWithTag("QuestionPopUp").transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>();
+        textQuestion.transform.parent.GetComponent<AnimationUIController>().animationType = TypeAnimation.Move;
         textQuestion.transform.parent.GetComponent<AnimationUIController>().ActiveAnimation();
         textQuestion.text = "¿Cuál es la distancia entre (" + misionController.mision.transform.position.x + ',' + misionController.mision.transform.position.y + ')'
              + " y (" + charPos.x+','+ charPos.y+") ?";
-
-
-        float sum1 = (float)(misionController.mision.transform.position.x+ charPos.x);
-        float sum2 = (float)(misionController.mision.transform.position.y+ charPos.y);
-
+        
+        float sum1 = (float)(charPos.x - misionController.mision.transform.position.x);
+        float sum2 = (float)(charPos.y - misionController.mision.transform.position.y);
         float squareResult = Mathf.Pow(sum1, 2) + Mathf.Pow(sum2,2);
-
         correctAnswer = Mathf.Sqrt(squareResult);
         string corregido = correctAnswer.ToString("0.0");
         correctAnswer = float.Parse(corregido);
     }
 
-
-
-    public void SolveEquation( string result)
+    public void SolveEquation(string result)
     {
-        float resultFloat = float.Parse(result);
-
+        float resultFloat = float.Parse(ChangeChar(result));
         if (resultFloat == correctAnswer)
         {
-            print("Bien my pez");
+            InputFieldController.Instance.currentChar.targetX =(int)misionController.mision.transform.position.x;
+            InputFieldController.Instance.currentChar.targetY = (int)misionController.mision.transform.position.y;
+            InputFieldController.Instance.currentChar.MoveSnaping();
         }
         else
         {
+            InputFieldController.Instance.currentChar.targetX =(int)InputFieldController.Instance.currentChar.transform.position.x;
+            InputFieldController.Instance.currentChar.targetY =(int)InputFieldController.Instance.currentChar.transform.position.y;
+            InputFieldController.Instance.currentChar.MoveSnaping();
+        }
 
-            print("Mal Mi Pez");
+
+        if (indexQuestion >= questionList.Count)
+        {
+            textQuestion.transform.parent.GetComponent<AnimationUIController>().animationType = TypeAnimation.Scale;
+            textQuestion.transform.parent.GetComponent<AnimationUIController>().targetScale = Vector3.zero;
+            textQuestion.transform.parent.GetComponent<AnimationUIController>().ActiveAnimation();
+            return;
+        }
+
+        if (questionList[indexQuestion] != TypeAnswer.QuestionTest)
+        {
+            textQuestion.transform.parent.GetComponent<AnimationUIController>().animationType = TypeAnimation.MoveBack;
+            textQuestion.transform.parent.GetComponent<AnimationUIController>().ActiveAnimation();
+        }
+        else
+        {
+            textQuestion.transform.parent.GetComponent<AnimationUIController>().animationType = TypeAnimation.ScaleReturnOriginScale;
+            textQuestion.transform.parent.GetComponent<AnimationUIController>().ActiveAnimation();
         }
     }
+
+    public void SolveArrive()
+    {
+
+    }
+
+    private string ChangeChar(string str)
+    {
+        string newStr = str.Replace('.',',');
+
+        return newStr;
+    }
+
+    public void SumQuestion()
+    {
+        indexQuestion++;
+        if (indexQuestion >= questionList.Count)
+        {
+            //print("Ganao partida");
+        }
+    }
+
 }
 
 public enum TypeAnswer

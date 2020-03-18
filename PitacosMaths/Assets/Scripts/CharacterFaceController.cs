@@ -35,7 +35,7 @@ public class CharacterFaceController : MonoBehaviour
                 image.sprite = myEmotions.sadImage;
                 animationControl.SetTrigger("Sad");
                 Invoke("RestoreBasicImage", 1.5f);
-                print("Mal mi brodi");
+                
                 break;
 
             case TypeEmotion.Happy:

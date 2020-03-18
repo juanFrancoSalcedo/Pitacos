@@ -10,7 +10,7 @@ public class TurnsManager : MonoBehaviour
     public Timer timer;
     [SerializeField] private InputFieldController inputContol;
     public CharacterController player1;
-    public  CharacterController player2;
+    public CharacterController player2;
     [SerializeField] private AnimationController shadowElement;
 
     public event System.Action<CharacterController> OnPlayerSelected;
@@ -24,7 +24,6 @@ public class TurnsManager : MonoBehaviour
             Instance = this;
         }
     }
-
 
     private void Start()
     {
@@ -58,6 +57,7 @@ public class TurnsManager : MonoBehaviour
         inputContol.currentChar.gameObject.SetActive(true);
         inputContol.xInputField.text = "0";
         inputContol.yInputField.text = "0";
+        AnswerManager.Instance.SumQuestion();
         OnPlayerSelected?.Invoke(inputContol.currentChar);
     }
 
