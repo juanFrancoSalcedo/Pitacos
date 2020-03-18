@@ -9,10 +9,10 @@ public class MisionController : MonoBehaviour
     [SerializeField] private Transform gridPosition;
     public event System.Action<TypeEmotion,CharacterController> OnPlayerMisionFinished;
 
-    [Header("~~~~~~~~~~ States Outputs ~~~~~~~~~~~~")]
+    [Header("~~~~~~~~~~ Animation Outputs ~~~~~~~~~~~~")]
     [SerializeField] private AnimationUIController popUpWin;
     [SerializeField] private AnimationTextController failText;
-
+    
     private void OnEnable()
     {
         turnsManager.OnPlayerSelected += DistributeMision;
@@ -35,11 +35,13 @@ public class MisionController : MonoBehaviour
         {
             popUpWin.ActiveAnimation();
             OnPlayerMisionFinished?.Invoke(TypeEmotion.Happy,playerPosit);
+            turnsManager.timer.initTime += 5;
         }
         else
         {
             failText.ActiveAnimation();
             OnPlayerMisionFinished?.Invoke(TypeEmotion.Sad, playerPosit);
+            turnsManager.timer.initTime -= 5;
         }
     }
 }

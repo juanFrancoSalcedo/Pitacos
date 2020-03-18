@@ -8,12 +8,14 @@ public class Timer : MonoBehaviour
     public float initTime;
     public bool rest;
     public event System.Action<string,float> OnCalculatedTimeString;
+    public event System.Action OnTimerZero;
     public bool stopTimer { get; set; } = false;
     public TypeTimer timerType;
 
     public enum TypeTimer
     {
         Second,
+        Minutes,
         Thousandths,
     }
 
@@ -36,6 +38,11 @@ public class Timer : MonoBehaviour
         }
 
         CheckTimerType();
+
+        if (initTime <= 0)
+        {
+            OnTimerZero?.Invoke();
+        }
     }
 
     private void CheckTimerType()
@@ -48,9 +55,11 @@ public class Timer : MonoBehaviour
             case TypeTimer.Thousandths:
                 OnCalculatedTimeString?.Invoke(GetTimeThousandths(initTime),initTime);
                 break;
+            case TypeTimer.Minutes:
+                OnCalculatedTimeString?.Invoke(GetTimeOnlyMinutes(initTime),initTime);
+                break;
         }
     }
-
 
     protected string GetTime(float time)
     {
@@ -105,6 +114,34 @@ public class Timer : MonoBehaviour
             strSec = "" + sec;
         }
         return strHoras + ":" + strMin + ":" + strSec;
+    }
+
+    protected string GetTimeOnlyMinutes(float time)
+    {
+        int min = (int)time / 60;
+
+
+        string strMin = "";
+        strMin = "" + min;
+
+        if (min < 10)
+        {
+            strMin = "0" + min;
+        }
+
+        string strSec = "";
+        int sec = (int)time - (min * 60);
+
+        if (sec < 10)
+        {
+            strSec = "0" + sec;
+        }
+        else
+        {
+            strSec = "" + sec;
+        }
+
+        return  strMin +':'+ strSec;
     }
 
     protected string GetTimeOnlySeconds(float time)

@@ -13,6 +13,7 @@ public class TurnsManager : MonoBehaviour
     [SerializeField] private AnimationController shadowElement;
 
     public event System.Action<CharacterController> OnPlayerSelected;
+
     private float bufferTime;
 
     private void Start()
@@ -27,6 +28,7 @@ public class TurnsManager : MonoBehaviour
         player1.OnArrived += SwitchPlayer;
         player2.OnArrived += SwitchPlayer;
         timer.OnCalculatedTimeString += ShowTime;
+        timer.OnTimerZero += TimeFinished;
     }
 
     private void SwitchPlayer(CharacterController _character)
@@ -53,7 +55,7 @@ public class TurnsManager : MonoBehaviour
     {
         textTimer.text = timerString;
 
-        if (timeArg <0)
+        if (timeArg <=0)
         {
             timer.stopTimer = true ;
         }
@@ -65,6 +67,12 @@ public class TurnsManager : MonoBehaviour
         futurePos.x = -futurePos.x;
         shadowElement.targetPosition = futurePos ;
         shadowElement.ActiveAnimation();
+    }
+
+    public void TimeFinished()
+    {
+        Time.timeScale = 1;
+        AnswerManager.Instance.Lose();
     }
 }
 
