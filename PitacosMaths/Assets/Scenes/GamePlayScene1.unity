@@ -307,7 +307,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285660733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.99, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1.7581999, z: 1}
   m_Children: []
   m_Father: {fileID: 821810518}
@@ -351,9 +351,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -4
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 6395f65939386c44395d9cd7b2a81d18, type: 3}
-  m_Color: {r: 0.26192597, g: 0.3350493, b: 0.509434, a: 0.39215687}
+  m_Color: {r: 0.26192597, g: 0.3350493, b: 0.509434, a: 0.7058824}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -581,8 +581,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483373666}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.533, y: -0.233, z: 0}
-  m_LocalScale: {x: 0.7567, y: 0.8, z: 0.964849}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.964849}
   m_Children: []
   m_Father: {fileID: 821810518}
   m_RootOrder: 0
@@ -690,7 +690,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 11
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1288,8 +1288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabTile: {fileID: 1326625601299605587, guid: 4e51cfeccefb02d4ea2b31e1ba05b4f6,
     type: 3}
-  columns: 11
-  rows: 11
+  columns: 13
+  rows: 13
 --- !u!4 &821810518
 Transform:
   m_ObjectHideFlags: 0
@@ -2702,13 +2702,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   limits:
     lowerX: 0
-    upperX: 5
-    lowerY: -5
-    upperY: 5
+    upperX: 6
+    lowerY: -6
+    upperY: 6
   xSprite: {fileID: 21300000, guid: c7834bd55a05ff542a108e52d69cda38, type: 3}
   grid: {fileID: 821810517}
-  originX: 5
-  originY: 5
+  originX: 6
+  originY: 6
 --- !u!212 &1367936192
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3909,14 +3909,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   limits:
-    lowerX: -5
+    lowerX: -6
     upperX: 0
-    lowerY: -5
-    upperY: 5
+    lowerY: -6
+    upperY: 6
   xSprite: {fileID: 21300000, guid: c7834bd55a05ff542a108e52d69cda38, type: 3}
   grid: {fileID: 821810517}
-  originX: -5
-  originY: -5
+  originX: -6
+  originY: -6
 --- !u!212 &1716214695
 SpriteRenderer:
   m_ObjectHideFlags: 0
