@@ -30,6 +30,8 @@ public class CharacterController : MonoBehaviour
 
     public IEnumerator Move()
     {
+        TurnsManager.Instance.timer.stopTimer = true;
+
         while (transform.position != new Vector3(targetX,targetY,0))
         {
             if (targetX != (int)transform.position.x)
@@ -49,10 +51,10 @@ public class CharacterController : MonoBehaviour
                  transform.Translate(0, dif, 0);
             }
             yield return new WaitForSeconds(0.3f);
-
         }
+
         OnArrived?.Invoke(this);
-        //AnswerManager.Instance.SumQuestion();
+        TurnsManager.Instance.timer.stopTimer = false;
     }
 
     public void MoveSnaping()
