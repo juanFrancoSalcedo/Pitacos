@@ -11,7 +11,7 @@ public class MisionController : MonoBehaviour
 
     [Header("~~~~~~~~~~ Animation Outputs ~~~~~~~~~~~~")]
     public AnimationUIController popUpWin;
-    public AnimationTextController failText;
+    public AnimationUIController failText;
     
     private void OnEnable()
     {

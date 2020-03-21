@@ -8,6 +8,7 @@ using DG.Tweening;
 public class AnimationUIController : MonoBehaviour
 {
     private RectTransform rectTransform;
+    private Image image;
     public Vector3 targetPosition;
     public Vector3 targetScale;
     private Vector3 originScale;
@@ -21,12 +22,14 @@ public class AnimationUIController : MonoBehaviour
 
 
     public UnityEvent OnCompletedCallBack;
+    public UnityEvent OnStartedCallBack;
     public event System.Action OnCompleted;
     
 
     private void OnEnable()
     {
         rectTransform = GetComponent<RectTransform>();
+        image = GetComponent<Image>();
         originPosition = rectTransform.anchoredPosition;
         originScale = rectTransform.localScale;
         OnCompleted += CallBacks;
@@ -39,6 +42,7 @@ public class AnimationUIController : MonoBehaviour
     
     public void ActiveAnimation()
     {
+        OnStartedCallBack?.Invoke();
         Sequence sequence = DOTween.Sequence();
         
         switch (animationType)
@@ -56,6 +60,14 @@ public class AnimationUIController : MonoBehaviour
                 sequence.Append(rectTransform.DOAnchorPos(targetPosition, timeAnimation,false).SetEase(animationCurve).SetDelay(delay));
                 sequence.AppendInterval(coldTime);
                 sequence.Append(rectTransform.DOAnchorPos(originPosition,timeAnimation,false).SetEase(animationCurve));
+                break;
+
+            case TypeAnimation.MoveFadeOut:
+
+                sequence.Append(image.DOFade(1, 0).SetDelay(delay));
+                sequence.Append(rectTransform.DOAnchorPos(targetPosition, timeAnimation, false).SetEase(animationCurve));
+                sequence.AppendInterval(coldTime);
+                sequence.Append(image.DOFade(0, timeAnimation).SetEase(animationCurve).OnComplete(CallBacks));
                 break;
 
             case TypeAnimation.Scale:
@@ -91,5 +103,6 @@ public enum TypeAnimation
     MoveFadeOut,
     MoveBack,
     Scale,
-    ScaleReturnOriginScale
+    ScaleReturnOriginScale,
+    FadeOut
 }

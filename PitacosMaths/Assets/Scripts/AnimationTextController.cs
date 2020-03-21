@@ -21,6 +21,7 @@ public class AnimationTextController : MonoBehaviour
 
 
     public UnityEvent OnCompletedCallBack;
+    public UnityEvent OnStartedCallBack;
     public event System.Action OnCompleted;
     
 
@@ -39,6 +40,7 @@ public class AnimationTextController : MonoBehaviour
     
     public void ActiveAnimation()
     {
+        OnStartedCallBack?.Invoke();
         Sequence sequence = DOTween.Sequence();
         
         switch (animationType)
@@ -61,6 +63,11 @@ public class AnimationTextController : MonoBehaviour
                 sequence.Append(textComponent.DOFade(0, timeAnimation).SetEase(animationCurve).OnComplete(CallBacks));
                 break;
 
+            case TypeAnimation.FadeOut:
+                textComponent.DOFade(1,0);
+                sequence.AppendInterval(coldTime);
+                sequence.Append(textComponent.DOFade(0,timeAnimation).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks));
+                break;
         }
     }
 

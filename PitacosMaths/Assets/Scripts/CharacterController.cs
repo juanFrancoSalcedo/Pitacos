@@ -52,7 +52,6 @@ public class CharacterController : MonoBehaviour
             }
             yield return new WaitForSeconds(0.3f);
         }
-
         OnArrived?.Invoke(this);
         TurnsManager.Instance.timer.stopTimer = false;
     }
