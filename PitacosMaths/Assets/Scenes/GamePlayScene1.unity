@@ -306,6 +306,9 @@ MonoBehaviour:
   OnCompletedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  OnStartedCallBack:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &285660733
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,7 +378,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -4
   m_Sprite: {fileID: 21300000, guid: 6395f65939386c44395d9cd7b2a81d18, type: 3}
   m_Color: {r: 0.26192597, g: 0.3350493, b: 0.509434, a: 0.7058824}
   m_FlipX: 0
@@ -967,6 +970,9 @@ MonoBehaviour:
   playOnAwake: 0
   animationType: 1
   OnCompletedCallBack:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &752198793
@@ -1811,10 +1817,10 @@ RectTransform:
   m_Father: {fileID: 838569566}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.31363893, y: 0.8228594}
-  m_AnchorMax: {x: 0.6636389, y: 0.9648751}
-  m_AnchoredPosition: {x: -1.5, y: 3.5}
-  m_SizeDelta: {x: -12.700001, y: 2}
+  m_AnchorMin: {x: 0.31363893, y: 0.85057825}
+  m_AnchorMax: {x: 0.651, y: 0.9648751}
+  m_AnchoredPosition: {x: 7.5, y: 16.799927}
+  m_SizeDelta: {x: 5.3, y: 49.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1124786618
 MonoBehaviour:
@@ -1928,8 +1934,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177723900}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.14, y: -0.11, z: 0}
-  m_LocalScale: {x: 1.04, y: 1.3439999, z: 1}
+  m_LocalPosition: {x: 3.324, y: 0.212, z: 0}
+  m_LocalScale: {x: 1.11384, y: 1.4729164, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -2658,6 +2664,9 @@ MonoBehaviour:
   OnCompletedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  OnStartedCallBack:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1324219938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3268,6 +3277,9 @@ MonoBehaviour:
   OnCompletedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  OnStartedCallBack:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1415554099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3420,7 +3432,7 @@ MonoBehaviour:
   mision: {fileID: 629965320}
   gridPosition: {fileID: 821810518}
   popUpWin: {fileID: 670869034}
-  failText: {fileID: 1415554098}
+  failText: {fileID: 0}
 --- !u!4 &1432168986
 Transform:
   m_ObjectHideFlags: 0
@@ -3994,8 +4006,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690461229}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.838, y: 0.081, z: 10}
-  m_LocalScale: {x: 2.280228, y: 2.0439, z: 1}
+  m_LocalPosition: {x: -8.876, y: 0.234, z: 10}
+  m_LocalScale: {x: 2.5716844, y: 2.212722, z: 1}
   m_Children: []
   m_Father: {fileID: 319817202}
   m_RootOrder: 0
