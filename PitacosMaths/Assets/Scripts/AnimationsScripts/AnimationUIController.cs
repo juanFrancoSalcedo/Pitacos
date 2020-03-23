@@ -5,42 +5,26 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using DG.Tweening;
 
-public class AnimationUIController : MonoBehaviour
+
+public class AnimationUIController : DoAnimationController
 {
     private RectTransform rectTransform;
     private Image image;
-    public Vector3 targetPosition;
+
     public Vector3 targetScale;
     private Vector3 originScale;
-    private Vector3 originPosition;
-    public float timeAnimation;
-    public float delay;
-    public float coldTime;
-    public Ease animationCurve;
-    public bool playOnAwake;
-    public TypeAnimation animationType;
 
-
-    public UnityEvent OnCompletedCallBack;
-    public UnityEvent OnStartedCallBack;
-    public event System.Action OnCompleted;
-    
-
-    private void OnEnable()
+    private new void OnEnable()
     {
         rectTransform = GetComponent<RectTransform>();
         image = GetComponent<Image>();
         originPosition = rectTransform.anchoredPosition;
         originScale = rectTransform.localScale;
-        OnCompleted += CallBacks;
-        
-        if (playOnAwake)
-        {
-            ActiveAnimation();
-        }
+
+        base.OnEnable();
     }
     
-    public void ActiveAnimation()
+    public override void ActiveAnimation()
     {
         OnStartedCallBack?.Invoke();
         Sequence sequence = DOTween.Sequence();
@@ -83,17 +67,7 @@ public class AnimationUIController : MonoBehaviour
 
         }
     }
-
-    private void CallBacks()
-    {
-        OnCompletedCallBack?.Invoke();
-    }
     
-
-    public void SetColdTime(float _time)
-    {
-        coldTime = _time;
-    }
 }
 
 public enum TypeAnimation

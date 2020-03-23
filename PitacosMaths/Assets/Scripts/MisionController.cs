@@ -24,7 +24,7 @@ public class MisionController : MonoBehaviour
     
     private void DistributeMision(CharacterController playerArg)
     {
-        Vector3 misionPos = playerArg.transform.position ;
+        Vector3 misionPos = Vector3.zero;
 
         while (misionPos == playerArg.transform.position)
         {

@@ -6,39 +6,22 @@ using UnityEngine.Events;
 using DG.Tweening;
 using TMPro;
 
-public class AnimationTextController : MonoBehaviour
+public class AnimationTextController : DoAnimationController
 {
     private RectTransform rectTransform;
     private TextMeshProUGUI textComponent;
-    public Vector3 targetPosition;
-    private Vector3 originPosition;
-    public float timeAnimation;
-    public float delay;
-    public float coldTime;
-    public Ease animationCurve;
-    public bool playOnAwake;
-    public TypeAnimation animationType;
-
-
-    public UnityEvent OnCompletedCallBack;
-    public UnityEvent OnStartedCallBack;
-    public event System.Action OnCompleted;
     
 
-    private void OnEnable()
+    private new void OnEnable()
     {
         textComponent = GetComponent<TextMeshProUGUI>();
         rectTransform = GetComponent<RectTransform>();
         originPosition = rectTransform.anchoredPosition;
-        OnCompleted += CallBacks;
-        
-        if (playOnAwake)
-        {
-            ActiveAnimation();
-        }
+
+        base.OnEnable();
     }
-    
-    public void ActiveAnimation()
+
+    public override void ActiveAnimation()
     {
         OnStartedCallBack?.Invoke();
         Sequence sequence = DOTween.Sequence();
@@ -70,16 +53,5 @@ public class AnimationTextController : MonoBehaviour
                 break;
         }
     }
-
-
-    private void CallBacks()
-    {
-        OnCompletedCallBack?.Invoke();
-    }
     
-
-    public void SetColdTime(float _time)
-    {
-        coldTime = _time;
-    }
 }

@@ -5,34 +5,16 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using DG.Tweening;
 
-public class AnimationController : MonoBehaviour
+public class AnimationController : DoAnimationController
 {
-    public Vector3 targetPosition;
-    private Vector3 originPosition;
-    public float timeAnimation;
-    public float delay;
-    public float coldTime;
-    public AnimationCurve animationCurve;
-    public bool playOnAwake;
-    public TypeAnimation animationType;
-
-  
-    public UnityEvent OnCompletedCallBack;
-    public event System.Action OnCompleted;
-    
-
-    private void OnEnable()
+    private new void OnEnable()
     {
         originPosition = transform.position;
-        OnCompleted += CallBacks;
-        
-        if (playOnAwake)
-        {
-            ActiveAnimation();
-        }
+
+        base.OnEnable();
     }
     
-    public void ActiveAnimation()
+    public override void ActiveAnimation()
     {
         Sequence sequence = DOTween.Sequence();
         
@@ -50,17 +32,5 @@ public class AnimationController : MonoBehaviour
 
                 break;
         }
-    }
-
-
-    private void CallBacks()
-    {
-        OnCompletedCallBack?.Invoke();
-    }
-    
-
-    public void SetColdTime(float _time)
-    {
-        coldTime = _time;
     }
 }
