@@ -24,12 +24,20 @@ public class MisionController : MonoBehaviour
     
     private void DistributeMision(CharacterController playerArg)
     {
-        Vector3 misionPos = Vector3.zero;
+        int count = 0 ;
+
+        Vector3 misionPos = playerArg.transform.position;
 
         while (misionPos == playerArg.transform.position)
         {
             misionPos.y = Random.Range(playerArg.limits.lowerY, playerArg.limits.upperY) + gridPosition.position.y;
             misionPos.x = Random.Range(playerArg.limits.lowerX, playerArg.limits.upperX) + gridPosition.position.x;
+            count++;
+        }
+
+        if (misionPos == playerArg.transform.position)
+        {
+            Debug.LogError("ESTE JUEGO VA EXPLOTAR 3...2...1... DATO De vital IMPORTANTCIA("+count+")");
         }
 
         mision.transform.position = misionPos;
