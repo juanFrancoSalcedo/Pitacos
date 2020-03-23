@@ -81,7 +81,7 @@ public class TurnsManager : MonoBehaviour
 
     public void TimeFinished()
     {
-        Time.timeScale = 1;
+        Time.timeScale = 0;
         AnswerManager.Instance.Lose();
     }
 }
