@@ -78,7 +78,7 @@ public class AnimationUIController : MonoBehaviour
             case TypeAnimation.ScaleReturnOriginScale:
                 sequence.Append(rectTransform.DOScale(targetScale, timeAnimation).SetEase(animationCurve).SetDelay(delay));
                 sequence.AppendInterval(coldTime);
-                sequence.Append(rectTransform.DOScale(originScale, timeAnimation).SetEase(animationCurve));
+                sequence.Append(rectTransform.DOScale(originScale, timeAnimation).SetEase(animationCurve).OnComplete(CallBacks));
                 break;
 
         }
@@ -105,4 +105,5 @@ public enum TypeAnimation
     Scale,
     ScaleReturnOriginScale,
     FadeOut
+    //InfiniyLoopScaleReturnOriginScale
 }
