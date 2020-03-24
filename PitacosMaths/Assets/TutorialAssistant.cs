@@ -12,6 +12,8 @@ public class TutorialAssistant : MonoBehaviour
     public TypeAnimation animationType;
     [SerializeField] private TypingAnimator typingObject;
     [SerializeField] private TMP_InputField fieldTextMision;
+    [SerializeField] private UnityEngine.UI.Button buttonMision;
+    [SerializeField] private Transform targetTransform;
     [TextArea(1,3)]
     [SerializeField] private string textToShow;
     [SerializeField] private string textEquivalent;
@@ -28,7 +30,8 @@ public class TutorialAssistant : MonoBehaviour
         none,
         textEquals,
         textCompleted,
-        animationCompleted
+        animationCompleted,
+        buttonClicked
     }
 
     private void OnEnable()
@@ -38,6 +41,7 @@ public class TutorialAssistant : MonoBehaviour
             case TypeMisionTutorial.animationCompleted:
                 animatorControl.animationType = this.animationType;
                 animatorControl.targetPosition = targetPos;
+                animatorControl.worldPoint = targetTransform;
                 animatorControl.targetScale = targetScale;
                 animatorControl.OnCompleted += MisionFinished;
                 break;
@@ -46,6 +50,10 @@ public class TutorialAssistant : MonoBehaviour
                  typingObject.OnComplitedText += MisionFinished;
                  typingObject.textCompo.text = textToShow;
                  typingObject.EraseAndSaveText();
+                break;
+
+            case TypeMisionTutorial.buttonClicked:
+                buttonMision.onClick.AddListener(MisionFinished);
                 break;
         }
     }
@@ -99,6 +107,10 @@ public class TutorialAssistant : MonoBehaviour
 
             case TypeMisionTutorial.textCompleted:
                 typingObject.OnComplitedText -= MisionFinished;
+                break;
+
+            case TypeMisionTutorial.buttonClicked:
+                buttonMision.onClick.RemoveListener(MisionFinished);
                 break;
         }
     }

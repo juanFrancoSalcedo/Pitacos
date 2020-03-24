@@ -32,6 +32,7 @@ public class MisionController : MonoBehaviour
         if (useEspecificPos)
         {
             mision.transform.position = new Vector3(specificX, specificY, playerArg.transform.position.z);
+            useEspecificPos = false;
             return;
         }
 

@@ -16,9 +16,11 @@ public abstract class DoAnimationController : MonoBehaviour
     public Ease animationCurve;
     public bool playOnAwake;
     public TypeAnimation animationType;
-
+    public Transform worldPoint;
     public UnityEvent OnCompletedCallBack;
     public UnityEvent OnStartedCallBack;
+
+
     public event System.Action OnCompleted;
 
     public abstract void ActiveAnimation();

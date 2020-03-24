@@ -11,6 +11,7 @@ public class AnimationUIController : DoAnimationController
     private RectTransform rectTransform;
     private Image image;
 
+
     private Vector3 originScale;
 
     private new void OnEnable()
@@ -42,7 +43,7 @@ public class AnimationUIController : DoAnimationController
             case TypeAnimation.MoveReturnOrigin:
                 sequence.Append(rectTransform.DOAnchorPos(targetPosition, timeAnimation,false).SetEase(animationCurve).SetDelay(delay));
                 sequence.AppendInterval(coldTime);
-                sequence.Append(rectTransform.DOAnchorPos(originPosition,timeAnimation,false).SetEase(animationCurve));
+                sequence.Append(rectTransform.DOAnchorPos(originPosition,timeAnimation,false).SetEase(animationCurve).OnComplete(CallBacks));
                 break;
 
             case TypeAnimation.MoveFadeOut:
@@ -71,6 +72,36 @@ public class AnimationUIController : DoAnimationController
                 sequence.Append(rectTransform.DOScale(originScale, timeAnimation).SetEase(animationCurve).OnComplete(CallBacks));
                 break;
 
+            case TypeAnimation.MoveWorldPoint2D:
+                Vector3 worldPos = worldPoint.position;
+                float z = Camera.main.nearClipPlane;
+                worldPos.z = z;
+                targetPosition = worldPos;
+                rectTransform.DOMove(targetPosition, timeAnimation, false).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
+                break;
+
+            case TypeAnimation.MoveScaleWorldPoint2D:
+                worldPos = worldPoint.position;
+                z = Camera.main.nearClipPlane;
+                worldPos.z = z;
+                targetPosition = worldPos;
+                sequence.Append(rectTransform.DOMove(targetPosition, timeAnimation, false).SetEase(animationCurve).SetDelay(delay));
+                sequence.AppendInterval(coldTime);
+                sequence.Append(rectTransform.DOScale(targetScale, timeAnimation).SetEase(animationCurve).OnComplete(CallBacks));
+                break;
+
+            case TypeAnimation.MoveUIPoint:
+                targetPosition = worldPoint.position;
+                rectTransform.DOMove(targetPosition, timeAnimation, false).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
+                break;
+
+            case TypeAnimation.MoveScaleUIPoint:
+                targetPosition = worldPoint.position;
+                sequence.Append(rectTransform.DOMove(targetPosition, timeAnimation, false).SetEase(animationCurve).SetDelay(delay));
+                sequence.AppendInterval(coldTime);
+                sequence.Append(rectTransform.DOScale(targetScale, timeAnimation).SetEase(animationCurve).OnComplete(CallBacks));
+
+                break;
         }
     }
     
@@ -83,6 +114,11 @@ public enum TypeAnimation
     MoveFadeOut,
     MoveBack,
     MoveScale,
+    MoveUIPoint,
+    MoveScaleUIPoint,
+    MoveWorldPoint2D,
+    MoveWorldPoint2DOffset,
+    MoveScaleWorldPoint2D,
     Scale,
     ScaleReturnOriginScale,
     FadeOut
