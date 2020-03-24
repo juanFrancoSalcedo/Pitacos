@@ -5,24 +5,25 @@ using UnityEngine;
 public class TutorialController : MonoBehaviour
 {
     [SerializeField] private AnimationUIController shadow;
-    public MisionTutorialAnswer[] misionAnimations;
+    public TutorialAssistant[] misionAnimations;
 
-    int misionIndex =0;
+    [SerializeField] private int misionIndex =-1;
+
+    private void Start()
+    {
+        NextMision();
+    }
 
     public void NextMision()
     {
-        misionIndex++;
-        misionAnimations[misionIndex].animator.ActiveAnimation();
-    }
-    
-}
 
-[System.Serializable]
-public struct MisionTutorialAnswer
-{
-    public DoAnimationController animator;
-    public TypeAnimation animationType;
-    public float delay;
-    public Vector3 scale;
-    public Vector3 position;
+        if (misionIndex + 1 >= misionAnimations.Length)
+        {
+            return;
+        }
+
+        misionIndex++;
+        misionAnimations[misionIndex].gameObject.SetActive(true);
+        misionAnimations[misionIndex].StartMision();
+    }
 }

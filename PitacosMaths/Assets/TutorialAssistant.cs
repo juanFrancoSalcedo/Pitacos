@@ -2,36 +2,111 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 public class TutorialAssistant : MonoBehaviour
 {
+    [SerializeField] private float delayCompleted = 0.6f; 
     [SerializeField] private TutorialController control;
-    //[SerializeField] private  
+    [SerializeField] private DoAnimationController animatorControl;
+    public TypeAnimation animationType;
+    [SerializeField] private TypingAnimator typingObject;
     [SerializeField] private TMP_InputField fieldTextMision;
+    [TextArea(1,3)]
+    [SerializeField] private string textToShow;
     [SerializeField] private string textEquivalent;
+    [SerializeField] private bool misionCompleted;
+    [SerializeField] private Vector3 targetPos;
+    [SerializeField] private Vector3 targetScale;
+
+    public UnityEvent OnCompletedMission;
 
     public TypeMisionTutorial misionTuto;
 
     public enum TypeMisionTutorial
     {
-        text
+        none,
+        textEquals,
+        textCompleted,
+        animationCompleted
     }
-    
-    private void Update()
-    {
 
+    private void OnEnable()
+    {
         switch (misionTuto)
         {
+            case TypeMisionTutorial.animationCompleted:
+                animatorControl.animationType = this.animationType;
+                animatorControl.targetPosition = targetPos;
+                animatorControl.targetScale = targetScale;
+                animatorControl.OnCompleted += MisionFinished;
+                break;
 
-            case TypeMisionTutorial.text:
+            case TypeMisionTutorial.textCompleted:
+                 typingObject.OnComplitedText += MisionFinished;
+                 typingObject.textCompo.text = textToShow;
+                 typingObject.EraseAndSaveText();
+                break;
+        }
+    }
 
-                if (fieldTextMision.text.Equals(textEquivalent))
+    private void Update()
+    {
+        switch (misionTuto)
+        {
+            case TypeMisionTutorial.textEquals:
+
+                if (fieldTextMision.text.Equals(textEquivalent) && !misionCompleted)
                 {
-                    print("Listo");
+                    MisionFinished();
+                    misionCompleted = true;
                 }
                 break;
                 
         }
+    }
 
+    public void StartMision()
+    {
+        if (misionCompleted)
+        {
+          //  MisionFinished();
+        }
+        else
+        {
+            switch (misionTuto)
+            {
+                case TypeMisionTutorial.animationCompleted:
+                    animatorControl.ActiveAnimation();
+                    break;
+
+                case TypeMisionTutorial.textCompleted:
+                    typingObject.StartAnimation();
+                    break;
+            }
+        }
+    }
+
+    public void MisionFinished()
+    {
+        Invoke("SendReport",delayCompleted);
+
+        switch (misionTuto)
+        {
+            case TypeMisionTutorial.animationCompleted:
+                animatorControl.OnCompleted -= MisionFinished;
+                break;
+
+            case TypeMisionTutorial.textCompleted:
+                typingObject.OnComplitedText -= MisionFinished;
+                break;
+        }
+    }
+
+    public void SendReport()
+    {
+        OnCompletedMission?.Invoke();
+        control.NextMision();
+        gameObject.SetActive(false);
     }
 }

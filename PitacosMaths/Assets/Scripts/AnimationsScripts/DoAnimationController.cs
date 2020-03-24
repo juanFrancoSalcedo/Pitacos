@@ -8,6 +8,7 @@ using UnityEngine.Events;
 public abstract class DoAnimationController : MonoBehaviour
 {
     public Vector3 targetPosition;
+    public Vector3 targetScale;
     protected Vector3 originPosition;
     public float timeAnimation;
     public float delay;
@@ -25,17 +26,15 @@ public abstract class DoAnimationController : MonoBehaviour
 
     protected void OnEnable()
     {
-        OnCompleted += CallBacks;
-
         if (playOnAwake)
         {
             ActiveAnimation();
         }
-
     }
 
     protected void CallBacks()
     {
+         OnCompleted?.Invoke();
          OnCompletedCallBack?.Invoke();
     }
 

@@ -10,7 +10,7 @@ public class AnimationTextController : DoAnimationController
 {
     private RectTransform rectTransform;
     private TextMeshProUGUI textComponent;
-    
+    private string textNarrativeBuffer;
 
     private new void OnEnable()
     {
@@ -51,6 +51,8 @@ public class AnimationTextController : DoAnimationController
                 sequence.AppendInterval(coldTime);
                 sequence.Append(textComponent.DOFade(0,timeAnimation).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks));
                 break;
+
+           
         }
     }
     

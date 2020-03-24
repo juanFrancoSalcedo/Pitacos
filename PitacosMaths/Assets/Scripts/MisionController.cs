@@ -12,7 +12,12 @@ public class MisionController : MonoBehaviour
     [Header("~~~~~~~~~~ Animation Outputs ~~~~~~~~~~~~")]
     public AnimationUIController popUpWin;
     public AnimationUIController failText;
-    
+
+    public bool useEspecificPos;
+    public int specificX;
+    public int specificY;
+
+
     private void OnEnable()
     {
         turnsManager.OnPlayerSelected += DistributeMision;
@@ -24,6 +29,12 @@ public class MisionController : MonoBehaviour
     
     private void DistributeMision(CharacterController playerArg)
     {
+        if (useEspecificPos)
+        {
+            mision.transform.position = new Vector3(specificX, specificY, playerArg.transform.position.z);
+            return;
+        }
+
         int count = 0 ;
 
         Vector3 misionPos = playerArg.transform.position;

@@ -11,7 +11,6 @@ public class AnimationUIController : DoAnimationController
     private RectTransform rectTransform;
     private Image image;
 
-    public Vector3 targetScale;
     private Vector3 originScale;
 
     private new void OnEnable()
@@ -54,8 +53,15 @@ public class AnimationUIController : DoAnimationController
                 sequence.Append(image.DOFade(0, timeAnimation).SetEase(animationCurve).OnComplete(CallBacks));
                 break;
 
+            case TypeAnimation.MoveScale:
+
+                sequence.Append(rectTransform.DOAnchorPos(targetPosition, timeAnimation, false).SetEase(animationCurve).SetDelay(delay));
+                sequence.AppendInterval(coldTime);
+                sequence.Append(rectTransform.DOScale(targetScale, timeAnimation).SetEase(animationCurve).OnComplete(CallBacks));
+                break;
+
             case TypeAnimation.Scale:
-                rectTransform.DOScale(targetScale, timeAnimation).SetEase(animationCurve).SetDelay(delay);
+                rectTransform.DOScale(targetScale, timeAnimation).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
                 break;
 
 
@@ -76,8 +82,8 @@ public enum TypeAnimation
     MoveReturnOrigin,
     MoveFadeOut,
     MoveBack,
+    MoveScale,
     Scale,
     ScaleReturnOriginScale,
     FadeOut
-    //InfiniyLoopScaleReturnOriginScale
 }
