@@ -272,6 +272,7 @@ MonoBehaviour:
   playOnAwake: 0
   animationType: 11
   worldPoint: {fileID: 0}
+  colorTarget: {r: 0, g: 0, b: 0, a: 0}
   OnCompletedCallBack:
     m_PersistentCalls:
       m_Calls: []
@@ -527,6 +528,7 @@ MonoBehaviour:
   playOnAwake: 1
   animationType: 11
   worldPoint: {fileID: 0}
+  colorTarget: {r: 0, g: 0, b: 0, a: 0}
   OnCompletedCallBack:
     m_PersistentCalls:
       m_Calls: []
@@ -859,6 +861,7 @@ MonoBehaviour:
   playOnAwake: 0
   animationType: 11
   worldPoint: {fileID: 0}
+  colorTarget: {r: 0, g: 0, b: 0, a: 0}
   OnCompletedCallBack:
     m_PersistentCalls:
       m_Calls: []
@@ -1032,6 +1035,7 @@ GameObject:
   - component: {fileID: 1487956410}
   - component: {fileID: 1487956412}
   - component: {fileID: 1487956411}
+  - component: {fileID: 1487956413}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -1071,7 +1075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.754717, g: 0.25987896, b: 0.25987896, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1094,6 +1098,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487956409}
   m_CullTransparentMesh: 0
+--- !u!114 &1487956413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487956409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d994f3e89e7fb4bbd5d5ca41d47e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  timeAnimation: 1
+  delay: 0
+  coldTime: 0
+  animationCurve: 13
+  playOnAwake: 1
+  animationType: 13
+  worldPoint: {fileID: 0}
+  colorTarget: {r: 1, g: 1, b: 1, a: 1}
+  OnCompletedCallBack:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStartedCallBack:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1507748820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,6 +1221,7 @@ MonoBehaviour:
   playOnAwake: 1
   animationType: 0
   worldPoint: {fileID: 0}
+  colorTarget: {r: 0, g: 0, b: 0, a: 0}
   OnCompletedCallBack:
     m_PersistentCalls:
       m_Calls: []
@@ -1502,6 +1535,7 @@ MonoBehaviour:
   playOnAwake: 0
   animationType: 11
   worldPoint: {fileID: 0}
+  colorTarget: {r: 0, g: 0, b: 0, a: 0}
   OnCompletedCallBack:
     m_PersistentCalls:
       m_Calls: []
@@ -1773,6 +1807,7 @@ MonoBehaviour:
   playOnAwake: 0
   animationType: 11
   worldPoint: {fileID: 0}
+  colorTarget: {r: 0, g: 0, b: 0, a: 0}
   OnCompletedCallBack:
     m_PersistentCalls:
       m_Calls: []
