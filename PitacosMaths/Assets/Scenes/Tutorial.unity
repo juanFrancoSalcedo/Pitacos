@@ -1008,7 +1008,7 @@ MonoBehaviour:
   fieldTextMision: {fileID: 0}
   buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: Debemos  introducir las cordenadas en X, pon -2
+  textToShow: Debemos  introducir las cordenadas en X, ingresa -2 en el circulo.
   textEquivalent: 
   misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
@@ -1370,10 +1370,10 @@ RectTransform:
   m_Father: {fileID: 1673409722}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.7, y: 0.4}
-  m_SizeDelta: {x: 473.2, y: 297}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -5}
+  m_SizeDelta: {x: -78.25, y: -134.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &536415237
 MonoBehaviour:
@@ -1408,15 +1408,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: afbb460381524b44b9b4dee844f5ae45, type: 2}
+  m_sharedMaterial: {fileID: 1598192256064139492, guid: afbb460381524b44b9b4dee844f5ae45,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294911239
-  m_fontColor: {r: 0.028301895, g: 0.14355908, b: 1, a: 1}
+  m_fontColor: {r: 0.4745098, g: 0.12156863, b: 0.21960784, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1434,8 +1435,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5665,7 +5666,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 69.349976, y: 30.050003}
+  m_AnchoredPosition: {x: 69.349976, y: 30.050018}
   m_SizeDelta: {x: -138.7, y: -99.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1673409723
@@ -6458,7 +6459,7 @@ MonoBehaviour:
   fieldTextMision: {fileID: 0}
   buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: "\xA1Bien Hecho! Ahora las cordinadas en Y"
+  textToShow: "\xA1Bien Hecho! Ahora las cordenadas en Y"
   textEquivalent: 
   misionCompleted: 0
   targetPos: {x: -250, y: -750, z: 0}
@@ -6543,6 +6544,7 @@ GameObject:
   - component: {fileID: 1903291382}
   - component: {fileID: 1903291384}
   - component: {fileID: 1903291383}
+  - component: {fileID: 1903291385}
   m_Layer: 0
   m_Name: ImageCharacterTUto
   m_TagString: Untagged
@@ -6564,10 +6566,10 @@ RectTransform:
   m_Father: {fileID: 2096780626}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -366, y: -0.000048637}
-  m_SizeDelta: {x: 200, y: 600}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.5406771, y: 1}
+  m_AnchoredPosition: {x: -259.00006, y: 132.6}
+  m_SizeDelta: {x: -56, y: 373.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1903291383
 MonoBehaviour:
@@ -6605,6 +6607,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903291381}
   m_CullTransparentMesh: 0
+--- !u!114 &1903291385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903291381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d994f3e89e7fb4bbd5d5ca41d47e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0.9, y: 0.9, z: 0.9}
+  timeAnimation: 20
+  delay: 0
+  coldTime: 0
+  animationCurve: 4
+  playOnAwake: 1
+  animationType: 11
+  worldPoint: {fileID: 0}
+  colorTarget: {r: 0, g: 0, b: 0, a: 0}
+  OnCompletedCallBack:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStartedCallBack:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1937691944
 GameObject:
   m_ObjectHideFlags: 0
@@ -7509,8 +7539,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1187, y: 196.5}
-  m_SizeDelta: {x: 762.1, y: 493}
+  m_AnchoredPosition: {x: -1155, y: 250}
+  m_SizeDelta: {x: 777.6, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2096780627
 MonoBehaviour:
@@ -7525,7 +7555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3018868, g: 0.7132296, b: 1, a: 0.5411765}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7564,7 +7594,7 @@ MonoBehaviour:
   targetScale: {x: 0, y: 0, z: 0}
   timeAnimation: 1
   delay: 0
-  coldTime: 6
+  coldTime: 5
   animationCurve: 20
   playOnAwake: 0
   animationType: 0
@@ -7613,7 +7643,7 @@ MonoBehaviour:
   fieldTextMision: {fileID: 0}
   buttonMision: {fileID: 0}
   targetTransform: {fileID: 629965322}
-  textToShow: mmm AL parecer las cordinadas en Y es de -2.
+  textToShow: Ahora vamos con el eje y; en este caso es -2.
   textEquivalent: 
   misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
