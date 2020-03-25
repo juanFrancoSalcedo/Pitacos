@@ -6,7 +6,7 @@ public class Transition : MonoBehaviour
 {
     public DoAnimationController animator;
     public GameObject image;
-    public static Transition Instance { get; set; }
+    public static Transition Instance { get; private set; }
     bool zoomIn;
 
     private void Awake()
@@ -14,15 +14,18 @@ public class Transition : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            transform.SetParent(null);
+        }
+
+        if (Instance == this)
+        {
             DontDestroyOnLoad(gameObject);
         }
         else
         {
-            if (Instance != this)
-            {
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
         }
+
     }
 
     public void Zoom()
@@ -57,5 +60,10 @@ public class Transition : MonoBehaviour
     private void ShowObjectEnd()
     {
         image.gameObject.SetActive(true);
+    }
+
+    private void OnDestroy()
+    {
+        print("meuro");
     }
 }

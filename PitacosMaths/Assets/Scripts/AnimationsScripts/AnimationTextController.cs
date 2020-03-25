@@ -39,11 +39,16 @@ public class AnimationTextController : DoAnimationController
                 break;
 
             case TypeAnimation.MoveFadeOut:
-
                 sequence.Append(textComponent.DOFade(1,0).SetDelay(delay));
                 sequence.Append(rectTransform.DOAnchorPos(targetPosition, timeAnimation, false).SetEase(animationCurve));
                 sequence.AppendInterval(coldTime);
                 sequence.Append(textComponent.DOFade(0, timeAnimation).SetEase(animationCurve).OnComplete(CallBacks));
+                break;
+
+            case TypeAnimation.ScaleReturnOriginScale:
+                sequence.Append(rectTransform.DOScale(targetScale, timeAnimation).SetEase(animationCurve).SetDelay(delay));
+                sequence.AppendInterval(coldTime);
+                sequence.Append(rectTransform.DOScale(originScale, timeAnimation).SetEase(animationCurve).OnComplete(CallBacks));
                 break;
 
             case TypeAnimation.FadeOut:

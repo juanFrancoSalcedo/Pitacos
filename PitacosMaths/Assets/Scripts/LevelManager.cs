@@ -16,6 +16,7 @@ public class LevelManager : MonoBehaviour
     }
     public void LoadSpecificSceneZoom(int indexScene)
     {
+        Time.timeScale = 1;
         Transition.Instance.Zoom();
         StartCoroutine(WaitLoadScene(indexScene));
     }

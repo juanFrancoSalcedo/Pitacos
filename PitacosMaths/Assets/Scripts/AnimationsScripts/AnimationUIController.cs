@@ -10,9 +10,7 @@ public class AnimationUIController : DoAnimationController
 {
     private RectTransform rectTransform;
     private Image image;
-
-
-    private Vector3 originScale;
+    
 
     private new void OnEnable()
     {
@@ -47,7 +45,6 @@ public class AnimationUIController : DoAnimationController
                 break;
 
             case TypeAnimation.MoveFadeOut:
-
                 sequence.Append(image.DOFade(1, 0).SetDelay(delay));
                 sequence.Append(rectTransform.DOAnchorPos(targetPosition, timeAnimation, false).SetEase(animationCurve));
                 sequence.AppendInterval(coldTime);
@@ -100,7 +97,10 @@ public class AnimationUIController : DoAnimationController
                 sequence.Append(rectTransform.DOMove(targetPosition, timeAnimation, false).SetEase(animationCurve).SetDelay(delay));
                 sequence.AppendInterval(coldTime);
                 sequence.Append(rectTransform.DOScale(targetScale, timeAnimation).SetEase(animationCurve).OnComplete(CallBacks));
+                break;
 
+            case TypeAnimation.ColorChange:
+                image.DOColor(colorTarget,timeAnimation).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
                 break;
         }
     }
@@ -121,5 +121,6 @@ public enum TypeAnimation
     MoveScaleWorldPoint2D,
     Scale,
     ScaleReturnOriginScale,
-    FadeOut
+    FadeOut,
+    ColorChange
 }

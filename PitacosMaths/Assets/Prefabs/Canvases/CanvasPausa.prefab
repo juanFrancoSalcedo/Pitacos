@@ -298,7 +298,7 @@ GameObject:
   - component: {fileID: 516585196222156202}
   - component: {fileID: 516585196222156203}
   m_Layer: 0
-  m_Name: Canvas Pausa
+  m_Name: CanvasPausa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -770,8 +770,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: LoadSpecificScene
+      - m_Target: {fileID: 516585196222156203}
+        m_MethodName: LoadSpecificSceneZoom
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
