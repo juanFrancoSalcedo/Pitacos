@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MisionController
   - QuestionPopUp
+  - Transition
   layers:
   - Default
   - TransparentFX

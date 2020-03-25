@@ -14,11 +14,23 @@ public class LevelManager : MonoBehaviour
     {
         Application.Quit();
     }
+    public void LoadSpecificSceneZoom(int indexScene)
+    {
+        Transition.Instance.Zoom();
+        StartCoroutine(WaitLoadScene(indexScene));
+    }
+
+    private IEnumerator WaitLoadScene(int scene)
+    {
+        yield return new WaitForSeconds(1f);
+        LoadSpecificScene(scene);
+    }
 
     public void LoadSpecificScene(int indexScene)
     {
         SceneManager.LoadScene(indexScene);
     }
+
 
     public void Pause(Canvas canvasPause)
     {
