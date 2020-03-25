@@ -14,6 +14,7 @@ public class AnswerManager : MonoBehaviour
 
     [Header("~~~~~~~ UI Elements ~~~~~~~")]
     [SerializeField] private Canvas loseCanvas;
+    [SerializeField] private Canvas winCanvas;
 
     private TMPro.TextMeshProUGUI textQuestion;
 
@@ -36,7 +37,8 @@ public class AnswerManager : MonoBehaviour
         if (indexQuestion >= questionList.Count)
         {
             InputFieldController.Instance.ActiveButtons(false);
-            print("Fin de la partida");
+            TurnsManager.Instance.timer.stopTimer = true;
+            winCanvas.enabled = true;
             return;
         }
         

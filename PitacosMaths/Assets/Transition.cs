@@ -61,9 +61,4 @@ public class Transition : MonoBehaviour
     {
         image.gameObject.SetActive(true);
     }
-
-    private void OnDestroy()
-    {
-        print("meuro");
-    }
 }

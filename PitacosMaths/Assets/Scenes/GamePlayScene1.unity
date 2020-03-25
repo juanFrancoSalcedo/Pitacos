@@ -305,7 +305,7 @@ MonoBehaviour:
   coldTime: 0
   animationCurve: 16
   playOnAwake: 0
-  animationType: 5
+  animationType: 11
   worldPoint: {fileID: 0}
   colorTarget: {r: 0, g: 0, b: 0, a: 0}
   OnCompletedCallBack:
@@ -708,6 +708,12 @@ MonoBehaviour:
     happyImage: {fileID: 21300000, guid: 0828c0aa9134b7c4fba8f6afd280b88c, type: 3}
   misionController: {fileID: 1432168985}
   characterOwner: {fileID: 1716214694}
+--- !u!223 &438869407 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 5206573839497168520, guid: 7831ccdf01e28ff489efa2014a1c5099,
+    type: 3}
+  m_PrefabInstance: {fileID: 5206573839985039510}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &483373666
 GameObject:
   m_ObjectHideFlags: 0
@@ -3139,7 +3145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2000, y: -431.9}
+  m_AnchoredPosition: {x: 2000, y: -456}
   m_SizeDelta: {x: 789, y: 660.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1324219937
@@ -3154,7 +3160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d994f3e89e7fb4bbd5d5ca41d47e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: 0, y: 200, z: 0}
+  targetPosition: {x: 0, y: -100, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   timeAnimation: 1
   delay: 0
@@ -4236,7 +4242,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Respuesta...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: afbb460381524b44b9b4dee844f5ae45, type: 2}
   m_sharedMaterial: {fileID: 1598192256064139492, guid: afbb460381524b44b9b4dee844f5ae45,
@@ -4265,7 +4271,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 18
+  m_fontSize: 72
   m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4306,13 +4312,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1631775992}
-    characterCount: 0
+    characterCount: 12
     spriteCount: 0
     spaceCount: 0
-    wordCount: 0
+    wordCount: 1
     linkCount: 0
-    lineCount: 0
-    pageCount: 0
+    lineCount: 1
+    pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -5657,6 +5663,11 @@ PrefabInstance:
       propertyPath: questionList.Array.data[8]
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3724394204803248144, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
+        type: 3}
+      propertyPath: winCanvas
+      value: 
+      objectReference: {fileID: 438869407}
     - target: {fileID: 3998681863611934021, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
         type: 3}
       propertyPath: m_AnchorMin.y
