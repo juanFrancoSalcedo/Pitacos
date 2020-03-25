@@ -9,7 +9,8 @@ public class CharacterController : MonoBehaviour
     public Constraints limits;
     private SpriteRenderer renderSprite;
     public Sprite xSprite;
-    private Sprite ySprite;
+    public Sprite ySpriteUp;
+    public Sprite ySpriteDown;
 
     public event Action<CharacterController> OnArrived;
 
@@ -24,7 +25,6 @@ public class CharacterController : MonoBehaviour
     void Start()
     {
         renderSprite = GetComponent<SpriteRenderer>();
-        ySprite = renderSprite.sprite;
         transform.position = new Vector3(grid.transform.position.x + originX, grid.transform.position.y +originY, transform.position.z);
     }
 
@@ -46,8 +46,7 @@ public class CharacterController : MonoBehaviour
             {
                 int dif = (targetY > (int)transform.position.y) ? 1 : -1;
 
-                 renderSprite.sprite = ySprite;
-                 renderSprite.flipY = (dif > 0) ? true : false;
+                 renderSprite.sprite = (dif >0) ? ySpriteUp: ySpriteDown;
                  transform.Translate(0, dif, 0);
             }
             yield return new WaitForSeconds(0.3f);
