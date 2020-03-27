@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour
 {
     public void Replay()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -14,6 +15,7 @@ public class LevelManager : MonoBehaviour
     {
         Application.Quit();
     }
+
     public void LoadSpecificSceneZoom(int indexScene)
     {
         Time.timeScale = 1;
@@ -31,7 +33,6 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene(indexScene);
     }
-
 
     public void Pause(Canvas canvasPause)
     {

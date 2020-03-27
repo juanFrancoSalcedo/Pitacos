@@ -62,12 +62,14 @@ public class MisionController : MonoBehaviour
             popUpWin.ActiveAnimation();
             OnPlayerMisionFinished?.Invoke(TypeEmotion.Happy,playerPosit);
             turnsManager.timer.initTime += 5;
+            turnsManager.ShowScore(true);
         }
         else
         {
             failText.ActiveAnimation();
             OnPlayerMisionFinished?.Invoke(TypeEmotion.Sad, playerPosit);
             turnsManager.timer.initTime -= 5;
+            turnsManager.ShowScore(false);
         }
     }
 }

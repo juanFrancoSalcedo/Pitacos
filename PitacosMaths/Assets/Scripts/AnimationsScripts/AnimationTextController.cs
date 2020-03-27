@@ -9,7 +9,7 @@ using TMPro;
 public class AnimationTextController : DoAnimationController
 {
     private RectTransform rectTransform;
-    private TextMeshProUGUI textComponent;
+    public TextMeshProUGUI textComponent { get; set; }
     private string textNarrativeBuffer;
 
     private new void OnEnable()
@@ -17,7 +17,7 @@ public class AnimationTextController : DoAnimationController
         textComponent = GetComponent<TextMeshProUGUI>();
         rectTransform = GetComponent<RectTransform>();
         originPosition = rectTransform.anchoredPosition;
-
+        originScale = rectTransform.localScale;
         base.OnEnable();
     }
 

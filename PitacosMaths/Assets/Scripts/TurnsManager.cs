@@ -5,16 +5,21 @@ using TMPro;
 
 public class TurnsManager : MonoBehaviour
 {
-    public static TurnsManager Instance;
+    [Header("~~~~~~~~~ UI Elements~~~~~~~~")]
     [SerializeField] private TextMeshProUGUI textTimer;
+    [SerializeField] private AnimationTextController textSuccesess;
+    [SerializeField] private AnimationTextController textMistakes;
+    [Header("~~~~~~~~~~~~~~~~~~")]
     public Timer timer;
     [SerializeField] private InputFieldController inputContol;
     public CharacterController player1;
     public CharacterController player2;
     [SerializeField] private AnimationController shadowElement;
 
+    public static TurnsManager Instance;
     public event System.Action<CharacterController> OnPlayerSelected;
-
+    public int successes { get; set; }
+    public int mistakes { get; set; }
     private float bufferTime;
 
     private void Awake()
@@ -68,6 +73,22 @@ public class TurnsManager : MonoBehaviour
         if (timeArg <=0)
         {
             timer.stopTimer = true ;
+        }
+    }
+
+    public void ShowScore(bool isGoodAnswer)
+    {
+        if (isGoodAnswer)
+        {
+            successes++;
+            textSuccesess.textComponent.text = "Aciertos: " + successes;
+            textSuccesess.ActiveAnimation();
+        }
+        else
+        {
+            mistakes++;
+            textMistakes.textComponent.text = "Errores: " + mistakes;
+            textMistakes.ActiveAnimation();
         }
     }
 
