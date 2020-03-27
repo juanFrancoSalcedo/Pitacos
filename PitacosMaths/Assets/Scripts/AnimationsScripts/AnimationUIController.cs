@@ -77,6 +77,16 @@ public class AnimationUIController : DoAnimationController
                 rectTransform.DOMove(targetPosition, timeAnimation, false).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
                 break;
 
+            case TypeAnimation.MoveWorldPoint2DScale:
+                worldPos = worldPoint.position;
+                z = Camera.main.nearClipPlane;
+                worldPos.z = z;
+                targetPosition = worldPos;
+                sequence.Append(rectTransform.DOMove(targetPosition, timeAnimation, false).SetEase(animationCurve).SetDelay(delay));
+                sequence.AppendInterval(coldTime);
+                sequence.Append(rectTransform.DOScale(targetScale,timeAnimation).SetEase(animationCurve).OnComplete(CallBacks));
+                break;
+
             case TypeAnimation.MoveScaleWorldPoint2D:
                 worldPos = worldPoint.position;
                 z = Camera.main.nearClipPlane;
@@ -107,20 +117,3 @@ public class AnimationUIController : DoAnimationController
     
 }
 
-public enum TypeAnimation
-{
-    Move,
-    MoveReturnOrigin,
-    MoveFadeOut,
-    MoveBack,
-    MoveScale,
-    MoveUIPoint,
-    MoveScaleUIPoint,
-    MoveWorldPoint2D,
-    MoveWorldPoint2DOffset,
-    MoveScaleWorldPoint2D,
-    Scale,
-    ScaleReturnOriginScale,
-    FadeOut,
-    ColorChange
-}

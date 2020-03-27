@@ -47,3 +47,23 @@ public abstract class DoAnimationController : MonoBehaviour
 
 
 }
+
+public enum TypeAnimation
+{
+    Move,
+    MoveReturnOrigin,
+    MoveFadeOut,
+    MoveBack,
+    MoveScale,
+    MoveUIPoint,
+    MoveScaleUIPoint,
+    MoveWorldPoint2D,
+    MoveWorldPoint2DScale,
+    MoveScaleWorldPoint2D,
+    Scale,
+    ScaleReturnOriginScale,
+    FadeOut,
+    ColorChange
+}
+
+
