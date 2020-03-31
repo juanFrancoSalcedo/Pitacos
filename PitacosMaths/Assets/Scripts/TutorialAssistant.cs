@@ -122,12 +122,11 @@ public class TutorialAssistant : MonoBehaviour
 
         if (forSkip)
         {
-            control.NextMision();
+            control.SkipMission();
         }
         else
         {
-            control.SkipMission();
-
+            control.NextMision();
         }
         gameObject.SetActive(false);
     }

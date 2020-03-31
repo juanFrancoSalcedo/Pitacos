@@ -2929,7 +2929,7 @@ GameObject:
   - component: {fileID: 955438022}
   - component: {fileID: 955438021}
   m_Layer: 0
-  m_Name: ButtonSkpi
+  m_Name: ButtonSkip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
