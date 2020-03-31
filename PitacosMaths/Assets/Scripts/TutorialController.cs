@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class TutorialController : MonoBehaviour
 {
-    [SerializeField] private AnimationUIController shadow;
     public TutorialAssistant[] misionAnimations;
-
-    [SerializeField] private int misionIndex =-1;
+    public TutorialAssistant[] skipeAnimations;
+    private int misionIndex =-1;
+    private int skipeMisionIndex = -1;
 
     private void Start()
     {
@@ -26,5 +26,21 @@ public class TutorialController : MonoBehaviour
         misionIndex++;
         misionAnimations[misionIndex].gameObject.SetActive(true);
         misionAnimations[misionIndex].StartMision();
+    }
+
+    public void SkipMission()
+    {
+        misionIndex = misionAnimations.Length-1;
+        NextMision();
+
+
+        if (skipeMisionIndex + 1 >= skipeAnimations.Length)
+        {
+            return;
+        }
+        skipeMisionIndex++;
+        skipeAnimations[skipeMisionIndex].gameObject.SetActive(true);
+        skipeAnimations[skipeMisionIndex].StartMision();
+
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 public class TutorialAssistant : MonoBehaviour
 {
+    [SerializeField] private bool forSkip = false;
     [SerializeField] private float delayCompleted = 0.6f; 
     [SerializeField] private TutorialController control;
     [SerializeField] private DoAnimationController animatorControl;
@@ -118,7 +119,16 @@ public class TutorialAssistant : MonoBehaviour
     public void SendReport()
     {
         OnCompletedMission?.Invoke();
-        control.NextMision();
+
+        if (forSkip)
+        {
+            control.NextMision();
+        }
+        else
+        {
+            control.SkipMission();
+
+        }
         gameObject.SetActive(false);
     }
 }
