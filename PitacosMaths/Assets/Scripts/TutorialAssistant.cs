@@ -71,7 +71,6 @@ public class TutorialAssistant : MonoBehaviour
                     misionCompleted = true;
                 }
                 break;
-                
         }
     }
 

@@ -3477,7 +3477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forSkip: 0
+  forSkip: 1
   delayCompleted: 0.2
   control: {fileID: 1752317589}
   animatorControl: {fileID: 1471024552}
@@ -7379,7 +7379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forSkip: 0
+  forSkip: 1
   delayCompleted: 0.2
   control: {fileID: 1752317589}
   animatorControl: {fileID: 2096780629}
