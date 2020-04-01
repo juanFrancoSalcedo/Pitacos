@@ -11,7 +11,11 @@ public class TutorialController : MonoBehaviour
 
     private void Start()
     {
-        TurnsManager.Instance.timer.stopTimer = true;
+        if (TurnsManager.Instance != null)
+        {
+            TurnsManager.Instance.timer.stopTimer = true;
+        }
+
         NextMision();
     }
 
@@ -19,7 +23,11 @@ public class TutorialController : MonoBehaviour
     {
         if (misionIndex + 1 >= misionAnimations.Length)
         {
-            TurnsManager.Instance.timer.stopTimer = false;
+            if (TurnsManager.Instance != null)
+            {
+                TurnsManager.Instance.timer.stopTimer = false;
+            }
+
             return;
         }
 
