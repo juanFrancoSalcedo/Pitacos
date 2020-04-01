@@ -7,8 +7,8 @@ public class TurnsManager : MonoBehaviour
 {
     [Header("~~~~~~~~~ UI Elements~~~~~~~~")]
     [SerializeField] private TextMeshProUGUI textTimer;
-    [SerializeField] private AnimationTextController textSuccesess;
-    [SerializeField] private AnimationTextController textMistakes;
+    [SerializeField] private PanelAnswer derquisPanel;
+    [SerializeField] private PanelAnswer feryiPanel;
     [Header("~~~~~~~~~~~~~~~~~~")]
     public Timer timer;
     [SerializeField] private InputFieldController inputContol;
@@ -78,17 +78,32 @@ public class TurnsManager : MonoBehaviour
 
     public void ShowScore(bool isGoodAnswer)
     {
-        if (isGoodAnswer)
+        if (ReferenceEquals(inputContol.currentChar, player1))
         {
-            successes++;
-            textSuccesess.textComponent.text = "Aciertos: " + successes;
-            textSuccesess.ActiveAnimation();
+            if (isGoodAnswer)
+            {
+                derquisPanel.SumCorrect();
+                successes++;
+            }
+            else
+            {
+                derquisPanel.SumIncorrect();
+                mistakes++;
+            }
         }
-        else
+
+        if (ReferenceEquals(inputContol.currentChar, player2))
         {
-            mistakes++;
-            textMistakes.textComponent.text = "Errores: " + mistakes;
-            textMistakes.ActiveAnimation();
+            if (isGoodAnswer)
+            {
+                feryiPanel.SumCorrect();
+                successes++;
+            }
+            else
+            {
+                feryiPanel.SumIncorrect();
+                mistakes++;
+            }
         }
     }
 
