@@ -1,21 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MyBox;
 
 public class MisionController : MonoBehaviour
 {
     public TurnsManager turnsManager;
     public GameObject mision;
     [SerializeField] private Transform gridPosition;
-    public event System.Action<TypeEmotion,CharacterController> OnPlayerMisionFinished;
+    public event System.Action<TypeEmotion, CharacterController> OnPlayerMisionFinished;
 
     [Header("~~~~~~~~~~ Animation Outputs ~~~~~~~~~~~~")]
     public AnimationUIController popUpWin;
     public AnimationUIController failText;
 
-    public bool useEspecificPos;
-    public int specificX;
-    public int specificY;
+    [ConditionalField(nameof(useSpecificArrive), true)] public bool useSpecificPos;
+    [ConditionalField(nameof(useSpecificPos))] public SpecificPos specificPos;
+    [ConditionalField(nameof(useSpecificPos), true)] public bool useSpecificArrive;
+    [ConditionalField(nameof(useSpecificArrive),false)] [SerializeField] private List<SpecificPos> arraySpecificPos = new List<SpecificPos>();
+    int countArraySpecific =0;
 
 
     private void OnEnable()
@@ -26,17 +29,25 @@ public class MisionController : MonoBehaviour
 
         tag = "MisionController";
     }
-    
+
     private void DistributeMision(CharacterController playerArg)
     {
-        if (useEspecificPos)
+        if (useSpecificArrive && countArraySpecific < arraySpecificPos.Count)
         {
-            mision.transform.position = new Vector3(specificX, specificY, playerArg.transform.position.z);
-            useEspecificPos = false;
+            mision.transform.position = new Vector3(arraySpecificPos[countArraySpecific]._X, arraySpecificPos[countArraySpecific]._Y, playerArg.transform.position.z);
+            countArraySpecific++;
             return;
         }
 
-        int count = 0 ;
+
+        if (useSpecificPos)
+        {
+            mision.transform.position = new Vector3(specificPos._X, specificPos._Y, playerArg.transform.position.z);
+            useSpecificPos = false;
+            return;
+        }
+
+        int count = 0;
 
         Vector3 misionPos = playerArg.transform.position;
 
@@ -49,7 +60,7 @@ public class MisionController : MonoBehaviour
 
         if (misionPos == playerArg.transform.position)
         {
-            Debug.LogError("ESTE JUEGO VA EXPLOTAR 3...2...1... DATO De vital IMPORTANTCIA("+count+")");
+            Debug.LogError("ESTE JUEGO VA EXPLOTAR 3...2...1... DATO De vital IMPORTANTCIA(" + count + ")");
         }
 
         mision.transform.position = misionPos;
@@ -60,7 +71,7 @@ public class MisionController : MonoBehaviour
         if (mision.transform.position == playerPosit.transform.position)
         {
             popUpWin.ActiveAnimation();
-            OnPlayerMisionFinished?.Invoke(TypeEmotion.Happy,playerPosit);
+            OnPlayerMisionFinished?.Invoke(TypeEmotion.Happy, playerPosit);
             turnsManager.timer.initTime += 5;
             turnsManager.ShowScore(true);
         }
@@ -72,5 +83,14 @@ public class MisionController : MonoBehaviour
             turnsManager.ShowScore(false);
         }
     }
+
+    [System.Serializable]
+    public struct SpecificPos
+    {
+        public int _X;
+        public int _Y;
+    }
 }
+
+
 

@@ -153,17 +153,18 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 1
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 1
   animatorControl: {fileID: 0}
   animationType: 8
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 1402225754}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 629965322}
-  textToShow: 
-  textEquivalent: -2
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: 
+  fieldTextMision: {fileID: 1402225754}
+  textEquivalent: -2
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls:
@@ -178,7 +179,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  misionTuto: 1
 --- !u!224 &27205382
 RectTransform:
   m_ObjectHideFlags: 0
@@ -266,17 +266,18 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 1
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 6
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 1402225754}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 1492704327}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: 
+  fieldTextMision: {fileID: 1402225754}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls:
@@ -291,7 +292,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  misionTuto: 3
 --- !u!224 &151424609
 RectTransform:
   m_ObjectHideFlags: 0
@@ -343,17 +343,18 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.05
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 2096780629}
   animationType: 0
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 200, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls:
@@ -368,7 +369,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  misionTuto: 3
 --- !u!224 &202143093
 RectTransform:
   m_ObjectHideFlags: 0
@@ -520,17 +520,18 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 1
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 6
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 1402225754}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 1402225753}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 2, y: 2, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: 
+  fieldTextMision: {fileID: 1402225754}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls:
@@ -545,7 +546,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  misionTuto: 3
 --- !u!1 &319817201
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,21 +803,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.1
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 4
   animatorControl: {fileID: 1471024552}
   animationType: 0
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 1402225754}
-  buttonMision: {fileID: 1492704329}
   targetTransform: {fileID: 0}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: -2000, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: 
+  fieldTextMision: {fileID: 1402225754}
+  textEquivalent: 
+  buttonMision: {fileID: 1492704329}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 4
 --- !u!1 &423927621
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,21 +982,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.5
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 0
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: Debemos  introducir las cordenadas en X, ingresa -2 en el circulo.
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: Debemos  introducir las cordenadas en X, ingresa -2 en el circulo.
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 2
 --- !u!1 &483373666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,21 +1538,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 3
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 2096780629}
   animationType: 0
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 1402225754}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: -1500, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: 
+  fieldTextMision: {fileID: 1402225754}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 3
 --- !u!1 &629157384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,21 +1997,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.5
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 7
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 629965322}
-  textToShow: Hola, este eres tu.
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: Hola, este eres tu.
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 2
 --- !u!1001 &750249145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2315,17 +2315,18 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.5
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 5
-  typingObject: {fileID: 0}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 944544265}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: -250, y: -750, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls:
@@ -2340,7 +2341,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  misionTuto: 3
 --- !u!1 &818608438
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,21 +2392,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.5
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 2096780629}
   animationType: 0
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 200, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 3
 --- !u!1 &821810516
 GameObject:
   m_ObjectHideFlags: 0
@@ -2506,21 +2506,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 1
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 0
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 1402225754}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 629965322}
-  textToShow: Este Es el Eje "X"
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: Este Es el Eje "X"
+  fieldTextMision: {fileID: 1402225754}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 2
 --- !u!1 &838569562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2682,21 +2682,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.05
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 8
-  typingObject: {fileID: 0}
-  fieldTextMision: {fileID: 1402225754}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 483373667}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 1.6, y: 16, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 1402225754}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 3
 --- !u!224 &931772016 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6184991507037638424, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
@@ -2901,21 +2901,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.6
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 0
   animatorControl: {fileID: 0}
   animationType: 0
-  typingObject: {fileID: 0}
-  fieldTextMision: {fileID: 944544266}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: 
-  textEquivalent: -5
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 944544266}
+  textEquivalent: -5
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 0
 --- !u!1 &955438019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3118,21 +3118,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 3
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 2096780629}
   animationType: 0
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 1402225754}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: -1500, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: 
+  fieldTextMision: {fileID: 1402225754}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 3
 --- !u!1 &978922158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3340,21 +3340,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 1
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 7
-  typingObject: {fileID: 0}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 629965322}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 3
 --- !u!1 &1124786616
 GameObject:
   m_ObjectHideFlags: 0
@@ -3480,21 +3480,21 @@ MonoBehaviour:
   forSkip: 1
   delayCompleted: 0.2
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 0
-  typingObject: {fileID: 0}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: -2000, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 3
 --- !u!1001 &1159165247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4037,17 +4037,18 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.1
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 0
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 1402225754}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: -2000, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: 
+  fieldTextMision: {fileID: 1402225754}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls:
@@ -4073,7 +4074,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  misionTuto: 3
 --- !u!1 &1244123195
 GameObject:
   m_ObjectHideFlags: 0
@@ -4374,21 +4374,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 2
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 0
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 1402225754}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 629965322}
-  textToShow: Recuerda, Este Es el Eje "Y"
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: Recuerda, Este Es el Eje "Y"
+  fieldTextMision: {fileID: 1402225754}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 2
 --- !u!224 &1315584450
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5180,9 +5180,12 @@ MonoBehaviour:
   gridPosition: {fileID: 821810518}
   popUpWin: {fileID: 670869034}
   failText: {fileID: 665120386}
-  useEspecificPos: 1
-  specificX: -2
-  specificY: -2
+  useSpecificPos: 1
+  specificPos:
+    _X: -2
+    _Y: -2
+  useSpecificArrive: 0
+  arraySpecificPos: []
 --- !u!4 &1432168986
 Transform:
   m_ObjectHideFlags: 0
@@ -5248,21 +5251,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 2
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 7
-  typingObject: {fileID: 0}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 875326816}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 3
 --- !u!1 &1452030096
 GameObject:
   m_ObjectHideFlags: 0
@@ -7055,21 +7058,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.5
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 2096780629}
   animationType: 9
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: "\xA1Bien Hecho! Ahora las cordenadas en Y"
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: -250, y: -750, z: 0}
   targetScale: {x: 1, y: 1, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: "\xA1Bien Hecho! Ahora las cordenadas en Y"
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 2
 --- !u!1 &1886543801
 GameObject:
   m_ObjectHideFlags: 0
@@ -7121,17 +7124,18 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.1
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 0
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 1402225754}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: -2000, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: 
+  fieldTextMision: {fileID: 1402225754}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls:
@@ -7157,7 +7161,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  misionTuto: 3
 --- !u!1 &1886552549
 GameObject:
   m_ObjectHideFlags: 0
@@ -7209,21 +7212,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 1
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 0
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 1402225754}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 629965322}
-  textToShow: Estupendo, Nos falta empezar el recorrido
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: Estupendo, Nos falta empezar el recorrido
+  fieldTextMision: {fileID: 1402225754}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 2
 --- !u!1 &1903291381
 GameObject:
   m_ObjectHideFlags: 0
@@ -7358,21 +7361,21 @@ MonoBehaviour:
   forSkip: 1
   delayCompleted: 0.2
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 2096780629}
   animationType: 0
-  typingObject: {fileID: 0}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: -1500, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 3
 --- !u!224 &1927994200
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7836,21 +7839,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 1
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 9
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 629965322}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 3
 --- !u!1 &2055685608
 GameObject:
   m_ObjectHideFlags: 0
@@ -7902,21 +7905,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 2
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 0
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: "Tenemos que llegar aqu\xED"
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: "Tenemos que llegar aqu\xED"
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 2
 --- !u!1001 &2061943894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8292,17 +8295,18 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.5
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 1
   animatorControl: {fileID: 0}
   animationType: 0
-  typingObject: {fileID: 0}
-  fieldTextMision: {fileID: 944544266}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 0}
-  textToShow: 
-  textEquivalent: -2
-  misionCompleted: 0
   targetPos: {x: -250, y: -750, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 944544266}
+  textEquivalent: -2
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls:
@@ -8317,7 +8321,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  misionTuto: 1
 --- !u!1 &2096780625
 GameObject:
   m_ObjectHideFlags: 0
@@ -8473,21 +8476,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.1
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 8
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 1402225754}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 483373667}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 16, y: 1.6, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: 
+  fieldTextMision: {fileID: 1402225754}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 3
 --- !u!1 &2122441383
 GameObject:
   m_ObjectHideFlags: 0
@@ -8520,21 +8523,21 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.1
   control: {fileID: 1752317589}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 8
-  typingObject: {fileID: 536415237}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
   targetTransform: {fileID: 629965322}
-  textToShow: Ahora vamos con el eje y; en este caso es -2.
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
+  typingObject: {fileID: 536415237}
+  textToShow: Ahora vamos con el eje y; en este caso es -2.
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 2
 --- !u!224 &2122441385
 RectTransform:
   m_ObjectHideFlags: 0

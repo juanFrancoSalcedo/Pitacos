@@ -62,6 +62,7 @@ public class AnswerManager : MonoBehaviour
     
     public void AskEquation(Vector3 charPos)
     {
+        print("erec");
         if (misionController == null)
         {
             misionController = GameObject.FindGameObjectWithTag("MisionController").GetComponent<MisionController>();
@@ -83,18 +84,22 @@ public class AnswerManager : MonoBehaviour
 
     public void SolveEquation(string result)
     {
+        
         float resultFloat = float.Parse(ChangeChar(result));
         if (resultFloat == correctAnswer)
         {
             InputFieldController.Instance.currentChar.targetX =(int)misionController.mision.transform.position.x;
             InputFieldController.Instance.currentChar.targetY = (int)misionController.mision.transform.position.y;
-            InputFieldController.Instance.currentChar.MoveSnaping();
+            InputFieldController.Instance.currentChar.StartCoroutine(InputFieldController.Instance.currentChar.Move());
+            //InputFieldController.Instance.currentChar.MoveSnaping(); 
         }
         else
         {
             InputFieldController.Instance.currentChar.targetX =(int)InputFieldController.Instance.currentChar.transform.position.x;
             InputFieldController.Instance.currentChar.targetY =(int)InputFieldController.Instance.currentChar.transform.position.y;
-            InputFieldController.Instance.currentChar.MoveSnaping();
+            InputFieldController.Instance.currentChar.StartCoroutine(InputFieldController.Instance.currentChar.Move());
+            //InputFieldController.Instance.currentChar.MoveSnaping(); 
+
         }
 
 
@@ -106,13 +111,19 @@ public class AnswerManager : MonoBehaviour
             return;
         }
 
+
+//        print(indexQuestion);
+
         if (questionList[indexQuestion] != TypeAnswer.QuestionTest)
         {
+  //          print("What Hell");
             textQuestion.transform.parent.GetComponent<AnimationUIController>().animationType = TypeAnimation.MoveBack;
             textQuestion.transform.parent.GetComponent<AnimationUIController>().ActiveAnimation();
         }
         else
         {
+    //        print("goodest");
+
             textQuestion.transform.parent.GetComponent<AnimationUIController>().animationType = TypeAnimation.ScaleReturnOriginScale;
             textQuestion.transform.parent.GetComponent<AnimationUIController>().ActiveAnimation();
         }
@@ -120,7 +131,11 @@ public class AnswerManager : MonoBehaviour
 
     public void SolveArrive()
     {
-
+        if (textQuestion != null)
+        {
+            textQuestion.transform.parent.GetComponent<AnimationUIController>().animationType = TypeAnimation.MoveBack;
+            textQuestion.transform.parent.GetComponent<AnimationUIController>().ActiveAnimation();
+        }
     }
 
     private string ChangeChar(string str)

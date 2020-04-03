@@ -3,28 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
+using MyBox;
 
 public class TutorialAssistant : MonoBehaviour
 {
     [SerializeField] private bool forSkip = false;
     [SerializeField] private float delayCompleted = 0.6f; 
     [SerializeField] private TutorialController control;
-    [SerializeField] private DoAnimationController animatorControl;
-    public TypeAnimation animationType;
-    [SerializeField] private TypingAnimator typingObject;
-    [SerializeField] private TMP_InputField fieldTextMision;
-    [SerializeField] private UnityEngine.UI.Button buttonMision;
-    [SerializeField] private Transform targetTransform;
-    [TextArea(1,3)]
-    [SerializeField] private string textToShow;
-    [SerializeField] private string textEquivalent;
     [SerializeField] private bool misionCompleted;
-    [SerializeField] private Vector3 targetPos;
-    [SerializeField] private Vector3 targetScale;
+    [Separator]
+    public TypeMisionTutorial misionTuto;
+    
+    [ConditionalField(nameof(misionTuto), false,TypeMisionTutorial.animationCompleted)] [SerializeField] private DoAnimationController animatorControl;
+    [ConditionalField(nameof(misionTuto), false, TypeMisionTutorial.animationCompleted)] public TypeAnimation animationType;
+    [ConditionalField(nameof(misionTuto), false, TypeMisionTutorial.animationCompleted)] [SerializeField] private Transform targetTransform;
+    [ConditionalField(nameof(misionTuto), false, TypeMisionTutorial.animationCompleted)] [SerializeField] private Vector3 targetPos;
+    [ConditionalField(nameof(misionTuto), false, TypeMisionTutorial.animationCompleted)] [SerializeField] private Vector3 targetScale;
+    [ConditionalField(nameof(misionTuto), false, TypeMisionTutorial.textCompleted)] [SerializeField] private TypingAnimator typingObject;
+    [ConditionalField(nameof(misionTuto), false, TypeMisionTutorial.textCompleted)] [TextArea(1, 3)] [SerializeField] private string textToShow;
+    [ConditionalField(nameof(misionTuto), false, TypeMisionTutorial.textEquals)] [SerializeField] private TMP_InputField fieldTextMision;
+    [ConditionalField(nameof(misionTuto), false, TypeMisionTutorial.textEquals)] [SerializeField] private string textEquivalent;
+    [ConditionalField(nameof(misionTuto), false, TypeMisionTutorial.buttonClicked)] [SerializeField] private UnityEngine.UI.Button buttonMision;
+    
 
     public UnityEvent OnCompletedMission;
 
-    public TypeMisionTutorial misionTuto;
 
     public enum TypeMisionTutorial
     {
