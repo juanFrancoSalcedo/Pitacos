@@ -11,6 +11,7 @@ public class AnswerManager : MonoBehaviour
     public List<TypeAnswer> questionList = new List<TypeAnswer>();
     public int indexQuestion { get; set; } = 0;
 
+    [SerializeField] private int limitMistakes =2;
 
     [Header("~~~~~~~ UI Elements ~~~~~~~")]
     [SerializeField] private Canvas loseCanvas;
@@ -34,6 +35,11 @@ public class AnswerManager : MonoBehaviour
 
     private void PoseChallenge(CharacterController character)
     {
+        if (limitMistakes <= TurnsManager.Instance.mistakes)
+        {
+            Lose();
+        }
+
         if (indexQuestion >= questionList.Count)
         {
             InputFieldController.Instance.ActiveButtons(false);

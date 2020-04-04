@@ -15462,6 +15462,11 @@ PrefabInstance:
       propertyPath: questionList.Array.data[11]
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3724394204803248144, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
+        type: 3}
+      propertyPath: limitMistakes
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3998681863611934021, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
         type: 3}
       propertyPath: m_AnchorMin.y

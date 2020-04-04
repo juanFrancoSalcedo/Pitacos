@@ -47,7 +47,6 @@ public class TurnsManager : MonoBehaviour
 
     private void SwitchPlayer(CharacterController _character)
     {
-
         if (ReferenceEquals(inputContol.currentChar, player1))
         {
             inputContol.currentChar = player2;

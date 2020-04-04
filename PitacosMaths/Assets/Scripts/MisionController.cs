@@ -34,14 +34,18 @@ public class MisionController : MonoBehaviour
 
     private void DistributeMision(CharacterController playerArg)
     {
-        if (AnswerManager.Instance.questionList[AnswerManager.Instance.indexQuestion] == TypeAnswer.Arrive)
+        if(AnswerManager.Instance.questionList.Count < AnswerManager.Instance.indexQuestion)
         {
-            mision.GetComponent<SpriteRenderer>().sprite = imagesMision[1];
+            if (AnswerManager.Instance.questionList[AnswerManager.Instance.indexQuestion] == TypeAnswer.Arrive)
+            {
+                mision.GetComponent<SpriteRenderer>().sprite = imagesMision[1];
+            }
+            else
+            {
+                mision.GetComponent<SpriteRenderer>().sprite = imagesMision[0];
+            }
         }
-        else
-        {
-            mision.GetComponent<SpriteRenderer>().sprite = imagesMision[0];
-        }
+        
 
         if (useSpecificArrive && countArraySpecific < arraySpecificPos.Count)
         {
