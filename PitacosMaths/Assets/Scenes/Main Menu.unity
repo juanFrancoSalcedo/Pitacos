@@ -1117,7 +1117,7 @@ MonoBehaviour:
   coldTime: 0
   animationCurve: 13
   playOnAwake: 1
-  animationType: 13
+  animationType: 14
   worldPoint: {fileID: 0}
   colorTarget: {r: 1, g: 1, b: 1, a: 1}
   OnCompletedCallBack:
