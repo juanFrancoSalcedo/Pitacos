@@ -102,7 +102,6 @@ public class AnswerManager : MonoBehaviour
 
         }
 
-
         if (indexQuestion >= questionList.Count)
         {
             textQuestion.transform.parent.GetComponent<AnimationUIController>().animationType = TypeAnimation.Scale;
@@ -111,19 +110,13 @@ public class AnswerManager : MonoBehaviour
             return;
         }
 
-
-//        print(indexQuestion);
-
         if (questionList[indexQuestion] != TypeAnswer.QuestionTest)
         {
-  //          print("What Hell");
             textQuestion.transform.parent.GetComponent<AnimationUIController>().animationType = TypeAnimation.MoveBack;
             textQuestion.transform.parent.GetComponent<AnimationUIController>().ActiveAnimation();
         }
         else
         {
-    //        print("goodest");
-
             textQuestion.transform.parent.GetComponent<AnimationUIController>().animationType = TypeAnimation.ScaleReturnOriginScale;
             textQuestion.transform.parent.GetComponent<AnimationUIController>().ActiveAnimation();
         }

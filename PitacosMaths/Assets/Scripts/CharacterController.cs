@@ -5,9 +5,8 @@ using System;
 
 public class CharacterController : MonoBehaviour
 {
-
     public Constraints limits;
-    private SpriteRenderer renderSprite;
+    public SpriteRenderer characterSprite;
     public Sprite xSprite;
     public Sprite ySpriteUp;
     public Sprite ySpriteDown;
@@ -24,7 +23,6 @@ public class CharacterController : MonoBehaviour
 
     void Start()
     {
-        renderSprite = GetComponent<SpriteRenderer>();
         transform.position = new Vector3(grid.transform.position.x + originX, grid.transform.position.y +originY, transform.position.z);
     }
 
@@ -38,16 +36,16 @@ public class CharacterController : MonoBehaviour
             {
                 int dif = (targetX > (int)transform.position.x) ? 1 : -1;
 
-                renderSprite.sprite = xSprite;
-                renderSprite.flipX = (dif > 0) ? false : true;
+                characterSprite.sprite = xSprite;
+                characterSprite.flipX = (dif > 0) ? false : true;
                 transform.Translate(dif, 0, 0);
             }
             else if (targetY != (int)transform.position.y)
             {
                 int dif = (targetY > (int)transform.position.y) ? 1 : -1;
 
-                 renderSprite.sprite = (dif >0) ? ySpriteUp: ySpriteDown;
-                 transform.Translate(0, dif, 0);
+                characterSprite.sprite = (dif >0) ? ySpriteUp: ySpriteDown;
+                transform.Translate(0, dif, 0);
             }
             yield return new WaitForSeconds(0.3f);
         }

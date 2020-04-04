@@ -44,8 +44,6 @@ public abstract class DoAnimationController : MonoBehaviour
     {
         coldTime = _time;
     }
-
-
 }
 
 public enum TypeAnimation
@@ -62,6 +60,7 @@ public enum TypeAnimation
     MoveScaleWorldPoint2D,
     Scale,
     ScaleReturnOriginScale,
+    ScaleFadeOut2D,
     FadeOut,
     ColorChange
 }

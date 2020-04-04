@@ -47,7 +47,7 @@ public class TurnsManager : MonoBehaviour
 
     private void SwitchPlayer(CharacterController _character)
     {
-        inputContol.currentChar.gameObject.SetActive(false);
+       // inputContol.currentChar.gameObject.SetActive(false);
 
         if (ReferenceEquals(inputContol.currentChar, player1))
         {
@@ -59,7 +59,7 @@ public class TurnsManager : MonoBehaviour
         }
 
         HideHalfPosition();
-        inputContol.currentChar.gameObject.SetActive(true);
+        //inputContol.currentChar.gameObject.SetActive(true);
         inputContol.xInputField.text = "0";
         inputContol.yInputField.text = "0";
         AnswerManager.Instance.SumQuestion();
