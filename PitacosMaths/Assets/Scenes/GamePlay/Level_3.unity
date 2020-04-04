@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 165600173}
   - component: {fileID: 165600172}
   m_Layer: 0
-  m_Name: a2
+  m_Name: as1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -660,7 +660,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1144230811}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4725,72 +4725,6 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &671328570
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 671328572}
-  - component: {fileID: 671328571}
-  m_Layer: 0
-  m_Name: a1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &671328571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 671328570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forSkip: 1
-  delayCompleted: 0.2
-  control: {fileID: 1460088030}
-  misionCompleted: 0
-  misionTuto: 3
-  animatorControl: {fileID: 636147558}
-  animationType: 0
-  targetTransform: {fileID: 0}
-  targetPos: {x: -2000, y: 0, z: 0}
-  targetScale: {x: 0, y: 0, z: 0}
-  typingObject: {fileID: 0}
-  textToShow: 
-  fieldTextMision: {fileID: 0}
-  textEquivalent: 
-  buttonMision: {fileID: 0}
-  OnCompletedMission:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!224 &671328572
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 671328570}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1144230811}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &688235386
 GameObject:
   m_ObjectHideFlags: 0
@@ -7667,7 +7601,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 671328572}
   - {fileID: 165600173}
   m_Father: {fileID: 1460088029}
   m_RootOrder: 3
@@ -10474,6 +10407,9 @@ MonoBehaviour:
   turnsManager: {fileID: 1610019976}
   mision: {fileID: 629965320}
   gridPosition: {fileID: 821810518}
+  imagesMision:
+  - {fileID: 21300000, guid: cf34bd4ab60ece54c8f095371c173a5d, type: 3}
+  - {fileID: 21300000, guid: 7f692811738a5e1488ee22eed7ed3f19, type: 3}
   popUpWin: {fileID: 670869034}
   failText: {fileID: 665120386}
   useSpecificPos: 0
@@ -10632,7 +10568,6 @@ MonoBehaviour:
   - {fileID: 2050589466}
   - {fileID: 1728981423}
   skipeAnimations:
-  - {fileID: 671328571}
   - {fileID: 165600172}
 --- !u!114 &1460088031
 MonoBehaviour:

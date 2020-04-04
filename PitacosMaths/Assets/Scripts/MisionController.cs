@@ -9,6 +9,8 @@ public class MisionController : MonoBehaviour
     public GameObject mision;
     [SerializeField] private Transform gridPosition;
     public event System.Action<TypeEmotion, CharacterController> OnPlayerMisionFinished;
+    [Tooltip("[0]Sum, [1]Pi")]
+    public Sprite[] imagesMision;
 
     [Header("~~~~~~~~~~ Animation Outputs ~~~~~~~~~~~~")]
     public AnimationUIController popUpWin;
@@ -32,6 +34,15 @@ public class MisionController : MonoBehaviour
 
     private void DistributeMision(CharacterController playerArg)
     {
+        if (AnswerManager.Instance.questionList[AnswerManager.Instance.indexQuestion] == TypeAnswer.Arrive)
+        {
+            mision.GetComponent<SpriteRenderer>().sprite = imagesMision[1];
+        }
+        else
+        {
+            mision.GetComponent<SpriteRenderer>().sprite = imagesMision[0];
+        }
+
         if (useSpecificArrive && countArraySpecific < arraySpecificPos.Count)
         {
             mision.transform.position = new Vector3(arraySpecificPos[countArraySpecific]._X, arraySpecificPos[countArraySpecific]._Y, playerArg.transform.position.z);
@@ -39,14 +50,13 @@ public class MisionController : MonoBehaviour
             return;
         }
 
-
         if (useSpecificPos)
         {
             mision.transform.position = new Vector3(specificPos._X, specificPos._Y, playerArg.transform.position.z);
             useSpecificPos = false;
             return;
         }
-
+        
         int count = 0;
 
         Vector3 misionPos = playerArg.transform.position;
