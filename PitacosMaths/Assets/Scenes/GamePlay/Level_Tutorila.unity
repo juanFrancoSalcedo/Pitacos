@@ -9120,11 +9120,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: f22a0630cab416d4fa0a4182764ad2f2,
         type: 3}
-    - target: {fileID: 8911011658514954974, guid: 992ab021a79d33f4bb6e5bde880809b2,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8911011659558132349, guid: 992ab021a79d33f4bb6e5bde880809b2,
         type: 3}
       propertyPath: m_LocalPosition.x
