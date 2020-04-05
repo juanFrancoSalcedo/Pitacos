@@ -60,7 +60,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!114 &5278405607382256570
 MonoBehaviour:
@@ -210,6 +210,7 @@ MonoBehaviour:
   playOnAwake: 0
   animationType: 10
   worldPoint: {fileID: 0}
+  colorTarget: {r: 0, g: 0, b: 0, a: 0}
   OnCompletedCallBack:
     m_PersistentCalls:
       m_Calls: []

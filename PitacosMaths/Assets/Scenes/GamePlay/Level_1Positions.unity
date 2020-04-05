@@ -717,6 +717,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5278405607382256571, guid: ac4c86f410d8d0b4792aaf4286e61d49,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5278405607382256575, guid: ac4c86f410d8d0b4792aaf4286e61d49,
         type: 3}
       propertyPath: m_Name
@@ -1057,6 +1062,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1598192256064139492, guid: afbb460381524b44b9b4dee844f5ae45,
         type: 2}
+    - target: {fileID: 516585196222156200, guid: 40b04b0606598d04d907d1e02150c02a,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 516585196222156204, guid: 40b04b0606598d04d907d1e02150c02a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1267,8 +1277,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 631d4eebe4bb4f74a88c3c7a9dd9fbee, type: 3}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 7f692811738a5e1488ee22eed7ed3f19, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1988,7 +1998,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &838569566
 RectTransform:
@@ -5933,6 +5943,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8911011659558132350, guid: 992ab021a79d33f4bb6e5bde880809b2,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8911011659558132351, guid: 992ab021a79d33f4bb6e5bde880809b2,
         type: 3}
       propertyPath: m_Name
@@ -6172,6 +6187,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 866079292}
+    - target: {fileID: 5206573839497168520, guid: 7831ccdf01e28ff489efa2014a1c5099,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5206573839497168524, guid: 7831ccdf01e28ff489efa2014a1c5099,
         type: 3}
       propertyPath: m_Name
@@ -6669,6 +6689,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6184991507037638427, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8356394328350544837, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
         type: 3}
