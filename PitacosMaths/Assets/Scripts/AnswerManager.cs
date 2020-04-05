@@ -68,7 +68,6 @@ public class AnswerManager : MonoBehaviour
     
     public void AskEquation(Vector3 charPos)
     {
-        print("erec");
         if (misionController == null)
         {
             misionController = GameObject.FindGameObjectWithTag("MisionController").GetComponent<MisionController>();
