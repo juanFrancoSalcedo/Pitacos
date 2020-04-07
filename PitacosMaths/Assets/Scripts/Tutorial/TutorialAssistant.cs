@@ -11,11 +11,15 @@ public class TutorialAssistant : MonoBehaviour
     [SerializeField] private float delayCompleted = 0.6f; 
     [SerializeField] private TutorialController control;
     [SerializeField] private bool misionCompleted;
+    
+
     [Separator]
     public TypeMisionTutorial misionTuto;
     
     [ConditionalField(nameof(misionTuto), false,TypeMisionTutorial.animationCompleted)] [SerializeField] private DoAnimationController animatorControl;
     [ConditionalField(nameof(misionTuto), false, TypeMisionTutorial.animationCompleted)] public TypeAnimation animationType;
+    [ConditionalField(nameof(misionTuto), false, TypeMisionTutorial.animationCompleted)] [SerializeField] private bool overrideTimeAnimation;
+    [ConditionalField(nameof(overrideTimeAnimation))] [SerializeField]  private float timeAnimation;
     [ConditionalField(nameof(misionTuto), false, TypeMisionTutorial.animationCompleted)] [SerializeField] private Transform targetTransform;
     [ConditionalField(nameof(misionTuto), false, TypeMisionTutorial.animationCompleted)] [SerializeField] private Vector3 targetPos;
     [ConditionalField(nameof(misionTuto), false, TypeMisionTutorial.animationCompleted)] [SerializeField] private Vector3 targetScale;
@@ -48,6 +52,12 @@ public class TutorialAssistant : MonoBehaviour
                 animatorControl.worldPoint = targetTransform;
                 animatorControl.targetScale = targetScale;
                 animatorControl.OnCompleted += MisionFinished;
+
+                if (overrideTimeAnimation)
+                {
+                    animatorControl.timeAnimation = timeAnimation;
+                }
+
                 break;
 
             case TypeMisionTutorial.textCompleted:

@@ -16,6 +16,7 @@ public class AnimationController : DoAnimationController
             _spriteRender = GetComponent<SpriteRenderer>();
         }
         originPosition = transform.position;
+        originScale = transform.localScale;
 
         base.OnEnable();
     }
