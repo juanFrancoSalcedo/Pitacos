@@ -91,7 +91,7 @@ public class TutorialAssistant : MonoBehaviour
     {
         if (misionCompleted)
         {
-          //  MisionFinished();
+           MisionFinished();
         }
         else
         {
