@@ -62,7 +62,8 @@ public enum TypeAnimation
     ScaleReturnOriginScale,
     ScaleFadeOut2D,
     FadeOut,
-    ColorChange
+    ColorChange,
+    MoveScaleAT
 }
 
 

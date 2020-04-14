@@ -52,7 +52,6 @@ public class AnimationUIController : DoAnimationController
                 break;
 
             case TypeAnimation.MoveScale:
-
                 sequence.Append(rectTransform.DOAnchorPos(targetPosition, timeAnimation, false).SetEase(animationCurve).SetDelay(delay));
                 sequence.AppendInterval(coldTime);
                 sequence.Append(rectTransform.DOScale(targetScale, timeAnimation).SetEase(animationCurve).OnComplete(CallBacks));
@@ -61,7 +60,6 @@ public class AnimationUIController : DoAnimationController
             case TypeAnimation.Scale:
                 rectTransform.DOScale(targetScale, timeAnimation).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
                 break;
-
 
             case TypeAnimation.ScaleReturnOriginScale:
                 sequence.Append(rectTransform.DOScale(targetScale, timeAnimation).SetEase(animationCurve).SetDelay(delay));
@@ -111,6 +109,11 @@ public class AnimationUIController : DoAnimationController
 
             case TypeAnimation.ColorChange:
                 image.DOColor(colorTarget,timeAnimation).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
+                break;
+
+            case TypeAnimation.FadeOut:
+                image.DOFade(1,0);
+                image.DOFade(0,timeAnimation).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
                 break;
         }
     }
