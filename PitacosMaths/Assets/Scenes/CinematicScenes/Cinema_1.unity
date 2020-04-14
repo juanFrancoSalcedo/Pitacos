@@ -195,6 +195,69 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &156367878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 156367880}
+  - component: {fileID: 156367879}
+  m_Layer: 0
+  m_Name: AnimaAssis20
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &156367879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156367878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.5
+  control: {fileID: 2101537002}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 770295668}
+  animationType: 10
+  overrideTimeAnimation: 0
+  timeAnimation: 0.5
+  targetTransform: {fileID: 0}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 1, y: 1, z: 1}
+  typingObject: {fileID: 239597608}
+  textToShow: Aqui va alguna monda de fermentado
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &156367880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156367878}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.62, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2101537001}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &170227311
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,6 +395,69 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &197142918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197142920}
+  - component: {fileID: 197142919}
+  m_Layer: 0
+  m_Name: AnimaAssis17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &197142919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197142918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 1
+  control: {fileID: 2101537002}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 770295668}
+  animationType: 10
+  overrideTimeAnimation: 0
+  timeAnimation: 0.5
+  targetTransform: {fileID: 0}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 239597608}
+  textToShow: Aqui va alguna monda de fermentado
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &197142920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197142918}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.62, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2101537001}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &239597606
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,7 +689,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2101537001}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &402232911
 GameObject:
@@ -6043,6 +6169,69 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770295666}
   m_CullTransparentMesh: 0
+--- !u!1 &798848383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798848385}
+  - component: {fileID: 798848384}
+  m_Layer: 0
+  m_Name: AnimaAssis21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &798848384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798848383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.5
+  control: {fileID: 2101537002}
+  misionCompleted: 0
+  misionTuto: 2
+  animatorControl: {fileID: 770295668}
+  animationType: 10
+  overrideTimeAnimation: 0
+  timeAnimation: 0.5
+  targetTransform: {fileID: 0}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 1, y: 1, z: 1}
+  typingObject: {fileID: 239597608}
+  textToShow: "\xA1ooooh no! Que impresion"
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &798848385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798848383}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.62, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2101537001}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &811483492
 GameObject:
   m_ObjectHideFlags: 0
@@ -10963,6 +11152,69 @@ Transform:
   m_Father: {fileID: 2101537001}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &979689422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 979689423}
+  - component: {fileID: 979689424}
+  m_Layer: 0
+  m_Name: AnimaAssis18
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &979689423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979689422}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.62, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2101537001}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &979689424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979689422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.5
+  control: {fileID: 2101537002}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1903655989}
+  animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0.5
+  targetTransform: {fileID: 0}
+  targetPos: {x: 3, y: 0, z: 0}
+  targetScale: {x: 1, y: 1, z: 1}
+  typingObject: {fileID: 239597608}
+  textToShow: Aqui va alguna monda de fermentado
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1086631668
 GameObject:
   m_ObjectHideFlags: 0
@@ -11068,6 +11320,7 @@ Transform:
   - {fileID: 402232913}
   - {fileID: 1704173063}
   - {fileID: 416050468}
+  - {fileID: 1903655987}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11100,7 +11353,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2101537001}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1282845005
 MonoBehaviour:
@@ -21115,69 +21368,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!1 &1742323290
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1742323292}
-  - component: {fileID: 1742323291}
-  m_Layer: 0
-  m_Name: AnimaAssis12
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1742323291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742323290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forSkip: 0
-  delayCompleted: 1.5
-  control: {fileID: 2101537002}
-  misionCompleted: 0
-  misionTuto: 3
-  animatorControl: {fileID: 458271385}
-  animationType: 13
-  overrideTimeAnimation: 1
-  timeAnimation: 1.5
-  targetTransform: {fileID: 0}
-  targetPos: {x: 0, y: 0.5, z: 6.3}
-  targetScale: {x: 1, y: 1, z: 1}
-  typingObject: {fileID: 239597608}
-  textToShow: Cuando derapante
-  fieldTextMision: {fileID: 0}
-  textEquivalent: 
-  buttonMision: {fileID: 0}
-  OnCompletedMission:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!4 &1742323292
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742323290}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.62, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2101537001}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1800980326
 GameObject:
   m_ObjectHideFlags: 0
@@ -21189,7 +21379,7 @@ GameObject:
   - component: {fileID: 1800980327}
   - component: {fileID: 1800980328}
   m_Layer: 0
-  m_Name: AnimaAssis13
+  m_Name: AnimaAssis12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21207,7 +21397,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2101537001}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1800980328
 MonoBehaviour:
@@ -21315,6 +21505,116 @@ Transform:
   m_Father: {fileID: 2101537001}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1903655986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1903655987}
+  - component: {fileID: 1903655988}
+  - component: {fileID: 1903655989}
+  m_Layer: 0
+  m_Name: Sequence5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1903655987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903655986}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.6, y: -4.1, z: 6.3125}
+  m_LocalScale: {x: 0.93, y: 0.93, z: 0.93}
+  m_Children: []
+  m_Father: {fileID: 1141156755}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1903655988
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903655986}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: ad4b2821bf623454fb5e29e92c0cda9f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 19.2, y: 10.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1903655989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903655986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e8a6bab79540ea4aaf6432c8f297fde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 3, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  timeAnimation: 5
+  delay: 0
+  coldTime: 0
+  animationCurve: 0
+  playOnAwake: 0
+  animationType: 0
+  worldPoint: {fileID: 0}
+  colorTarget: {r: 0, g: 0, b: 0, a: 0}
+  OnCompletedCallBack:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStartedCallBack:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1904904685
 GameObject:
   m_ObjectHideFlags: 0
@@ -21407,7 +21707,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2101537001}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1906942203
 MonoBehaviour:
@@ -21422,7 +21722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 0.5
+  delayCompleted: 1
   control: {fileID: 2101537002}
   misionCompleted: 0
   misionTuto: 2
@@ -21441,6 +21741,69 @@ MonoBehaviour:
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1940671199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1940671201}
+  - component: {fileID: 1940671200}
+  m_Layer: 0
+  m_Name: AnimaAssis19
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1940671200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940671199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.1
+  control: {fileID: 2101537002}
+  misionCompleted: 0
+  misionTuto: 2
+  animatorControl: {fileID: 770295668}
+  animationType: 10
+  overrideTimeAnimation: 0
+  timeAnimation: 0.5
+  targetTransform: {fileID: 0}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 1, y: 1, z: 1}
+  typingObject: {fileID: 239597608}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1940671201
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940671199}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.62, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2101537001}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1988220306
 GameObject:
   m_ObjectHideFlags: 0
@@ -26640,11 +27003,15 @@ Transform:
   - {fileID: 2107662177}
   - {fileID: 1605604899}
   - {fileID: 970938724}
-  - {fileID: 1742323292}
   - {fileID: 1800980327}
   - {fileID: 327532923}
   - {fileID: 1282845004}
   - {fileID: 1906942202}
+  - {fileID: 197142920}
+  - {fileID: 979689423}
+  - {fileID: 1940671201}
+  - {fileID: 156367880}
+  - {fileID: 798848385}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26673,11 +27040,15 @@ MonoBehaviour:
   - {fileID: 2107662176}
   - {fileID: 1605604898}
   - {fileID: 970938723}
-  - {fileID: 1742323291}
   - {fileID: 1800980328}
   - {fileID: 327532922}
   - {fileID: 1282845005}
   - {fileID: 1906942203}
+  - {fileID: 197142919}
+  - {fileID: 979689424}
+  - {fileID: 1940671200}
+  - {fileID: 156367879}
+  - {fileID: 798848384}
   skipeAnimations:
   - {fileID: 0}
   - {fileID: 0}
