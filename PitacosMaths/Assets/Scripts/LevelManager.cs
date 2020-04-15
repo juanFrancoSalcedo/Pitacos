@@ -37,11 +37,16 @@ public class LevelManager : MonoBehaviour
     public void Pause(Canvas canvasPause)
     {
         Time.timeScale = (Time.timeScale == 0) ? 1 : 0;
-        canvasPause.enabled = (canvasPause.enabled) ? false : true; 
+        canvasPause.enabled = (canvasPause.enabled) ? false : true;
     }
 
     public void SwitchSpeedsHigh()
     {
         Time.timeScale = (Time.timeScale == 1) ? 2 : 1;
+    }
+
+    public void SetTimeScaleSpeed(int _speed)
+    {
+        Time.timeScale = _speed;
     }
 }
