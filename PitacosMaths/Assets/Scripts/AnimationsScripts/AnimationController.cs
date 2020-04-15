@@ -31,7 +31,6 @@ public class AnimationController : DoAnimationController
                 transform.DOMove(targetPosition, timeAnimation, false).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
                 break;
 
-
             case TypeAnimation.MoveWorldPoint2D:
                 transform.DOMove(worldPoint.position, timeAnimation).SetDelay(delay).SetEase(animationCurve).OnComplete(CallBacks);
                 break;

@@ -39,4 +39,9 @@ public class LevelManager : MonoBehaviour
         Time.timeScale = (Time.timeScale == 0) ? 1 : 0;
         canvasPause.enabled = (canvasPause.enabled) ? false : true; 
     }
+
+    public void SwitchSpeedsHigh()
+    {
+        Time.timeScale = (Time.timeScale == 1) ? 2 : 1;
+    }
 }

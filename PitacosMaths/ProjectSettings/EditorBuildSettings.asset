@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: f10f3d6ba6092b64fb5c7474da138756
   - enabled: 1
+    path: Assets/Scenes/CinematicScenes/Cinema_1.unity
+    guid: 51cab2541d91119468ee4a7014033fd3
+  - enabled: 1
+    path: Assets/Scenes/Conversation_1.unity
+    guid: 418585fe98fdbab4f83f4cd9645f86c9
+  - enabled: 1
     path: Assets/Scenes/GamePlay/Level_Tutorila.unity
     guid: 05a75b68b210dec47aee5e9b8460a387
   - enabled: 1
