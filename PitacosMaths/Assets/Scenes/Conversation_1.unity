@@ -219,6 +219,69 @@ MonoBehaviour:
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &123852440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 123852441}
+  - component: {fileID: 123852442}
+  m_Layer: 0
+  m_Name: a21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &123852441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123852440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &123852442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123852440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1637166022}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &145795739
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +323,37 @@ MonoBehaviour:
   - {fileID: 2034220092}
   - {fileID: 155139335}
   - {fileID: 1449845330}
+  - {fileID: 1032808460}
+  - {fileID: 1110859736}
+  - {fileID: 1804656395}
+  - {fileID: 1963113765}
+  - {fileID: 1670880830}
+  - {fileID: 795793251}
+  - {fileID: 1057949284}
+  - {fileID: 1825984547}
+  - {fileID: 155033726}
+  - {fileID: 123852442}
+  - {fileID: 941406790}
+  - {fileID: 1773811619}
+  - {fileID: 1982638993}
+  - {fileID: 147796872}
+  - {fileID: 1324670746}
+  - {fileID: 2106166383}
+  - {fileID: 1822559926}
+  - {fileID: 660229410}
+  - {fileID: 1454574842}
+  - {fileID: 563165267}
+  - {fileID: 588523456}
+  - {fileID: 1957769426}
+  - {fileID: 778319707}
+  - {fileID: 1766032662}
+  - {fileID: 1414837391}
+  - {fileID: 2083465346}
+  - {fileID: 1263409716}
+  - {fileID: 1718432057}
+  - {fileID: 574297611}
+  - {fileID: 1154279034}
+  - {fileID: 1493839585}
   skipeAnimations: []
 --- !u!4 &145795741
 Transform:
@@ -283,9 +377,188 @@ Transform:
   - {fileID: 2034220091}
   - {fileID: 155139334}
   - {fileID: 1449845329}
+  - {fileID: 1032808459}
+  - {fileID: 1110859735}
+  - {fileID: 1804656394}
+  - {fileID: 1963113764}
+  - {fileID: 1670880829}
+  - {fileID: 795793250}
+  - {fileID: 1057949283}
+  - {fileID: 1825984546}
+  - {fileID: 155033725}
+  - {fileID: 123852441}
+  - {fileID: 941406789}
+  - {fileID: 1773811618}
+  - {fileID: 1982638992}
+  - {fileID: 147796873}
+  - {fileID: 1324670747}
+  - {fileID: 2106166384}
+  - {fileID: 1822559927}
+  - {fileID: 660229411}
+  - {fileID: 1454574841}
+  - {fileID: 563165266}
+  - {fileID: 588523455}
+  - {fileID: 1957769425}
+  - {fileID: 778319706}
+  - {fileID: 1766032661}
+  - {fileID: 1414837390}
+  - {fileID: 2083465345}
+  - {fileID: 1263409715}
+  - {fileID: 1718432056}
+  - {fileID: 574297610}
+  - {fileID: 1154279033}
+  - {fileID: 1493839584}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &147796871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 147796873}
+  - component: {fileID: 147796872}
+  m_Layer: 0
+  m_Name: a25
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &147796872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147796871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1290200209}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1581864696}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &147796873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147796871}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &155033724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 155033725}
+  - component: {fileID: 155033726}
+  m_Layer: 0
+  m_Name: a20
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &155033725
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155033724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &155033726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155033724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1523000831}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1581864696}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &155139333
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,6 +855,195 @@ Transform:
   m_Father: {fileID: 145795741}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &563165265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 563165266}
+  - component: {fileID: 563165267}
+  m_Layer: 0
+  m_Name: a31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &563165266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563165265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &563165267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563165265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1637166022}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &574297609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 574297610}
+  - component: {fileID: 574297611}
+  m_Layer: 0
+  m_Name: a40
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &574297610
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574297609}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 39
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &574297611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574297609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 2
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1637166022}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 433654847}
+  textToShow: "\xA1Por las mates!"
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &588523454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 588523455}
+  - component: {fileID: 588523456}
+  m_Layer: 0
+  m_Name: a32
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &588523455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588523454}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &588523456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588523454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 2
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1637166022}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 433654847}
+  textToShow: "C\xE9st... muy bien, chicos. \xA1siganme!"
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &633670665
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,6 +1107,80 @@ MonoBehaviour:
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &660229409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 660229411}
+  - component: {fileID: 660229410}
+  m_Layer: 0
+  m_Name: a29
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &660229410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660229409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1341460093}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 433654847}
+        m_MethodName: EraseAndSaveText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &660229411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660229409}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &717417231
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +1238,132 @@ MonoBehaviour:
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 433654847}
   textToShow: "\xA1Necesito vuestra ayuda!"
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &778319705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 778319706}
+  - component: {fileID: 778319707}
+  m_Layer: 0
+  m_Name: a34
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &778319706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778319705}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &778319707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778319705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1637166022}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &795793249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 795793250}
+  - component: {fileID: 795793251}
+  m_Layer: 0
+  m_Name: a17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &795793250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795793249}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &795793251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795793249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 2
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1637166022}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 433654847}
+  textToShow: "Espera... A\xFAn no me cree todo esto."
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -771,6 +1433,69 @@ MonoBehaviour:
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &941406788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 941406789}
+  - component: {fileID: 941406790}
+  m_Layer: 0
+  m_Name: a22
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &941406789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941406788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &941406790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941406788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 2
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1637166022}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 433654847}
+  textToShow: "Dale, ayud\xE9moslo."
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &958037859
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,7 +1533,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1112999568
+--- !u!1 &1032808458
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -816,154 +1541,261 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1112999569}
-  - component: {fileID: 1112999571}
-  - component: {fileID: 1112999570}
-  m_Layer: 5
-  m_Name: Text (TMP)
+  - component: {fileID: 1032808459}
+  - component: {fileID: 1032808460}
+  m_Layer: 0
+  m_Name: a12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1112999569
-RectTransform:
+  m_IsActive: 0
+--- !u!4 &1032808459
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1112999568}
+  m_GameObject: {fileID: 1032808458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2064812995}
-  m_RootOrder: 0
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1112999570
+--- !u!114 &1032808460
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1112999568}
+  m_GameObject: {fileID: 1032808458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
+  forSkip: 0
+  delayCompleted: 0
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1523000831}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1540703662}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Saltar
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0de60fb147bfba04ebde7c59a81f36d3, type: 2}
-  m_sharedMaterial: {fileID: 6654379852079006507, guid: 0de60fb147bfba04ebde7c59a81f36d3,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 40
-  m_fontSizeBase: 40
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 514
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 1112999570}
-    characterCount: 6
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 1
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1112999571
-CanvasRenderer:
+--- !u!1 &1057949282
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1112999568}
-  m_CullTransparentMesh: 0
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1057949283}
+  - component: {fileID: 1057949284}
+  m_Layer: 0
+  m_Name: a18
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1057949283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057949282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1057949284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057949282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1290200209}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1540703662}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &1110859734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1110859735}
+  - component: {fileID: 1110859736}
+  m_Layer: 0
+  m_Name: a13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1110859735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110859734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1110859736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110859734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1341460093}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 433654847}
+        m_MethodName: EraseAndSaveText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1154279032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1154279033}
+  - component: {fileID: 1154279034}
+  m_Layer: 0
+  m_Name: a41
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1154279033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154279032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 40
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1154279034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154279032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1523000831}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1540703662}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1169540839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,7 +1838,6 @@ GameObject:
   - component: {fileID: 1256834117}
   - component: {fileID: 1256834116}
   - component: {fileID: 1256834115}
-  - component: {fileID: 1256834119}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1089,7 +1920,6 @@ RectTransform:
   - {fileID: 1637166022}
   - {fileID: 1341460093}
   - {fileID: 54046905}
-  - {fileID: 2064812995}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1098,18 +1928,80 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1256834119
+--- !u!1 &1263409714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1263409715}
+  - component: {fileID: 1263409716}
+  m_Layer: 0
+  m_Name: a38
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1263409715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263409714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1263409716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1256834114}
+  m_GameObject: {fileID: 1263409714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01536e047a8de8f4a90ca210d4ef678a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1523000831}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1581864696}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 433654847}
+        m_MethodName: EraseAndSaveText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1282559906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1339,6 +2231,69 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1324670745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1324670747}
+  - component: {fileID: 1324670746}
+  m_Layer: 0
+  m_Name: a26
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1324670746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324670745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1637166022}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1324670747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324670745}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1341128290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1454,7 +2409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1098, y: 347}
+  m_AnchoredPosition: {x: 1407, y: 347}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1378144704
@@ -1487,6 +2442,69 @@ Transform:
   m_Father: {fileID: 958037860}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1414837389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1414837390}
+  - component: {fileID: 1414837391}
+  m_Layer: 0
+  m_Name: a36
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1414837390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414837389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1414837391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414837389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1820249805}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1378144705}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1449845328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1543,13 +2561,161 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 433654847}
-  textToShow: Sin vaselina por favor
+  textToShow: "\xA1Incre\xEDblre! Eres el gran Fermat. Cuenta conmigo y Ferye..."
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1454574840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454574841}
+  - component: {fileID: 1454574842}
+  m_Layer: 0
+  m_Name: a30
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1454574841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454574840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1454574842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454574840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1820249805}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1169540840}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1493839583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1493839584}
+  - component: {fileID: 1493839585}
+  m_Layer: 0
+  m_Name: a42
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1493839584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493839583}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 41
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1493839585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493839583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1341460093}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 433654847}
+        m_MethodName: EraseAndSaveText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1523000829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,6 +2987,69 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 347}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1670880828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1670880829}
+  - component: {fileID: 1670880830}
+  m_Layer: 0
+  m_Name: a16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1670880829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670880828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1670880830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670880828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1637166022}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1677884282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1924,6 +3153,195 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1718432055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1718432056}
+  - component: {fileID: 1718432057}
+  m_Layer: 0
+  m_Name: a39
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1718432056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718432055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1718432057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718432055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1637166022}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &1766032660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1766032661}
+  - component: {fileID: 1766032662}
+  m_Layer: 0
+  m_Name: a35
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1766032661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766032660}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1766032662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766032660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 2
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1637166022}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 433654847}
+  textToShow: "Les contar\xE9 m\xE1s detalles de este suceso, mas adelante. "
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &1773811617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1773811618}
+  - component: {fileID: 1773811619}
+  m_Layer: 0
+  m_Name: a23
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1773811618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773811617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1773811619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773811617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1523000831}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1540703662}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1778986446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1968,7 +3386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 0.1
+  delayCompleted: 0
   control: {fileID: 145795740}
   misionCompleted: 0
   misionTuto: 3
@@ -1986,7 +3404,92 @@ MonoBehaviour:
   buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 433654847}
+        m_MethodName: EraseAndSaveText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1804656393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1804656394}
+  - component: {fileID: 1804656395}
+  m_Layer: 0
+  m_Name: a14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1804656394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804656393}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1804656395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804656393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 54046905}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 433654847}
+        m_MethodName: EraseAndSaveText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1820249803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2097,6 +3600,291 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1822559925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1822559927}
+  - component: {fileID: 1822559926}
+  m_Layer: 0
+  m_Name: a28
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1822559926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822559925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1290200209}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1540703662}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1822559927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822559925}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1825984545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1825984546}
+  - component: {fileID: 1825984547}
+  m_Layer: 0
+  m_Name: a19
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1825984546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825984545}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1825984547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825984545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1341460093}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 433654847}
+        m_MethodName: EraseAndSaveText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1957769424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1957769425}
+  - component: {fileID: 1957769426}
+  m_Layer: 0
+  m_Name: a33
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1957769425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957769424}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1957769426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957769424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1820249805}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1169540840}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 433654847}
+        m_MethodName: EraseAndSaveText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1963113763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1963113764}
+  - component: {fileID: 1963113765}
+  m_Layer: 0
+  m_Name: a15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1963113764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963113763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1963113765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963113763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1290200209}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1581864696}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1973413441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,7 +3929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 0.1
+  delayCompleted: 0
   control: {fileID: 145795740}
   misionCompleted: 0
   misionTuto: 3
@@ -2160,6 +3948,80 @@ MonoBehaviour:
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1982638991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1982638992}
+  - component: {fileID: 1982638993}
+  m_Layer: 0
+  m_Name: a24
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1982638992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982638991}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1982638993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1982638991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1341460093}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 433654847}
+        m_MethodName: EraseAndSaveText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2034220090
 GameObject:
   m_ObjectHideFlags: 0
@@ -2222,8 +4084,19 @@ MonoBehaviour:
   buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
-      m_Calls: []
---- !u!1 &2064812994
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &2083465344
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2231,127 +4104,72 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2064812995}
-  - component: {fileID: 2064812998}
-  - component: {fileID: 2064812997}
-  - component: {fileID: 2064812996}
-  m_Layer: 5
-  m_Name: ButtonSaltar
+  - component: {fileID: 2083465345}
+  - component: {fileID: 2083465346}
+  m_Layer: 0
+  m_Name: a37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2064812995
-RectTransform:
+  m_IsActive: 0
+--- !u!4 &2083465345
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2064812994}
+  m_GameObject: {fileID: 2083465344}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1112999569}
-  m_Father: {fileID: 1256834118}
-  m_RootOrder: 4
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.83352774, y: 0.9438378}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035, y: -0.00012207}
-  m_SizeDelta: {x: 0.000030518, y: -0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2064812996
+--- !u!114 &2083465346
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2064812994}
+  m_GameObject: {fileID: 2083465344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 2064812997}
-  m_OnClick:
+  forSkip: 0
+  delayCompleted: 0
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 54046905}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1256834119}
-        m_MethodName: LoadSpecificSceneZoom
-        m_Mode: 3
+      - m_Target: {fileID: 433654847}
+        m_MethodName: EraseAndSaveText
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2064812997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2064812994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d3094f5c8ce6e5a4abba7990da926e47, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 4
---- !u!222 &2064812998
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2064812994}
-  m_CullTransparentMesh: 0
 --- !u!1 &2087259946
 GameObject:
   m_ObjectHideFlags: 0
@@ -2414,4 +4232,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 145795741}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2106166382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2106166384}
+  - component: {fileID: 2106166383}
+  m_Layer: 0
+  m_Name: a27
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2106166383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106166382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 1
+  control: {fileID: 145795740}
+  misionCompleted: 0
+  misionTuto: 2
+  animatorControl: {fileID: 1677884286}
+  animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1637166022}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 433654847}
+  textToShow: Ahhh, esta bien, pero rapido.
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &2106166384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106166382}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 145795741}
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
