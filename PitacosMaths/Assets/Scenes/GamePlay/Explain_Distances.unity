@@ -358,17 +358,20 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 6
   control: {fileID: 381159311}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 7
-  typingObject: {fileID: 471862552}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
-  textToShow: (PONER FROMULA AQUI)
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 471862552}
+  textToShow: (PONER FROMULA AQUI)
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls:
@@ -383,7 +386,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  misionTuto: 2
 --- !u!224 &126143253
 RectTransform:
   m_ObjectHideFlags: 0
@@ -540,7 +542,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!224 &381159315
 RectTransform:
@@ -787,21 +789,23 @@ MonoBehaviour:
   forSkip: 1
   delayCompleted: 0.2
   control: {fileID: 381159311}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 2038692160}
   animationType: 0
-  typingObject: {fileID: 0}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: -2000, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 3
 --- !u!1 &886588521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,7 +1012,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1295,17 +1299,20 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 2
   control: {fileID: 381159311}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 7
-  typingObject: {fileID: 471862552}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
-  textToShow: Este es el punto A
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 471862552}
+  textToShow: Este es el punto A
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls:
@@ -1320,7 +1327,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  misionTuto: 2
 --- !u!1 &1429465724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,17 +1378,20 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 1
   control: {fileID: 381159311}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 7
-  typingObject: {fileID: 471862552}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
-  textToShow: Saca lapiz y papel
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 471862552}
+  textToShow: Saca lapiz y papel
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls:
@@ -1397,7 +1406,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  misionTuto: 2
 --- !u!1 &1502908422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,21 +1682,23 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 1.5
   control: {fileID: 381159311}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 7
-  typingObject: {fileID: 471862552}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
-  textToShow: Este es el punto B
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 471862552}
+  textToShow: Este es el punto B
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 2
 --- !u!224 &1580941898
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1947,21 +1957,23 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 2
   control: {fileID: 381159311}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 7
-  typingObject: {fileID: 471862552}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
-  textToShow: tenemos que aplicar la siguiente formula
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 471862552}
+  textToShow: tenemos que aplicar la siguiente formula
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 2
 --- !u!224 &1708094421
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2032,17 +2044,20 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 2
   control: {fileID: 381159311}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 7
-  typingObject: {fileID: 471862552}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
-  textToShow: Para hayar la distancia...
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 471862552}
+  textToShow: Para hayar la distancia...
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls:
@@ -2057,7 +2072,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  misionTuto: 2
 --- !u!1 &1831060477
 GameObject:
   m_ObjectHideFlags: 0
@@ -2090,21 +2104,23 @@ MonoBehaviour:
   forSkip: 1
   delayCompleted: 0.2
   control: {fileID: 381159311}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 1502908423}
   animationType: 0
-  typingObject: {fileID: 0}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: -1500, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 0}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 3
 --- !u!224 &1831060479
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2331,21 +2347,23 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 0.5
   control: {fileID: 381159311}
+  misionCompleted: 0
+  misionTuto: 3
   animatorControl: {fileID: 1502908423}
   animationType: 0
-  typingObject: {fileID: 471862552}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
-  textToShow: 
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 300, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 471862552}
+  textToShow: 
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 3
 --- !u!1 &1985205514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,21 +2415,23 @@ MonoBehaviour:
   forSkip: 0
   delayCompleted: 1
   control: {fileID: 381159311}
+  misionCompleted: 0
+  misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 7
-  typingObject: {fileID: 471862552}
-  fieldTextMision: {fileID: 0}
-  buttonMision: {fileID: 0}
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
-  textToShow: "\xBFNescesitas ayuda para saber distancias?"
-  textEquivalent: 
-  misionCompleted: 0
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 471862552}
+  textToShow: "\xBFNescesitas ayuda para saber distancias?"
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls: []
-  misionTuto: 2
 --- !u!1001 &1985298233
 PrefabInstance:
   m_ObjectHideFlags: 0

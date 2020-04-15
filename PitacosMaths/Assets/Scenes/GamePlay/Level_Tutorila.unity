@@ -157,6 +157,8 @@ MonoBehaviour:
   misionTuto: 1
   animatorControl: {fileID: 0}
   animationType: 8
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 629965322}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
@@ -270,6 +272,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 6
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 1492704327}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
@@ -347,6 +351,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 2096780629}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: 0, y: 200, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -524,6 +530,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 6
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 1402225753}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 2, y: 2, z: 0}
@@ -807,6 +815,8 @@ MonoBehaviour:
   misionTuto: 4
   animatorControl: {fileID: 1471024552}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: -2000, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
@@ -854,7 +864,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.90000004}
-  m_AnchoredPosition: {x: 4.5999756, y: -57.8721}
+  m_AnchoredPosition: {x: 4.5999756, y: -57.87213}
   m_SizeDelta: {x: 115.73407, y: 166.96315}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &423927623
@@ -986,6 +996,8 @@ MonoBehaviour:
   misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -1542,6 +1554,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 2096780629}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: -1500, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
@@ -2001,6 +2015,8 @@ MonoBehaviour:
   misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 629965322}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -2319,6 +2335,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 5
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 944544265}
   targetPos: {x: -250, y: -750, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -2396,6 +2414,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 2096780629}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: 0, y: 200, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -2510,6 +2530,8 @@ MonoBehaviour:
   misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 629965322}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
@@ -2686,6 +2708,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 8
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 483373667}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 1.6, y: 16, z: 0}
@@ -2905,6 +2929,8 @@ MonoBehaviour:
   misionTuto: 0
   animatorControl: {fileID: 0}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -3122,6 +3148,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 2096780629}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: -1500, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
@@ -3344,6 +3372,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 629965322}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -3484,6 +3514,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: -2000, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -4041,6 +4073,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: -2000, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
@@ -4378,6 +4412,8 @@ MonoBehaviour:
   misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 629965322}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
@@ -5258,6 +5294,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 875326816}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -6404,66 +6442,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1958162427748958688, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1958162427748958688, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1958162427748958688, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1958162427748958688, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1958162427748958688, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2981632059806581572, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2981632059806581572, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2981632059806581572, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2981632059806581572, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2981632059806581572, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3214284579622366268, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1726950691}
-    - target: {fileID: 3214284579622366268, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5206573839497168520, guid: 7831ccdf01e28ff489efa2014a1c5099,
         type: 3}
       propertyPath: m_Enabled
@@ -6579,31 +6557,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7899363233078110920, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7899363233078110920, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7899363233078110920, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7899363233078110920, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7899363233078110920, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8217429913076511705, guid: 7831ccdf01e28ff489efa2014a1c5099,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -6626,6 +6579,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8405233999334300927, guid: 7831ccdf01e28ff489efa2014a1c5099,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405233999334300927, guid: 7831ccdf01e28ff489efa2014a1c5099,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405233999334300927, guid: 7831ccdf01e28ff489efa2014a1c5099,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405233999334300927, guid: 7831ccdf01e28ff489efa2014a1c5099,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1726950690}
@@ -6636,8 +6604,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8405233999334300927, guid: 7831ccdf01e28ff489efa2014a1c5099,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8405233999334300927, guid: 7831ccdf01e28ff489efa2014a1c5099,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7831ccdf01e28ff489efa2014a1c5099, type: 3}
@@ -6647,18 +6620,12 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1726950689}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726950691}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01536e047a8de8f4a90ca210d4ef678a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1726950691 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5206573839497168524, guid: 7831ccdf01e28ff489efa2014a1c5099,
-    type: 3}
-  m_PrefabInstance: {fileID: 1726950689}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1748715278
 GameObject:
   m_ObjectHideFlags: 0
@@ -7081,6 +7048,8 @@ MonoBehaviour:
   misionTuto: 2
   animatorControl: {fileID: 2096780629}
   animationType: 9
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: -250, y: -750, z: 0}
   targetScale: {x: 1, y: 1, z: 0}
@@ -7147,6 +7116,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: -2000, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
@@ -7235,6 +7206,8 @@ MonoBehaviour:
   misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 629965322}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
@@ -7384,6 +7357,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 2096780629}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: -1500, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -7862,6 +7837,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 9
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 629965322}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
@@ -7928,6 +7905,8 @@ MonoBehaviour:
   misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -8318,6 +8297,8 @@ MonoBehaviour:
   misionTuto: 1
   animatorControl: {fileID: 0}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: -250, y: -750, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -8499,6 +8480,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 1471024552}
   animationType: 8
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 483373667}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 16, y: 1.6, z: 0}
@@ -8546,6 +8529,8 @@ MonoBehaviour:
   misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 8
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 629965322}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
