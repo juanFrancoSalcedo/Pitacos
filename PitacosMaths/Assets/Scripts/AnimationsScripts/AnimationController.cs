@@ -53,11 +53,15 @@ public class AnimationController : DoAnimationController
                 sequence.AppendInterval(coldTime);
                 sequence.Append(_spriteRender.DOFade(0,timeAnimation).SetEase(animationCurve).OnComplete(CallBacks));
                 break;
-
-
+                
             case TypeAnimation.MoveScaleAT:
                 transform.DOMove(targetPosition,timeAnimation).SetEase(animationCurve).SetDelay(delay);
                 transform.DOScale(targetScale,timeAnimation).SetEase(animationCurve).OnComplete(CallBacks);
+                break;
+
+            case TypeAnimation.FadeIn2D:
+                _spriteRender.DOFade(0, 0);
+                _spriteRender.DOFade(1, timeAnimation).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
                 break;
                 
         }
