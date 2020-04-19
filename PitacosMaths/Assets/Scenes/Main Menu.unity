@@ -1119,7 +1119,7 @@ MonoBehaviour:
   playOnAwake: 1
   animationType: 14
   worldPoint: {fileID: 0}
-  colorTarget: {r: 1, g: 1, b: 1, a: 1}
+  colorTarget: {r: 0.63529414, g: 0.9019608, b: 0.99215686, a: 1}
   OnCompletedCallBack:
     m_PersistentCalls:
       m_Calls: []

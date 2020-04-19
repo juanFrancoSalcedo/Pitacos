@@ -1383,7 +1383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.2216981, b: 0.24553795, a: 1}
+  m_Color: {r: 0.47450984, g: 0.13333334, b: 0.227451, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1782,8 +1782,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4282140745
+  m_fontColor: {r: 0.28627452, g: 0.28235295, b: 0.23529413, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2308,8 +2308,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4282206537
+  m_fontColor: {r: 0.28627452, g: 0.28627452, b: 0.2392157, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5868,6 +5868,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: f22a0630cab416d4fa0a4182764ad2f2,
         type: 3}
+    - target: {fileID: 8911011658514954969, guid: 992ab021a79d33f4bb6e5bde880809b2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.139
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911011658514954969, guid: 992ab021a79d33f4bb6e5bde880809b2,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 11.433
+      objectReference: {fileID: 0}
     - target: {fileID: 8911011658514954974, guid: 992ab021a79d33f4bb6e5bde880809b2,
         type: 3}
       propertyPath: m_SortingOrder
@@ -5948,6 +5958,12 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8911011659558132350, guid: 992ab021a79d33f4bb6e5bde880809b2,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 34beee970c387e34485616440c2a26bf,
+        type: 3}
     - target: {fileID: 8911011659558132351, guid: 992ab021a79d33f4bb6e5bde880809b2,
         type: 3}
       propertyPath: m_Name

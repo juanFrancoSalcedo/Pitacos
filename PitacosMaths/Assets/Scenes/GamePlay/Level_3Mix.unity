@@ -637,6 +637,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 437024661}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: -1500, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -1902,18 +1904,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Skip
+  m_text: SKIP
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: afbb460381524b44b9b4dee844f5ae45, type: 2}
-  m_sharedMaterial: {fileID: 1598192256064139492, guid: afbb460381524b44b9b4dee844f5ae45,
+  m_fontAsset: {fileID: 11400000, guid: b7eca2b3e4eae5749b691ee662b84b72, type: 2}
+  m_sharedMaterial: {fileID: 1675818611026873246, guid: b7eca2b3e4eae5749b691ee662b84b72,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4282798161
+  m_fontColor: {r: 0.31764707, g: 0.3137255, b: 0.27450982, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3047,6 +3049,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 437024661}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: 0, y: 200, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -4553,7 +4557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.2216981, b: 0.24553795, a: 1}
+  m_Color: {r: 0.47450984, g: 0.13333334, b: 0.22352943, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5171,6 +5175,8 @@ MonoBehaviour:
   misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -5510,8 +5516,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4282337867
+  m_fontColor: {r: 0.29411766, g: 0.2901961, b: 0.24705884, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6920,8 +6926,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4282535245
+  m_fontColor: {r: 0.3019608, g: 0.3019608, b: 0.25882354, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -12438,6 +12444,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 437024661}
   animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: -1500, y: 0, z: 0}
   targetScale: {x: 4, y: 4, z: 0}
@@ -14056,6 +14064,8 @@ MonoBehaviour:
   misionTuto: 2
   animatorControl: {fileID: 0}
   animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
   targetTransform: {fileID: 0}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
