@@ -3142,7 +3142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 3
+  delayCompleted: 0.5
   control: {fileID: 1752317589}
   misionCompleted: 0
   misionTuto: 3
@@ -3160,7 +3160,18 @@ MonoBehaviour:
   buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 955438019}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &978922158
 GameObject:
   m_ObjectHideFlags: 0
@@ -5223,7 +5234,7 @@ MonoBehaviour:
   specificPos:
     _X: -2
     _Y: -2
-  useSpecificArrive: 0
+  useSpecificArray: 0
   arraySpecificPos: []
 --- !u!4 &1432168986
 Transform:

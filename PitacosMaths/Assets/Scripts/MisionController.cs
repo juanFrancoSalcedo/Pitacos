@@ -16,10 +16,10 @@ public class MisionController : MonoBehaviour
     public AnimationUIController popUpWin;
     public AnimationUIController failText;
 
-    [ConditionalField(nameof(useSpecificArrive), true)] public bool useSpecificPos;
+    [ConditionalField(nameof(useSpecificArray), true)] public bool useSpecificPos;
     [ConditionalField(nameof(useSpecificPos))] public SpecificPos specificPos;
-    [ConditionalField(nameof(useSpecificPos), true)] public bool useSpecificArrive;
-    [ConditionalField(nameof(useSpecificArrive),false)] [SerializeField] private List<SpecificPos> arraySpecificPos = new List<SpecificPos>();
+    [ConditionalField(nameof(useSpecificPos), true)] public bool useSpecificArray;
+    [ConditionalField(nameof(useSpecificArray),false)] [SerializeField] private List<SpecificPos> arraySpecificPos = new List<SpecificPos>();
     int countArraySpecific =0;
 
 
@@ -45,9 +45,8 @@ public class MisionController : MonoBehaviour
                 mision.GetComponent<SpriteRenderer>().sprite = imagesMision[0];
             }
         }
-        
 
-        if (useSpecificArrive && countArraySpecific < arraySpecificPos.Count)
+        if (useSpecificArray && countArraySpecific < arraySpecificPos.Count)
         {
             mision.transform.position = new Vector3(arraySpecificPos[countArraySpecific]._X, arraySpecificPos[countArraySpecific]._Y, playerArg.transform.position.z);
             countArraySpecific++;
@@ -64,8 +63,9 @@ public class MisionController : MonoBehaviour
         int count = 0;
 
         Vector3 misionPos = playerArg.transform.position;
+        Vector3 bufPlayerPos = playerArg.transform.position;
 
-        while (misionPos == playerArg.transform.position)
+        while (misionPos == playerArg.transform.position && misionPos.y == bufPlayerPos.y)
         {
             misionPos.y = Random.Range(playerArg.limits.lowerY, playerArg.limits.upperY) + gridPosition.position.y;
             misionPos.x = Random.Range(playerArg.limits.lowerX, playerArg.limits.upperX) + gridPosition.position.x;
