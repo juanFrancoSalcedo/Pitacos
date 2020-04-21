@@ -37,14 +37,14 @@ public class AnswerManager : MonoBehaviour
     {
         if (limitMistakes <= TurnsManager.Instance.mistakes)
         {
-            Lose();
+            Invoke("Lose",2);
         }
 
         if (indexQuestion >= questionList.Count)
         {
             InputFieldController.Instance.ActiveButtons(false);
             TurnsManager.Instance.timer.stopTimer = true;
-            winCanvas.enabled = true;
+            Invoke("Win",2);
             return;
         }
         
@@ -65,7 +65,12 @@ public class AnswerManager : MonoBehaviour
     {
         loseCanvas.enabled = true;
     }
-    
+
+    public void Win()
+    {
+        winCanvas.enabled = true;
+    }
+
     public void AskEquation(Vector3 charPos)
     {
         if (misionController == null)
@@ -146,10 +151,6 @@ public class AnswerManager : MonoBehaviour
     public void SumQuestion()
     {
         indexQuestion++;
-        if (indexQuestion >= questionList.Count)
-        {
-            //print("Ganao partida");
-        }
     }
 
 }
