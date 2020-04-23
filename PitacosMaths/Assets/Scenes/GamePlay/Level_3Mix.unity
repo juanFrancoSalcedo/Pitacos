@@ -701,6 +701,74 @@ Transform:
   m_Father: {fileID: 821810518}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &219028436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 219028437}
+  - component: {fileID: 219028438}
+  m_Layer: 0
+  m_Name: a5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &219028437
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219028436}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1043426267}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &219028438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219028436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 1
+  control: {fileID: 1460088030}
+  misionCompleted: 0
+  misionTuto: 2
+  animatorControl: {fileID: 0}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 0}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 1321836369}
+  textToShow: "Usen sus conocimiento previos. \xA1Allez!"
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &225077536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,7 +1972,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SKIP
+  m_text: Omitir
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7eca2b3e4eae5749b691ee662b84b72, type: 2}
   m_sharedMaterial: {fileID: 1675818611026873246, guid: b7eca2b3e4eae5749b691ee662b84b72,
@@ -1939,7 +2007,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1974,7 +2042,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 356235021}
-    characterCount: 4
+    characterCount: 6
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -5181,7 +5249,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 1321836369}
-  textToShow: Estamos perdidos en el espacio tiempo.
+  textToShow: He quedado atrapado.
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -7047,6 +7115,8 @@ RectTransform:
   - {fileID: 542363009}
   - {fileID: 737052748}
   - {fileID: 2050589465}
+  - {fileID: 1688983427}
+  - {fileID: 219028437}
   - {fileID: 1728981424}
   m_Father: {fileID: 1460088029}
   m_RootOrder: 2
@@ -8428,8 +8498,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d3094f5c8ce6e5a4abba7990da926e47, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 3b7b42f54ce67ac4cb21dea19f560904, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -8905,7 +8975,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4281868153
-  m_fontColor: {r: 0.4745098, g: 0.12156863, b: 0.21960784, a: 1}
+  m_fontColor: {r: 0.28627452, g: 0.28235295, b: 0.23529413, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8929,7 +8999,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 513
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -9759,8 +9829,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281868153
-  m_fontColor: {r: 0.4745098, g: 0.12156863, b: 0.21960784, a: 1}
+    rgba: 4282140745
+  m_fontColor: {r: 0.28627452, g: 0.28235295, b: 0.23529413, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10422,7 +10492,7 @@ MonoBehaviour:
   specificPos:
     _X: 0
     _Y: 0
-  useSpecificArrive: 1
+  useSpecificArray: 0
   arraySpecificPos:
   - _X: -4
     _Y: 1
@@ -10572,6 +10642,8 @@ MonoBehaviour:
   - {fileID: 542363008}
   - {fileID: 737052747}
   - {fileID: 2050589466}
+  - {fileID: 1688983428}
+  - {fileID: 219028438}
   - {fileID: 1728981423}
   skipeAnimations:
   - {fileID: 165600172}
@@ -11652,8 +11724,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 2150773298
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
+    rgba: 2151434313
+  m_fontColor: {r: 0.28627452, g: 0.28235295, b: 0.23529413, a: 0.5}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11905,6 +11977,74 @@ Canvas:
     type: 3}
   m_PrefabInstance: {fileID: 532623919}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1688983426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1688983427}
+  - component: {fileID: 1688983428}
+  m_Layer: 0
+  m_Name: a4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1688983427
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688983426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1043426267}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1688983428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688983426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 1
+  control: {fileID: 1460088030}
+  misionCompleted: 0
+  misionTuto: 2
+  animatorControl: {fileID: 0}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 0}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 1321836369}
+  textToShow: "Derquis ayudame a salir de esta prisi\xF3n."
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1690461229
 GameObject:
   m_ObjectHideFlags: 0
@@ -12419,7 +12559,7 @@ GameObject:
   - component: {fileID: 1728981424}
   - component: {fileID: 1728981423}
   m_Layer: 0
-  m_Name: a4
+  m_Name: a6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12480,7 +12620,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1043426267}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -13108,8 +13248,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281868153
-  m_fontColor: {r: 0.4745098, g: 0.12156863, b: 0.21960784, a: 1}
+    rgba: 4282140745
+  m_fontColor: {r: 0.28627452, g: 0.28235295, b: 0.23529413, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -14070,7 +14210,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 1321836369}
-  textToShow: "R\xE1pido reunanse conmigo, antes de que algo malo pase."
+  textToShow: "Ferye ve por el s\xEDmbolo E."
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -14493,8 +14633,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d3094f5c8ce6e5a4abba7990da926e47, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 3b7b42f54ce67ac4cb21dea19f560904, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

@@ -178,16 +178,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: Velocidad
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0de60fb147bfba04ebde7c59a81f36d3, type: 2}
-  m_sharedMaterial: {fileID: 6654379852079006507, guid: 0de60fb147bfba04ebde7c59a81f36d3,
+  m_fontAsset: {fileID: 11400000, guid: afbb460381524b44b9b4dee844f5ae45, type: 2}
+  m_sharedMaterial: {fileID: 1598192256064139492, guid: afbb460381524b44b9b4dee844f5ae45,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4281802617
+  m_fontColor: {r: 0.47450984, g: 0.121568635, b: 0.21568629, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -32399,7 +32399,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0.5, z: 6.3}
   targetScale: {x: 1, y: 1, z: 1}
   typingObject: {fileID: 239597608}
-  textToShow: y Felipe revisaba sus notificaciones.
+  textToShow: mientras Ferye revisaba sus notificaciones.
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
