@@ -6419,6 +6419,17 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5598598280108453779, guid: 7831ccdf01e28ff489efa2014a1c5099,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d0df6dd519ba9774991bdf1694f01080,
+        type: 3}
+    - target: {fileID: 5598598280108453779, guid: 7831ccdf01e28ff489efa2014a1c5099,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5600700126468856706, guid: 7831ccdf01e28ff489efa2014a1c5099,
         type: 3}
       propertyPath: m_Sprite
@@ -6445,13 +6456,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: afbb460381524b44b9b4dee844f5ae45,
+      objectReference: {fileID: 11400000, guid: b7eca2b3e4eae5749b691ee662b84b72,
         type: 2}
     - target: {fileID: 7899363233078110920, guid: 7831ccdf01e28ff489efa2014a1c5099,
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 1598192256064139492, guid: afbb460381524b44b9b4dee844f5ae45,
+      objectReference: {fileID: 1675818611026873246, guid: b7eca2b3e4eae5749b691ee662b84b72,
         type: 2}
     - target: {fileID: 7899363233078110920, guid: 7831ccdf01e28ff489efa2014a1c5099,
         type: 3}
@@ -6477,6 +6488,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899363233078110920, guid: 7831ccdf01e28ff489efa2014a1c5099,
+        type: 3}
+      propertyPath: m_text
+      value: "\xA1Bien Hecho! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899363233078110920, guid: 7831ccdf01e28ff489efa2014a1c5099,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899363233078110920, guid: 7831ccdf01e28ff489efa2014a1c5099,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.47450984
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899363233078110920, guid: 7831ccdf01e28ff489efa2014a1c5099,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.121568635
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899363233078110920, guid: 7831ccdf01e28ff489efa2014a1c5099,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.21960786
       objectReference: {fileID: 0}
     - target: {fileID: 8217429913076511705, guid: 7831ccdf01e28ff489efa2014a1c5099,
         type: 3}
@@ -6554,6 +6590,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 32055695}
     m_Modifications:
+    - target: {fileID: 327668579639059959, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b7eca2b3e4eae5749b691ee662b84b72,
+        type: 2}
+    - target: {fileID: 327668579639059959, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1675818611026873246, guid: b7eca2b3e4eae5749b691ee662b84b72,
+        type: 2}
+    - target: {fileID: 327668579639059959, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.58431375
+      objectReference: {fileID: 0}
+    - target: {fileID: 327668579639059959, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.82745105
+      objectReference: {fileID: 0}
+    - target: {fileID: 327668579639059959, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.91372555
+      objectReference: {fileID: 0}
     - target: {fileID: 3724394204803248144, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
         type: 3}
       propertyPath: questionList.Array.size
@@ -6728,6 +6791,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LosePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6184991506792507854, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9a4b3ed9635b9d444bc9d8f64bf81685,
+        type: 3}
+    - target: {fileID: 6184991506792507854, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6184991507037638407, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
         type: 3}
