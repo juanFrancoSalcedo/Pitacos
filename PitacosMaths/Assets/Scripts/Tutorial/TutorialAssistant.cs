@@ -142,4 +142,16 @@ public class TutorialAssistant : MonoBehaviour
         }
         gameObject.SetActive(false);
     }
+
+    [ButtonMethod]
+    private void SetCurrentPositionAsTarget()
+    {
+        targetPos = animatorControl.transform.position;
+    }
+
+    [ButtonMethod]
+    private void SetCurrentScaleAsTarget()
+    {
+        targetScale = animatorControl.transform.localScale;
+    }
 }
