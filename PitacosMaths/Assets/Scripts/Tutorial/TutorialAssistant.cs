@@ -9,7 +9,7 @@ public class TutorialAssistant : MonoBehaviour
 {
     [SerializeField] private bool forSkip = false;
     [SerializeField] private float delayCompleted = 0.6f; 
-    [SerializeField] private TutorialController control;
+    public TutorialController control;
     [SerializeField] private bool misionCompleted;
     
 

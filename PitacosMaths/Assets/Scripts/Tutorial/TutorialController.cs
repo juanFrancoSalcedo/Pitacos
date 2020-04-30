@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MyBox;
+
 
 public class TutorialController : MonoBehaviour
 {
@@ -50,5 +52,16 @@ public class TutorialController : MonoBehaviour
         skipeAnimations[skipeMisionIndex].gameObject.SetActive(true);
         skipeAnimations[skipeMisionIndex].StartMision();
 
+    }
+
+    [ButtonMethod]
+    private void SeachAsissitantsInside()
+    {
+        misionAnimations = new TutorialAssistant[transform.childCount];
+        for (int i =0; i < transform.childCount;i++)
+        {
+            misionAnimations[i] = transform.GetChild(i).GetComponent<TutorialAssistant>();
+            misionAnimations[i].control = this;
+        }
     }
 }
