@@ -121,91 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &8982015
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8982017}
-  - component: {fileID: 8982016}
-  m_Layer: 0
-  m_Name: a4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &8982016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8982015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forSkip: 0
-  delayCompleted: 2
-  control: {fileID: 1315406142}
-  misionCompleted: 0
-  misionTuto: 2
-  animatorControl: {fileID: 0}
-  animationType: 7
-  overrideTimeAnimation: 0
-  timeAnimation: 0
-  targetTransform: {fileID: 1169540840}
-  targetPos: {x: 0, y: 0, z: 0}
-  targetScale: {x: 0, y: 0, z: 0}
-  typingObject: {fileID: 391413350}
-  textToShow: 'Te refieres: distancia entre dos puntos.'
-  fieldTextMision: {fileID: 0}
-  textEquivalent: 
-  buttonMision: {fileID: 0}
-  OnCompletedMission:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1409532789}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
---- !u!4 &8982017
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8982015}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1315406141}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &54046904
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +156,7 @@ RectTransform:
   m_AnchoredPosition: {x: -1390, y: 347}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &61363069
+--- !u!1 &77646386
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -249,73 +164,100 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 61363070}
-  - component: {fileID: 61363071}
-  m_Layer: 0
-  m_Name: a9
+  - component: {fileID: 77646390}
+  - component: {fileID: 77646389}
+  - component: {fileID: 77646388}
+  - component: {fileID: 77646387}
+  m_Layer: 5
+  m_Name: Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &61363070
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61363069}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1315406141}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &61363071
+--- !u!114 &77646387
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61363069}
+  m_GameObject: {fileID: 77646386}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Script: {fileID: 11500000, guid: 39d994f3e89e7fb4bbd5d5ca41d47e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forSkip: 0
-  delayCompleted: 2
-  control: {fileID: 1315406142}
-  misionCompleted: 0
-  misionTuto: 2
-  animatorControl: {fileID: 0}
-  animationType: 7
-  overrideTimeAnimation: 0
-  timeAnimation: 0
-  targetTransform: {fileID: 1169540840}
-  targetPos: {x: 0, y: 0, z: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
-  typingObject: {fileID: 0}
-  textToShow: "Recuerden que si fallan tres veces perder\xE1n y tendr\xE1n que comenzar
-    de nuevo."
-  fieldTextMision: {fileID: 0}
-  textEquivalent: 
-  buttonMision: {fileID: 0}
-  OnCompletedMission:
+  timeAnimation: 0.8
+  delay: 0.2
+  coldTime: 0
+  animationCurve: 0
+  playOnAwake: 1
+  animationType: 13
+  worldPoint: {fileID: 0}
+  colorTarget: {r: 0, g: 0, b: 0, a: 0}
+  OnCompletedCallBack:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1256834119}
-        m_MethodName: LoadSpecificSceneZoom
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  OnStartedCallBack:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &77646388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77646386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6395f65939386c44395d9cd7b2a81d18, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &77646389
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77646386}
+  m_CullTransparentMesh: 0
+--- !u!224 &77646390
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77646386}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1256834118}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &143073404
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,8 +284,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143073404}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13, y: -0.06, z: 0}
-  m_LocalScale: {x: 0.433854, y: 0.433854, z: 0.433854}
+  m_LocalPosition: {x: -2.7, y: 0, z: 0}
+  m_LocalScale: {x: 0.8961, y: 0.8961, z: 0.8961}
   m_Children:
   - {fileID: 225129103}
   m_Father: {fileID: 1026728632}
@@ -411,13 +353,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e8a6bab79540ea4aaf6432c8f297fde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: 1, y: 0, z: 0}
+  targetPosition: {x: 2.5, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
-  timeAnimation: 6
-  delay: 1
+  timeAnimation: 4
+  delay: 3.5
   coldTime: 0
-  animationCurve: 22
-  playOnAwake: 0
+  animationCurve: 1
+  playOnAwake: 1
   animationType: 0
   worldPoint: {fileID: 0}
   colorTarget: {r: 0, g: 0, b: 0, a: 0}
@@ -463,8 +405,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.44, y: 2.83}
-  m_SizeDelta: {x: 2.72, y: 1.389}
+  m_AnchoredPosition: {x: -3.969, y: 2.83}
+  m_SizeDelta: {x: 1.662, y: 1.389}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &153042371
 MonoBehaviour:
@@ -481,7 +423,7 @@ MonoBehaviour:
   targetPosition: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   timeAnimation: 0.5
-  delay: 2
+  delay: 7.5
   coldTime: 0
   animationCurve: 22
   playOnAwake: 1
@@ -560,11 +502,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 0.5
+  delayCompleted: 8
   control: {fileID: 1315406142}
   misionCompleted: 1
   misionTuto: 0
-  animatorControl: {fileID: 1820249805}
+  animatorControl: {fileID: 143073407}
   animationType: 7
   overrideTimeAnimation: 0
   timeAnimation: 0
@@ -579,7 +521,7 @@ MonoBehaviour:
   OnCompletedMission:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 143073404}
+      - m_Target: {fileID: 77646386}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -910,7 +852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.051, y: 0.018}
+  m_AnchoredPosition: {x: -0.05099988, y: 0.018000007}
   m_SizeDelta: {x: -0.576, y: -0.577}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &391413350
@@ -1019,7 +961,7 @@ MonoBehaviour:
     spaceCount: 4
     wordCount: 5
     linkCount: 0
-    lineCount: 3
+    lineCount: 5
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1215,91 +1157,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433654845}
   m_CullTransparentMesh: 0
---- !u!1 &549695285
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 549695287}
-  - component: {fileID: 549695286}
-  m_Layer: 0
-  m_Name: a6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &549695286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 549695285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forSkip: 0
-  delayCompleted: 2
-  control: {fileID: 1315406142}
-  misionCompleted: 0
-  misionTuto: 2
-  animatorControl: {fileID: 0}
-  animationType: 7
-  overrideTimeAnimation: 0
-  timeAnimation: 0
-  targetTransform: {fileID: 1169540840}
-  targetPos: {x: 0, y: 0, z: 0}
-  targetScale: {x: 0, y: 0, z: 0}
-  typingObject: {fileID: 0}
-  textToShow: "\xBFDe qu\xE9 est\xE1n hablando?"
-  fieldTextMision: {fileID: 0}
-  textEquivalent: 
-  buttonMision: {fileID: 0}
-  OnCompletedMission:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
---- !u!4 &549695287
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 549695285}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1315406141}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &653532151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,70 +1286,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 653532151}
   m_CullTransparentMesh: 0
---- !u!1 &784199652
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 784199654}
-  - component: {fileID: 784199653}
-  m_Layer: 0
-  m_Name: a7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &784199653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784199652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forSkip: 0
-  delayCompleted: 2
-  control: {fileID: 1315406142}
-  misionCompleted: 0
-  misionTuto: 2
-  animatorControl: {fileID: 0}
-  animationType: 7
-  overrideTimeAnimation: 0
-  timeAnimation: 0
-  targetTransform: {fileID: 1169540840}
-  targetPos: {x: 0, y: 0, z: 0}
-  targetScale: {x: 0, y: 0, z: 0}
-  typingObject: {fileID: 0}
-  textToShow: "Recuerden que si fallan tres veces perder\xE1n y tendr\xE1n que comenzar
-    de nuevo."
-  fieldTextMision: {fileID: 0}
-  textEquivalent: 
-  buttonMision: {fileID: 0}
-  OnCompletedMission:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!4 &784199654
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784199652}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1315406141}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &958037859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,6 +1480,7 @@ RectTransform:
   - {fileID: 1341460093}
   - {fileID: 54046905}
   - {fileID: 653532152}
+  - {fileID: 77646390}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1947,12 +1741,12 @@ GameObject:
   - component: {fileID: 1315406141}
   - component: {fileID: 1315406142}
   m_Layer: 0
-  m_Name: (3)ManagerDialogs
+  m_Name: (1)ManagerDialogs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1315406141
 Transform:
   m_ObjectHideFlags: 0
@@ -1965,13 +1759,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 191040971}
-  - {fileID: 1499314411}
-  - {fileID: 1502494809}
-  - {fileID: 8982017}
-  - {fileID: 1976372088}
-  - {fileID: 549695287}
-  - {fileID: 784199654}
-  - {fileID: 61363070}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1989,14 +1776,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   misionAnimations:
   - {fileID: 191040970}
-  - {fileID: 1499314410}
-  - {fileID: 1502494808}
-  - {fileID: 8982016}
-  - {fileID: 1976372087}
-  - {fileID: 549695286}
-  - {fileID: 784199653}
-  - {fileID: 0}
-  - {fileID: 61363071}
   skipeAnimations: []
 --- !u!1 &1341128290
 GameObject:
@@ -2182,8 +1961,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.07, y: 2.547}
-  m_SizeDelta: {x: 3.499, y: 1.955}
+  m_AnchoredPosition: {x: 1.224, y: 2.28}
+  m_SizeDelta: {x: 2.448, y: 2.534}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1409532791
 MonoBehaviour:
@@ -2200,7 +1979,7 @@ MonoBehaviour:
   targetPosition: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   timeAnimation: 0.5
-  delay: 2
+  delay: 4.5
   coldTime: 0
   animationCurve: 22
   playOnAwake: 1
@@ -2405,165 +2184,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1439637788}
   m_CullTransparentMesh: 0
---- !u!1 &1499314409
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1499314411}
-  - component: {fileID: 1499314410}
-  m_Layer: 0
-  m_Name: a2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1499314410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499314409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forSkip: 0
-  delayCompleted: 1
-  control: {fileID: 1315406142}
-  misionCompleted: 1
-  misionTuto: 0
-  animatorControl: {fileID: 0}
-  animationType: 7
-  overrideTimeAnimation: 0
-  timeAnimation: 0
-  targetTransform: {fileID: 1169540840}
-  targetPos: {x: 0, y: 0, z: 0}
-  targetScale: {x: 0, y: 0, z: 0}
-  typingObject: {fileID: 0}
-  textToShow: 
-  fieldTextMision: {fileID: 0}
-  textEquivalent: 
-  buttonMision: {fileID: 0}
-  OnCompletedMission:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
---- !u!4 &1499314411
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499314409}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1315406141}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1502494807
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1502494809}
-  - component: {fileID: 1502494808}
-  m_Layer: 0
-  m_Name: a3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1502494808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502494807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forSkip: 0
-  delayCompleted: 2
-  control: {fileID: 1315406142}
-  misionCompleted: 0
-  misionTuto: 2
-  animatorControl: {fileID: 0}
-  animationType: 7
-  overrideTimeAnimation: 0
-  timeAnimation: 0
-  targetTransform: {fileID: 1169540840}
-  targetPos: {x: 0, y: 0, z: 0}
-  targetScale: {x: 0, y: 0, z: 0}
-  typingObject: {fileID: 0}
-  textToShow: Muy bien chicos, ahora vamos a continuar con distancias.
-  fieldTextMision: {fileID: 0}
-  textEquivalent: 
-  buttonMision: {fileID: 0}
-  OnCompletedMission:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1409532789}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
---- !u!4 &1502494809
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502494807}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1315406141}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1523000829
 GameObject:
   m_ObjectHideFlags: 0
@@ -3048,91 +2668,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1976372086
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1976372088}
-  - component: {fileID: 1976372087}
-  m_Layer: 0
-  m_Name: a5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1976372087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976372086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forSkip: 0
-  delayCompleted: 2
-  control: {fileID: 1315406142}
-  misionCompleted: 0
-  misionTuto: 2
-  animatorControl: {fileID: 0}
-  animationType: 7
-  overrideTimeAnimation: 0
-  timeAnimation: 0
-  targetTransform: {fileID: 1169540840}
-  targetPos: {x: 0, y: 0, z: 0}
-  targetScale: {x: 0, y: 0, z: 0}
-  typingObject: {fileID: 0}
-  textToShow: "Exactamente, ma ch\xE8re."
-  fieldTextMision: {fileID: 0}
-  textEquivalent: 
-  buttonMision: {fileID: 0}
-  OnCompletedMission:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
---- !u!4 &1976372088
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976372086}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1315406141}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2059694053
 GameObject:
   m_ObjectHideFlags: 0
@@ -3169,8 +2704,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.881, y: -3.203}
-  m_SizeDelta: {x: 2.72, y: 1.389}
+  m_AnchoredPosition: {x: -1.233, y: -3.203}
+  m_SizeDelta: {x: 2.018, y: 1.389}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2059694055
 MonoBehaviour:
@@ -3187,7 +2722,7 @@ MonoBehaviour:
   targetPosition: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   timeAnimation: 0.5
-  delay: 2
+  delay: 6.5
   coldTime: 0
   animationCurve: 22
   playOnAwake: 1
@@ -3271,8 +2806,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.051, y: 0.018}
-  m_SizeDelta: {x: -0.576, y: -0.577}
+  m_AnchoredPosition: {x: -0.066, y: 0.018}
+  m_SizeDelta: {x: -0.606, y: -0.577}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2091666211
 MonoBehaviour:
