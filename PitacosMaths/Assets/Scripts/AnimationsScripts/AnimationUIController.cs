@@ -58,7 +58,10 @@ public class AnimationUIController : DoAnimationController
                 break;
 
             case TypeAnimation.Scale:
-                rectTransform.DOScale(targetScale, timeAnimation).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
+
+                sequence.Append(rectTransform.DOScale(targetScale, timeAnimation).SetEase(animationCurve).SetDelay(delay));
+                sequence.AppendInterval(coldTime).OnComplete(CallBacks);
+                //rectTransform.DOScale(targetScale, timeAnimation).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
                 break;
 
             case TypeAnimation.ScaleReturnOriginScale:
