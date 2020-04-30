@@ -27,6 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/_Escena6(TODO).unity
     guid: 65ec1a23f7d6fcb438447707dee9e095
   - enabled: 1
-    path: Assets/Scenes/Level_3Mix.unity
+    path: Assets/Scenes/_Escena9.unity
     guid: 38d7d4cfc533c1e4da2f423092871e11
   m_configObjects: {}
