@@ -60,13 +60,11 @@ public class CharacterController : MonoBehaviour
     public void ShowArrow()
     {
         transform.GetChild(3).gameObject.SetActive(true);
-        print("sol");
     }
 
     public void HideArrow()
     {
         transform.GetChild(3).gameObject.SetActive(false);
-        print("noche");
     }
 }
 

@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class LevelManager : MonoBehaviour
 {
+
+    public AudioMixerSnapshot pause;
     public void Replay()
     {
+
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
@@ -21,11 +25,13 @@ public class LevelManager : MonoBehaviour
         Time.timeScale = 1;
         Transition.Instance.Zoom();
         StartCoroutine(WaitLoadScene(indexScene));
+        AudioController.Instance.TransitionAudio();
     }
 
     private IEnumerator WaitLoadScene(int scene)
     {
         yield return new WaitForSeconds(1f);
+        AudioController.Instance.SetNormal();
         LoadSpecificScene(scene);
     }
 
@@ -36,6 +42,7 @@ public class LevelManager : MonoBehaviour
 
     public void Pause(Canvas canvasPause)
     {
+        AudioController.Instance.PauseAudio();
         Time.timeScale = (Time.timeScale == 0) ? 1 : 0;
         canvasPause.enabled = (canvasPause.enabled) ? false : true;
     }
