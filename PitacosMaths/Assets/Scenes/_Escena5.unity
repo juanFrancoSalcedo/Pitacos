@@ -401,7 +401,7 @@ Transform:
   m_GameObject: {fileID: 213896480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.1, y: -0.6, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1026728632}
   m_RootOrder: 1
@@ -1737,8 +1737,8 @@ MonoBehaviour:
   misionTuto: 3
   animatorControl: {fileID: 1820249805}
   animationType: 7
-  overrideTimeAnimation: 0
-  timeAnimation: 0
+  overrideTimeAnimation: 1
+  timeAnimation: 0.1
   targetTransform: {fileID: 1169540840}
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
@@ -2722,8 +2722,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
-  timeAnimation: 2
-  delay: 0.5
+  timeAnimation: 0.7
+  delay: 0
   coldTime: 0
   animationCurve: 18
   playOnAwake: 0
@@ -3318,8 +3318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
-  timeAnimation: 2
-  delay: 0.2
+  timeAnimation: 0.5
+  delay: 0
   coldTime: 0
   animationCurve: 19
   playOnAwake: 0
@@ -3689,7 +3689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 0.1
+  delayCompleted: 2
   control: {fileID: 1315406142}
   misionCompleted: 0
   misionTuto: 3
@@ -3707,4 +3707,15 @@ MonoBehaviour:
   buttonMision: {fileID: 0}
   OnCompletedMission:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1256834119}
+        m_MethodName: LoadSpecificSceneZoom
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

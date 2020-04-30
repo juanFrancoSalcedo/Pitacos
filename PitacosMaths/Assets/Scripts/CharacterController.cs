@@ -56,6 +56,18 @@ public class CharacterController : MonoBehaviour
         OnArrived?.Invoke(this);
         //AnswerManager.Instance.SumQuestion();
     }
+
+    public void ShowArrow()
+    {
+        transform.GetChild(3).gameObject.SetActive(true);
+        print("sol");
+    }
+
+    public void HideArrow()
+    {
+        transform.GetChild(3).gameObject.SetActive(false);
+        print("noche");
+    }
 }
 
 [System.Serializable]

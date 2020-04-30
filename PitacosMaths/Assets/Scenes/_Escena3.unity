@@ -9018,7 +9018,7 @@ PrefabInstance:
     - target: {fileID: 9108448933913561625, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadSpecificScene
+      value: LoadSpecificSceneZoom
       objectReference: {fileID: 0}
     - target: {fileID: 9108448933913561625, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
         type: 3}

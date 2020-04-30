@@ -34,6 +34,7 @@ public class TurnsManager : MonoBehaviour
     {
         bufferTime = timer.initTime;
         inputContol.currentChar = player1;
+        player1.ShowArrow();
         OnPlayerSelected?.Invoke(inputContol.currentChar);
     }
 
@@ -50,10 +51,14 @@ public class TurnsManager : MonoBehaviour
         if (ReferenceEquals(inputContol.currentChar, player1))
         {
             inputContol.currentChar = player2;
+            player2.ShowArrow();
+            player1.HideArrow();
         }
         else
         {
             inputContol.currentChar = player1;
+            player1.ShowArrow();
+            player2.HideArrow();
         }
 
         HideHalfPosition();
