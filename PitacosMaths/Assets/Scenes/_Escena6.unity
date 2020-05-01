@@ -264,7 +264,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 471862552}
-  textToShow: Y recuerda la formula de distancias.
+  textToShow: "Y recuerda la f\xF3rmula de distancias."
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -337,7 +337,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19916667, y: 0.0152968755}
   m_AnchorMax: {x: 0.42200002, y: 0.134}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0.9399414}
+  m_AnchoredPosition: {x: 0, y: 0.9399414}
   m_SizeDelta: {x: 0, y: 1.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &152544439
@@ -4720,7 +4720,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 471862552}
-  textToShow: Recuerda el terorema de pitagoras
+  textToShow: "Recuerda el teorema de pit\xE1goras"
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -5095,7 +5095,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 471862552}
-  textToShow: Para hayar la distancia...
+  textToShow: Para hallar la distancia...
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
