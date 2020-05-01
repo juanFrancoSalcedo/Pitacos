@@ -38,6 +38,12 @@ public class TutorialController : MonoBehaviour
         misionAnimations[misionIndex].StartMision();
     }
 
+    public void SetMisionIndex(int _indexMis)
+    {
+        misionIndex = _indexMis;
+        NextMision();
+    }
+
     public void SkipMission()
     {
         misionIndex = misionAnimations.Length-1;
