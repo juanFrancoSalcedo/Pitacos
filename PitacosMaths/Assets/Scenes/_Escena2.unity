@@ -3714,6 +3714,14 @@ MonoBehaviour:
   - {fileID: 909251125}
   - {fileID: 1950786706}
   - {fileID: 1269696575}
+  - {fileID: 2069526759}
+  - {fileID: 1221412059}
+  - {fileID: 975885615}
+  - {fileID: 1685768344}
+  - {fileID: 1558104969}
+  - {fileID: 1715025605}
+  - {fileID: 335782255}
+  - {fileID: 2063362136}
   skipeAnimations: []
 --- !u!1 &1324670745
 GameObject:
@@ -4981,6 +4989,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioController
       objectReference: {fileID: 0}
+    - target: {fileID: 6540119424516286035, guid: c582bb35b5f039e42827b7f0e89a81c7,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2307d5b43172d4040a761f2a0f95f65a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c582bb35b5f039e42827b7f0e89a81c7, type: 3}
 --- !u!1 &1615910442
