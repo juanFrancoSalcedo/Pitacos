@@ -64,7 +64,8 @@ public enum TypeAnimation
     FadeOut,
     ColorChange,
     MoveScaleAT,
-    FadeIn2D
+    FadeIn2D,
+    SwitchSprite
 }
 
 

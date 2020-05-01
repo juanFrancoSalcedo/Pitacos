@@ -5,6 +5,7 @@ using UnityEngine.Audio;
 
 public class AudioController : MonoBehaviour
 {
+   
     public AudioMixer mixer;
     public static AudioController Instance;
 
@@ -39,6 +40,22 @@ public class AudioController : MonoBehaviour
     public void SetNormal()
     {
         mixer.FindSnapshot("Unpaused").TransitionTo(0.01f);
+    }
+
+    public void Mute()
+    {
+        float volume;
+
+        mixer.GetFloat("Master",out volume);
+
+        if (volume == -80)
+        {
+            mixer.SetFloat("Master", 0);
+        }
+        else
+        {
+            mixer.SetFloat("Master", -80);
+        }
 
     }
 }

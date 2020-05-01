@@ -10,6 +10,8 @@ public class AnimationUIController : DoAnimationController
 {
     private RectTransform rectTransform;
     private Image image;
+    public Sprite spriteToShift;
+    private Sprite spriteOriginal;
     
 
     private new void OnEnable()
@@ -18,6 +20,7 @@ public class AnimationUIController : DoAnimationController
         image = GetComponent<Image>();
         originPosition = rectTransform.anchoredPosition;
         originScale = rectTransform.localScale;
+        spriteOriginal = image.sprite;
 
         base.OnEnable();
     }
@@ -118,6 +121,14 @@ public class AnimationUIController : DoAnimationController
                 image.DOFade(1,0);
                 image.DOFade(0,timeAnimation).SetEase(animationCurve).SetDelay(delay).OnComplete(CallBacks);
                 break;
+
+            case TypeAnimation.SwitchSprite:
+                if (ReferenceEquals(image.sprite,spriteOriginal))
+                {image.sprite = spriteToShift;}
+                else
+                {image.sprite = spriteOriginal;}
+                break;
+                
         }
     }
     
