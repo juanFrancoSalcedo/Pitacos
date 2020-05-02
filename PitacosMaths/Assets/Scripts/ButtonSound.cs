@@ -18,6 +18,8 @@ public class ButtonSound : MonoBehaviour
     }
     private void PlaySound()
     {
-        audioSour.Play();
+        GameObject shot = new GameObject();
+       //shot.AddComponent(audioSour)
+        //PlayClipAtPoint(audioSour.clip,Vector3.zero,1f);
     }
 }
