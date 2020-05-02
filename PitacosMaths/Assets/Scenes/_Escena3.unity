@@ -1056,7 +1056,7 @@ MonoBehaviour:
     sadImage: {fileID: 21300000, guid: 3c7240b872ae95a4b972827523e91eaf, type: 3}
     happyImage: {fileID: 21300000, guid: 0828c0aa9134b7c4fba8f6afd280b88c, type: 3}
   misionController: {fileID: 1432168985}
-  characterOwner: {fileID: 0}
+  characterOwner: {fileID: 2093075318}
 --- !u!1 &459491117
 GameObject:
   m_ObjectHideFlags: 0
@@ -8689,7 +8689,7 @@ MonoBehaviour:
     sadImage: {fileID: 21300000, guid: 5cabf092154da174bb634f0490ff24f5, type: 3}
     happyImage: {fileID: 21300000, guid: 906c991738d49f143a4a0ac67201678e, type: 3}
   misionController: {fileID: 1432168985}
-  characterOwner: {fileID: 0}
+  characterOwner: {fileID: 750249146}
 --- !u!114 &1938938013
 MonoBehaviour:
   m_ObjectHideFlags: 0

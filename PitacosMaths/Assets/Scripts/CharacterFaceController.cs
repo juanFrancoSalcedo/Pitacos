@@ -24,6 +24,7 @@ public class CharacterFaceController : MonoBehaviour
         {
             return;
         }
+        //print("Pipen");
 
         switch (emo)
         {
