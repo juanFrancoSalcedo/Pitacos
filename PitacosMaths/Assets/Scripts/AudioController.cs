@@ -8,12 +8,19 @@ public class AudioController : MonoBehaviour
    
     public AudioMixer mixer;
     public static AudioController Instance;
+    private AudioSource audioSourceComp;
+
+    [Header("~~~~~Clips~~~~~~~")]
+
+    public AudioClip winSound;
+    public AudioClip loseSound;
 
     void Start()
     {
         if (Instance == null)
         {
             Instance = this;
+            audioSourceComp = GetComponent<AudioSource>();
         }
         else
         {
@@ -55,6 +62,24 @@ public class AudioController : MonoBehaviour
         else
         {
             mixer.SetFloat("Master", -80);
+        }
+    }
+
+    public void OnLosePlay(bool areYouLoser)
+    {
+        if (areYouLoser)
+        {
+            audioSourceComp.clip = loseSound;
+            audioSourceComp.Stop();
+            audioSourceComp.Play();
+        }
+        else
+        {
+
+            audioSourceComp.clip = winSound;
+            audioSourceComp.Stop();
+            audioSourceComp.Play();
+
         }
 
     }

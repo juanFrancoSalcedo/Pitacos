@@ -314,6 +314,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!1 &285660733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,6 +1283,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!114 &665120387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1467,6 +1469,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!1 &752198793
 GameObject:
   m_ObjectHideFlags: 0
@@ -3069,6 +3072,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!114 &1324219938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5617,6 +5621,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 866079292}
+    - target: {fileID: 5206573839497168520, guid: 7831ccdf01e28ff489efa2014a1c5099,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5206573839497168524, guid: 7831ccdf01e28ff489efa2014a1c5099,
         type: 3}
       propertyPath: m_Name
@@ -5725,17 +5734,6 @@ PrefabInstance:
     - target: {fileID: 5206573839497168525, guid: 7831ccdf01e28ff489efa2014a1c5099,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5598598280108453779, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f3d13e54133f2494ba7d4ee2478cd8d8,
-        type: 3}
-    - target: {fileID: 5598598280108453779, guid: 7831ccdf01e28ff489efa2014a1c5099,
-        type: 3}
-      propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5600700126468856706, guid: 7831ccdf01e28ff489efa2014a1c5099,
@@ -6099,17 +6097,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LosePanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 6184991506792507854, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: b4ab2956690df4745b17ce317c85a93a,
-        type: 3}
-    - target: {fileID: 6184991506792507854, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
-        type: 3}
-      propertyPath: m_Type
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6184991507037638407, guid: 493d8aeb66edcbb448dfaef8e4bc58c5,
         type: 3}

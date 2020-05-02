@@ -64,11 +64,13 @@ public class AnswerManager : MonoBehaviour
     public void Lose()
     {
         loseCanvas.enabled = true;
+        AudioController.Instance.OnLosePlay(true);
     }
 
     public void Win()
     {
-        winCanvas.enabled = true;
+          winCanvas.enabled = true;
+        AudioController.Instance.OnLosePlay(false);
     }
 
     public void AskEquation(Vector3 charPos)
