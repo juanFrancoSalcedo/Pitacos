@@ -18,7 +18,6 @@ public class InputFieldController : MonoBehaviour
     public int xCoordinate { get; set; } = 0;
     public int yCoordinate { get; set; } = 0;
 
-
     private void Awake()
     {
         if (Instance == null)
