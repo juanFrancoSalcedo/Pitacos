@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
+using MyBox;
 
 public class AudioController : MonoBehaviour
 {
@@ -14,6 +16,8 @@ public class AudioController : MonoBehaviour
 
     public AudioClip winSound;
     public AudioClip loseSound;
+    public AudioClip buttonound;
+    public AudioMixerGroup group;
 
     void Start()
     {
@@ -79,8 +83,20 @@ public class AudioController : MonoBehaviour
             audioSourceComp.clip = winSound;
             audioSourceComp.Stop();
             audioSourceComp.Play();
-
         }
+    }
 
+    [ButtonMethod]
+    private void SerachButtonsSounds()
+    {
+        Button[] but = FindObjectsOfType<Button>();
+
+        foreach (Button bi in but)
+        {
+            bi.gameObject.AddComponent<ButtonSound>();
+            bi.gameObject.GetComponent<AudioSource>().clip = buttonound;
+            bi.gameObject.GetComponent<AudioSource>().outputAudioMixerGroup = group;
+            bi.gameObject.GetComponent<AudioSource>().playOnAwake = false;
+        }
     }
 }

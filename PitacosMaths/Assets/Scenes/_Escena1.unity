@@ -1637,6 +1637,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!114 &458271386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6998,6 +6999,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!114 &770295669
 MonoBehaviour:
   m_ObjectHideFlags: 0

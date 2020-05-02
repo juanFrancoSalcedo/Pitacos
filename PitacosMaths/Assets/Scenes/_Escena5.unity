@@ -2077,6 +2077,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasTransition
       objectReference: {fileID: 0}
+    - target: {fileID: 5278405607382256575, guid: ac4c86f410d8d0b4792aaf4286e61d49,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac4c86f410d8d0b4792aaf4286e61d49, type: 3}
 --- !u!1 &1285409654
@@ -3204,6 +3209,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!1 &1703843283
 GameObject:
   m_ObjectHideFlags: 0

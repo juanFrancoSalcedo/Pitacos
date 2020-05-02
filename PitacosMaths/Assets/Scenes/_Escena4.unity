@@ -314,6 +314,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!1 &72633973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,6 +1460,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!114 &665120387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1644,6 +1646,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!1 &752198793
 GameObject:
   m_ObjectHideFlags: 0
@@ -3321,6 +3324,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!114 &1324219938
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -144,3 +144,5 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 5d7f082d47a7def419adcd723f05678d, type: 2}
   winSound: {fileID: 8300000, guid: fc89775607df96045878b35d05b48bf8, type: 3}
   loseSound: {fileID: 8300000, guid: 72dc9a5c29fb07c4c81fd19fff1f9402, type: 3}
+  buttonound: {fileID: 8300000, guid: 67b6872de7cb7514192e8a2394563272, type: 3}
+  group: {fileID: -517758531689855273, guid: 5d7f082d47a7def419adcd723f05678d, type: 2}

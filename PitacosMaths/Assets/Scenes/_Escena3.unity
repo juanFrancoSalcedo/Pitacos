@@ -1775,6 +1775,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!114 &665120387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1960,6 +1961,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!1 &675042874
 GameObject:
   m_ObjectHideFlags: 0
@@ -4602,6 +4604,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!114 &1324219938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5549,6 +5552,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!1 &1492704326
 GameObject:
   m_ObjectHideFlags: 0
@@ -5617,6 +5621,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!114 &1492704329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7467,6 +7472,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!1 &1927994198
 GameObject:
   m_ObjectHideFlags: 0
@@ -8571,6 +8577,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!1 &2102020690
 GameObject:
   m_ObjectHideFlags: 0

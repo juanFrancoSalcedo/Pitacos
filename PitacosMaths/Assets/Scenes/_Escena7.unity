@@ -6294,6 +6294,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Charecter1
       objectReference: {fileID: 0}
+    - target: {fileID: 7374820956491384033, guid: 4eaf431948081c647a85927a898b4bea,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7374820956491384034, guid: 4eaf431948081c647a85927a898b4bea,
         type: 3}
       propertyPath: grid

@@ -5263,6 +5263,7 @@ MonoBehaviour:
   OnStartedCallBack:
     m_PersistentCalls:
       m_Calls: []
+  spriteToShift: {fileID: 0}
 --- !u!1 &1684300998
 GameObject:
   m_ObjectHideFlags: 0
