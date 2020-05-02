@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioController
       objectReference: {fileID: 0}
+    - target: {fileID: 6540119424516286034, guid: c582bb35b5f039e42827b7f0e89a81c7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6540119424516286035, guid: c582bb35b5f039e42827b7f0e89a81c7,
         type: 3}
       propertyPath: m_audioClip
@@ -714,6 +719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b4d0a87e37999945b3cf9d08171f7b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shot: {fileID: 4260339141364582290, guid: 939227fc088b00f40a0c07bf5b49ce5e, type: 3}
 --- !u!82 &786278808
 AudioSource:
   m_ObjectHideFlags: 0

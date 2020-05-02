@@ -11,13 +11,12 @@ public class AudioController : MonoBehaviour
     public AudioMixer mixer;
     public static AudioController Instance;
     private AudioSource audioSourceComp;
+    public GameObject shotObj;
 
     [Header("~~~~~Clips~~~~~~~")]
 
     public AudioClip winSound;
     public AudioClip loseSound;
-    public AudioClip buttonound;
-    public AudioMixerGroup group;
 
     void Start()
     {
@@ -93,10 +92,18 @@ public class AudioController : MonoBehaviour
 
         foreach (Button bi in but)
         {
-            bi.gameObject.AddComponent<ButtonSound>();
-            bi.gameObject.GetComponent<AudioSource>().clip = buttonound;
-            bi.gameObject.GetComponent<AudioSource>().outputAudioMixerGroup = group;
-            bi.gameObject.GetComponent<AudioSource>().playOnAwake = false;
+            if (bi.GetComponents<ButtonSound>().Length > 0)
+            {
+                DestroyImmediate(bi.GetComponents<ButtonSound>()[0]);
+            }
+
+            if (!bi.GetComponent<ButtonSound>())
+            {
+                bi.gameObject.AddComponent<ButtonSound>();
+            }
+
+            bi.GetComponent<ButtonSound>().shot = shotObj;
+
         }
     }
 }
