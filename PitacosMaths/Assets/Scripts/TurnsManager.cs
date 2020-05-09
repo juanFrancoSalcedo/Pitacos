@@ -35,6 +35,11 @@ public class TurnsManager : MonoBehaviour
         bufferTime = timer.initTime;
         inputContol.currentChar = player1;
         player1.ShowArrow();
+        Invoke("FirstOnPlayer",0.3f);
+    }
+
+    private void FirstOnPlayer()
+    {
         OnPlayerSelected?.Invoke(inputContol.currentChar);
     }
 

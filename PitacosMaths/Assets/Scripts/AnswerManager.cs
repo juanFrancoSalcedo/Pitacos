@@ -25,14 +25,16 @@ public class AnswerManager : MonoBehaviour
         {
             Instance = this;
         }
-        TurnsManager.Instance.OnPlayerSelected += PoseChallenge;
+        Invoke("GetOnPlayerSelected",0.2f);
+    }
 
+    void GetOnPlayerSelected()
+    {
+        TurnsManager.Instance.OnPlayerSelected += PoseChallenge;
     }
 
     private void PoseChallenge(CharacterController character)
     {
-        print("Cambio Posicion");
-
         if (limitMistakes <= TurnsManager.Instance.mistakes)
         {
             Invoke("Lose",2);
@@ -49,7 +51,6 @@ public class AnswerManager : MonoBehaviour
         switch (questionList[indexQuestion])
         {
             case TypeAnswer.QuestionTest:
-                print("Supocicion Input Fields");
                 InputFieldController.Instance.ActiveInputsfields(false);
                 AskEquation(character.transform.position);
                 break;
