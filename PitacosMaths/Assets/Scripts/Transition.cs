@@ -26,6 +26,9 @@ public class Transition : MonoBehaviour
             Destroy(gameObject);
         }
 
+      #if UNITY_EDITOR
+        //DataSystem.DeleteData();
+      # endif
     }
 
     public void Zoom()

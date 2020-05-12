@@ -18,6 +18,13 @@ public class AudioController : MonoBehaviour
     public AudioClip winSound;
     public AudioClip loseSound;
 
+    [Header("~~~~~~~UI States ~~~~~~")]
+
+    [SerializeField] Button soundButton;
+    [SerializeField] AnimationUIController animationSprite;
+    [SerializeField] Sprite spriteSoundEnabled;
+    [SerializeField] Sprite spriteSoundDisabled;
+
     void Start()
     {
         if (Instance == null)
@@ -29,6 +36,8 @@ public class AudioController : MonoBehaviour
         {
             Destroy(this);
         }
+
+        Mute(DataSystem.LoadSoundState());
     }
 
     public void PauseAudio()
@@ -61,10 +70,28 @@ public class AudioController : MonoBehaviour
         if (volume == -80)
         {
             mixer.SetFloat("Master", 0);
+            DataSystem.SaveSoundState(true);
         }
         else
         {
             mixer.SetFloat("Master", -80);
+            DataSystem.SaveSoundState(false);
+        }
+    }
+
+    public void Mute(bool stateSound)
+    {
+        if (stateSound)
+        {
+            mixer.SetFloat("Master", 0);
+            soundButton.GetComponent<Image>().sprite = spriteSoundEnabled;
+            animationSprite.spriteToShift = spriteSoundDisabled;
+        }
+        else
+        {
+            mixer.SetFloat("Master", -80);
+            soundButton.GetComponent<Image>().sprite = spriteSoundDisabled;
+            animationSprite.spriteToShift = spriteSoundEnabled;
         }
     }
 
@@ -85,7 +112,7 @@ public class AudioController : MonoBehaviour
         }
     }
 
-    [ButtonMethod]
+    //[ButtonMethod]
     private void SerachButtonsSounds()
     {
         Button[] but = FindObjectsOfType<Button>();

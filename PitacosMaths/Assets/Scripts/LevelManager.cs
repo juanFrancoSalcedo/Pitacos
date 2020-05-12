@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
+
 public class LevelManager : MonoBehaviour
 {
-
     public AudioMixerSnapshot pause;
+
     public void Replay()
     {
-
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
@@ -18,6 +18,14 @@ public class LevelManager : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void LoadSavedSceneZoom()
+    {
+        Time.timeScale = 1;
+        Transition.Instance.Zoom();
+        StartCoroutine(WaitLoadScene(DataSystem.LoadLevel()));
+        AudioController.Instance.TransitionAudio();
     }
 
     public void LoadSpecificSceneZoom(int indexScene)
@@ -37,7 +45,8 @@ public class LevelManager : MonoBehaviour
 
     public void LoadSpecificScene(int indexScene)
     {
-        SceneManager.LoadScene(indexScene);
+        DataSystem.SaveLevel(indexScene);
+        SceneManager.LoadScene(indexScene);   
     }
 
     public void Pause(Canvas canvasPause)
