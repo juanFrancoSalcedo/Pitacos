@@ -1057,7 +1057,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 433654847}
-  textToShow: 'Te refieres: distancia entre dos puntos.'
+  textToShow: "\xBFTe refieres a la distancia entre dos puntos?"
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -2159,7 +2159,8 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 433654847}
-  textToShow: Muy bien chicos, ahora vamos a continuar con distancias.
+  textToShow: Muy bien chicos, ahora vamos a continuar con las distancias entre dos
+    puntos.
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}

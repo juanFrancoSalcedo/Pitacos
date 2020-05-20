@@ -12271,7 +12271,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 1321836369}
-  textToShow: "Derquis ayudame a salir de esta prisi\xF3n."
+  textToShow: "Derquis, tambi\xE9n tendr\xE1s que hacerlo mismo."
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -14443,7 +14443,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 1321836369}
-  textToShow: "Ferye ve por el s\xEDmbolo E."
+  textToShow: "Ferye, tendr\xE1s que llegar por otro camino."
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}

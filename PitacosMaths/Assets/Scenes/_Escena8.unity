@@ -163,7 +163,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 433654847}
-  textToShow: "Continuaremos hablando del tema en otra ocasi\xF3n."
+  textToShow: "Pero hablaremos del tema en otra ocasi\xF3n."
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -1051,7 +1051,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 433654847}
-  textToShow: "Claro que s\xED.Ya hemos llegado."
+  textToShow: "Claro que s\xED, ya estamos cerca."
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -1780,7 +1780,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 433654847}
-  textToShow: Ustedes dos se complementan en...
+  textToShow: Porque ustedes dos se complementan en...
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -5126,7 +5126,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 433654847}
-  textToShow: No te preocupes Fermat, te ayudaremos.
+  textToShow: No te preocupes Fermat.
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -5744,8 +5744,8 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 433654847}
-  textToShow: "As\xED que los escog\xED a ustedes dos dentro de varios de miles de
-    muchachos."
+  textToShow: "As\xED que, los escog\xED a ustedes dos dentro de varios de miles
+    de muchachos."
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}

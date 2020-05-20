@@ -1925,7 +1925,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.82900006, y: 0.9375626}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.8000488, y: -0.19995117}
+  m_AnchoredPosition: {x: 0.8000488, y: -0.20019531}
   m_SizeDelta: {x: -1.3999939, y: 0.3999939}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &653532153
@@ -4743,7 +4743,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 433654847}
-  textToShow: "Es un plano 2D\u2026 Se siente extra\xF1o"
+  textToShow: "Parece un plano 2D\u2026 Se siente extra\xF1o"
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -4836,7 +4836,8 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 433654847}
-  textToShow: "Sortear estos obst\xE1culos requiere de ubicarnos en un plano de coordenadas."
+  textToShow: "\xA1Recuerden! estos obst\xE1culos requieren del uso de un par ordenado
+    en un plano de coordenadas."
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -5402,7 +5403,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 433654847}
-  textToShow: "los ir\xE9 guiando. Para ello deber\xE1n recolectar los s\xEDmbolos
+  textToShow: "los ir\xE9 guiando. Para ello, deber\xE1n recolectar los s\xEDmbolos
     matem\xE1ticos."
   fieldTextMision: {fileID: 0}
   textEquivalent: 
@@ -5466,8 +5467,8 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 433654847}
-  textToShow: "Recuerden que si fallan tres veces perder\xE1n y tendr\xE1n que comenzar
-    de nuevo."
+  textToShow: "Adicionalmente, si fallan tres veces, perder\xE1n y tendr\xE1n que
+    comenzar de nuevo."
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}

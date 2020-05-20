@@ -7092,7 +7092,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 1, y: 1, z: 1}
   typingObject: {fileID: 239597608}
-  textToShow: "\xA1WTF! \xBFQui\xE9n eres?"
+  textToShow: "\xA1Wao! \xBFQui\xE9n eres?"
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -32253,7 +32253,7 @@ MonoBehaviour:
   targetPos: {x: 2, y: 0.5, z: 6.3}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 239597608}
-  textToShow: "En una tarde de oto\xF1o. Derquis Le\xEDa"
+  textToShow: "En una tarde de oto\xF1o. Derquis Le\xEDa."
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -32514,7 +32514,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0.5, z: 6.3}
   targetScale: {x: 1, y: 1, z: 1}
   typingObject: {fileID: 239597608}
-  textToShow: Repentinamente...
+  textToShow: "S\xFAbitamente..."
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -32577,7 +32577,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 1, y: 1, z: 1}
   typingObject: {fileID: 239597608}
-  textToShow: "Por f\xEDn, \xE9ste viaje ha terminado."
+  textToShow: Por fin, este viaje ha terminado.
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -32711,7 +32711,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0.5, z: 6.3}
   targetScale: {x: 1, y: 1, z: 1}
   typingObject: {fileID: 239597608}
-  textToShow: mientras Ferye revisaba sus notificaciones.
+  textToShow: Mientras tanto, Ferye revisaba sus notificaciones.
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
