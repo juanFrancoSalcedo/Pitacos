@@ -37,6 +37,11 @@ public class AudioController : MonoBehaviour
             Destroy(this);
         }
 
+        if (PlayerPrefs.GetInt(KeySotrage.FIRSTOPEN_I) == 0)
+        {
+            PlayerPrefs.SetInt(KeySotrage.FIRSTOPEN_I,1);
+            DataSystem.SaveSoundState(true);
+        }
         Mute(DataSystem.LoadSoundState());
     }
 
@@ -84,14 +89,14 @@ public class AudioController : MonoBehaviour
         if (stateSound)
         {
             mixer.SetFloat("Master", 0);
-            soundButton.GetComponent<Image>().sprite = spriteSoundEnabled;
-            animationSprite.spriteToShift = spriteSoundDisabled;
+            if (soundButton != null) { soundButton.GetComponent<Image>().sprite = spriteSoundEnabled; }
+            if (animationSprite != null) { animationSprite.spriteToShift = spriteSoundDisabled; }
         }
         else
         {
             mixer.SetFloat("Master", -80);
-            soundButton.GetComponent<Image>().sprite = spriteSoundDisabled;
-            animationSprite.spriteToShift = spriteSoundEnabled;
+            if (soundButton != null) { soundButton.GetComponent<Image>().sprite = spriteSoundDisabled; }
+            if (animationSprite != null) { animationSprite.spriteToShift = spriteSoundEnabled; }
         }
     }
 

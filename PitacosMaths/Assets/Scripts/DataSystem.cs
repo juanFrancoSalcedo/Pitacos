@@ -11,10 +11,6 @@ public static class DataSystem
         {
             PlayerPrefs.SetInt(KeySotrage.LASTLEVEL_I, _levelIndex);
         }
-        else
-        {
-            PlayerPrefs.DeleteAll();
-        }
     }
 
     public static int LoadLevel()
@@ -25,6 +21,7 @@ public static class DataSystem
     public static void  SaveSoundState(bool state)
     {
         PlayerPrefs.SetInt(KeySotrage.SOUNDSTATE_I, (state)?1:0);
+        Debug.Log("Espa");
     }
 
     public static bool LoadSoundState()
@@ -49,4 +46,5 @@ public static class KeySotrage
 {
     public static string LASTLEVEL_I = "LASTLEVEL";
     public static string SOUNDSTATE_I = "SOUNDSTATE";
+    public static string FIRSTOPEN_I = "FIRSTOPEN";
 }
