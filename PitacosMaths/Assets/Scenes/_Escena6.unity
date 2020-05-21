@@ -150,7 +150,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -264,7 +264,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 471862552}
-  textToShow: "Y recuerda la f\xF3rmula de distancias."
+  textToShow: "Utilizaremos esta f\xF3rmula"
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -294,13 +294,81 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &140512318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 140512319}
+  - component: {fileID: 140512320}
+  m_Layer: 0
+  m_Name: a17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &140512319
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140512318}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1585274078}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &140512320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140512318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 2
+  control: {fileID: 1585274079}
+  misionCompleted: 0
+  misionTuto: 2
+  animatorControl: {fileID: 0}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 0}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 471862552}
+  textToShow: Este es el resultado
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &152544437
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +406,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19916667, y: 0.0152968755}
   m_AnchorMax: {x: 0.42200002, y: 0.134}
-  m_AnchoredPosition: {x: 0, y: 0.9404297}
+  m_AnchoredPosition: {x: 0, y: 0.9399414}
   m_SizeDelta: {x: 0, y: 1.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &152544439
@@ -1057,85 +1125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shot: {fileID: 4260339141364582290, guid: 939227fc088b00f40a0c07bf5b49ce5e, type: 3}
---- !u!1 &359093232
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 359093233}
-  - component: {fileID: 359093234}
-  m_Layer: 0
-  m_Name: a19
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &359093233
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 359093232}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1585274078}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &359093234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 359093232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forSkip: 0
-  delayCompleted: 2
-  control: {fileID: 1585274079}
-  misionCompleted: 0
-  misionTuto: 2
-  animatorControl: {fileID: 0}
-  animationType: 7
-  overrideTimeAnimation: 0
-  timeAnimation: 0
-  targetTransform: {fileID: 0}
-  targetPos: {x: 0, y: 0, z: 0}
-  targetScale: {x: 0, y: 0, z: 0}
-  typingObject: {fileID: 471862552}
-  textToShow: "\xA1Perfecto!  ahora recuerda"
-  fieldTextMision: {fileID: 0}
-  textEquivalent: 
-  buttonMision: {fileID: 272459328}
-  OnCompletedMission:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1758793456}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!1 &364863558
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,7 +1136,7 @@ GameObject:
   - component: {fileID: 364863559}
   - component: {fileID: 364863560}
   m_Layer: 0
-  m_Name: a21
+  m_Name: a20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1165,7 +1154,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 20
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1197,7 +1186,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 471862552}
-  textToShow: a jugar
+  textToShow: "Perfecto \xA1A jugar!"
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 272459328}
@@ -1359,13 +1348,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430788277}
-  m_LocalRotation: {x: -0, y: -0, z: 0.47625673, w: 0.8793063}
-  m_LocalPosition: {x: -57.4, y: 14.61, z: 0}
-  m_LocalScale: {x: 0.76227057, y: 0.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.46984628, w: 0.88274825}
+  m_LocalPosition: {x: -57.51, y: 13.97, z: 0}
+  m_LocalScale: {x: 0.76154083, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 886588522}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 56.882004}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 56.049004}
 --- !u!120 &430788279
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1563,7 +1552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1bfbeb77f037748bddd5dd2138c065, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedText: 0.1
+  speedText: 0.07
 --- !u!114 &471862553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1946,7 +1935,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739479861}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -54.08, y: 18.89, z: 0}
+  m_LocalPosition: {x: -55.67, y: 17.64, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 886588522}
@@ -1965,7 +1954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
-  targetScale: {x: 1, y: 1, z: 0}
+  targetScale: {x: 1.5, y: 1.5, z: 0}
   timeAnimation: 0.3
   delay: 0
   coldTime: 0
@@ -2153,7 +2142,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 471862552}
-  textToShow: "Si, realizaste bien los c\xE1lculos"
+  textToShow: "Si realizaste bien los c\xE1lculos"
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -2183,7 +2172,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2215,13 +2204,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 832890691}
-  m_LocalRotation: {x: -0, y: -0, z: -0.20335606, w: 0.9791049}
-  m_LocalPosition: {x: -53.85, y: 16.8, z: 0}
-  m_LocalScale: {x: 0.46773747, y: 0.5, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.2044961, w: 0.97886735}
+  m_LocalPosition: {x: -53.49, y: 16.05, z: 0}
+  m_LocalScale: {x: 0.505404, y: 0.49943212, z: 1}
   m_Children: []
   m_Father: {fileID: 886588522}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -23.467001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -23.6}
 --- !u!120 &832890693
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -2559,7 +2548,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908128284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.1, y: 8.7, z: -18.4}
+  m_LocalPosition: {x: 2.1, y: 8.7, z: -21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2901,10 +2890,10 @@ RectTransform:
   m_Father: {fileID: 1502908426}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5406771, y: 1}
-  m_AnchoredPosition: {x: -259.00006, y: 132.6}
-  m_SizeDelta: {x: -56, y: 373.2}
+  m_AnchorMin: {x: 0, y: 0.061666667}
+  m_AnchorMax: {x: 0, y: 0.061666667}
+  m_AnchoredPosition: {x: -40.7, y: 40.8}
+  m_SizeDelta: {x: 600, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1142443171
 MonoBehaviour:
@@ -2953,7 +2942,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a1d512daee1bb4846b7500098d54cb89, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b7ab8f466f459b4595322ae1919733c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2982,7 +2971,7 @@ GameObject:
   - component: {fileID: 1151025954}
   - component: {fileID: 1151025955}
   m_Layer: 0
-  m_Name: a18
+  m_Name: a19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3143,13 +3132,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246896545}
-  m_LocalRotation: {x: -0, y: -0, z: -0.39204204, w: 0.91994727}
-  m_LocalPosition: {x: -52.45, y: 16.42, z: 0}
-  m_LocalScale: {x: 0.3663442, y: 0.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.30595884, w: 0.9520447}
+  m_LocalPosition: {x: -52.71, y: 16.38, z: 0}
+  m_LocalScale: {x: 0.26625404, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 886588522}
   m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.163002}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -35.632}
 --- !u!120 &1246896547
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -3323,7 +3312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378774557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -55.46, y: 18.64, z: 0}
+  m_LocalPosition: {x: -55.46, y: 18.14, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 886588522}
@@ -3456,7 +3445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 1
+  delayCompleted: 1.5
   control: {fileID: 1585274079}
   misionCompleted: 0
   misionTuto: 2
@@ -3468,7 +3457,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 471862552}
-  textToShow: " Saca l\xE1piz y papel."
+  textToShow: "Saca l\xE1piz y papel y presta mucha atenci\xF3n"
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -3515,7 +3504,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3596,7 +3585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d994f3e89e7fb4bbd5d5ca41d47e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPosition: {x: -200, y: -600, z: 0}
+  targetPosition: {x: 0, y: -600, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   timeAnimation: 1
   delay: 0
@@ -3658,7 +3647,7 @@ RectTransform:
   m_GameObject: {fileID: 1502908422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_Children:
   - {fileID: 1572776876}
   - {fileID: 1142443170}
@@ -3681,7 +3670,7 @@ GameObject:
   - component: {fileID: 1508089353}
   - component: {fileID: 1508089354}
   m_Layer: 0
-  m_Name: a17
+  m_Name: a18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3855,7 +3844,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3875,7 +3864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 5
+  delayCompleted: 2
   control: {fileID: 1585274079}
   misionCompleted: 1
   misionTuto: 0
@@ -4070,7 +4059,6 @@ RectTransform:
   - {fileID: 1239640309}
   - {fileID: 1580941898}
   - {fileID: 1759667888}
-  - {fileID: 1708094421}
   - {fileID: 126143253}
   - {fileID: 1568248353}
   - {fileID: 2126049167}
@@ -4080,10 +4068,9 @@ RectTransform:
   - {fileID: 1493640576}
   - {fileID: 1692831838}
   - {fileID: 765110854}
+  - {fileID: 140512319}
   - {fileID: 1508089353}
   - {fileID: 1151025954}
-  - {fileID: 359093233}
-  - {fileID: 1821096913}
   - {fileID: 364863559}
   m_Father: {fileID: 381159315}
   m_RootOrder: 2
@@ -4112,7 +4099,6 @@ MonoBehaviour:
   - {fileID: 1239640310}
   - {fileID: 1580941897}
   - {fileID: 1759667889}
-  - {fileID: 1708094420}
   - {fileID: 126143252}
   - {fileID: 1568248354}
   - {fileID: 2126049168}
@@ -4122,10 +4108,9 @@ MonoBehaviour:
   - {fileID: 1493640577}
   - {fileID: 1692831839}
   - {fileID: 765110853}
+  - {fileID: 140512320}
   - {fileID: 1508089354}
   - {fileID: 1151025955}
-  - {fileID: 359093234}
-  - {fileID: 1821096914}
   - {fileID: 364863560}
   skipeAnimations: []
 --- !u!1 &1596212797
@@ -4394,7 +4379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
-  targetScale: {x: 0.6, y: 0.6, z: 0}
+  targetScale: {x: 1.2, y: 1.2, z: 0}
   timeAnimation: 0.3
   delay: 0
   coldTime: 0
@@ -4599,7 +4584,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4631,7 +4616,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 471862552}
-  textToShow: Reemplazamos los valores.
+  textToShow: Ahora remplazemos los valores
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -4727,7 +4712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
-  targetScale: {x: 0.6, y: 0.6, z: 0}
+  targetScale: {x: 1, y: 1, z: 0}
   timeAnimation: 0.3
   delay: 0
   coldTime: 0
@@ -4821,7 +4806,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4871,96 +4856,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!1 &1708094419
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1708094421}
-  - component: {fileID: 1708094420}
-  m_Layer: 0
-  m_Name: a7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1708094420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708094419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forSkip: 0
-  delayCompleted: 2
-  control: {fileID: 1585274079}
-  misionCompleted: 0
-  misionTuto: 2
-  animatorControl: {fileID: 0}
-  animationType: 7
-  overrideTimeAnimation: 0
-  timeAnimation: 0
-  targetTransform: {fileID: 0}
-  targetPos: {x: 0, y: 0, z: 0}
-  targetScale: {x: 0, y: 0, z: 0}
-  typingObject: {fileID: 471862552}
-  textToShow: "Recuerda el teorema de pit\xE1goras"
-  fieldTextMision: {fileID: 0}
-  textEquivalent: 
-  buttonMision: {fileID: 0}
-  OnCompletedMission:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1600640855}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 219455062}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
---- !u!224 &1708094421
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708094419}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1585274078}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1720343310
 GameObject:
   m_ObjectHideFlags: 0
@@ -5306,74 +5201,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!1 &1821096912
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1821096913}
-  - component: {fileID: 1821096914}
-  m_Layer: 0
-  m_Name: a20
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1821096913
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1821096912}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1585274078}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1821096914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1821096912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forSkip: 0
-  delayCompleted: 1
-  control: {fileID: 1585274079}
-  misionCompleted: 0
-  misionTuto: 2
-  animatorControl: {fileID: 0}
-  animationType: 7
-  overrideTimeAnimation: 0
-  timeAnimation: 0
-  targetTransform: {fileID: 0}
-  targetPos: {x: 0, y: 0, z: 0}
-  targetScale: {x: 0, y: 0, z: 0}
-  typingObject: {fileID: 471862552}
-  textToShow: poner el resultado con un digito decimal.
-  fieldTextMision: {fileID: 0}
-  textEquivalent: 
-  buttonMision: {fileID: 272459328}
-  OnCompletedMission:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1831060477
 GameObject:
   m_ObjectHideFlags: 0
@@ -5467,13 +5294,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839326618}
-  m_LocalRotation: {x: -0, y: -0, z: 0.3926547, w: 0.919686}
-  m_LocalPosition: {x: -56.33, y: 14.46, z: 0}
-  m_LocalScale: {x: 0.92752415, y: 0.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.37669343, w: 0.92633796}
+  m_LocalPosition: {x: -56.39, y: 13.75, z: 0}
+  m_LocalScale: {x: 0.93020105, y: 0.63, z: 1}
   m_Children: []
   m_Father: {fileID: 886588522}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 46.24}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 44.258003}
 --- !u!120 &1839326620
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -5650,7 +5477,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5914,7 +5741,7 @@ MonoBehaviour:
   overrideTimeAnimation: 0
   timeAnimation: 0
   targetTransform: {fileID: 0}
-  targetPos: {x: -200, y: 600, z: 0}
+  targetPos: {x: 200, y: 700, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 471862552}
   textToShow: 
@@ -5973,7 +5800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 1
+  delayCompleted: 1.5
   control: {fileID: 1585274079}
   misionCompleted: 0
   misionTuto: 2
@@ -5985,7 +5812,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 471862552}
-  textToShow: "\xBFNecesitas ayuda para hallar la distancia entre dos puntos?"
+  textToShow: "\xBFNecesitas ayuda para hallar la distancia?"
   fieldTextMision: {fileID: 0}
   textEquivalent: 
   buttonMision: {fileID: 0}
@@ -6422,7 +6249,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

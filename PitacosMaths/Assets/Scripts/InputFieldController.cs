@@ -6,7 +6,6 @@ using TMPro;
 
 public class InputFieldController : MonoBehaviour
 {
-
     public static InputFieldController Instance;
     public TMP_InputField xInputField;
     public TMP_InputField yInputField;

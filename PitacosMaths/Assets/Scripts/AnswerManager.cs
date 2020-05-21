@@ -28,7 +28,7 @@ public class AnswerManager : MonoBehaviour
         Invoke("GetOnPlayerSelected",0.2f);
     }
 
-    void GetOnPlayerSelected()
+    private void GetOnPlayerSelected()
     {
         TurnsManager.Instance.OnPlayerSelected += PoseChallenge;
     }
@@ -96,7 +96,6 @@ public class AnswerManager : MonoBehaviour
 
     public void SolveEquation(string result)
     {
-        
         float resultFloat = float.Parse(ChangeChar(result));
         if (resultFloat == correctAnswer)
         {
