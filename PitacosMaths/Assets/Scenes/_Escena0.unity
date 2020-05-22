@@ -3068,13 +3068,13 @@ PrefabInstance:
         type: 3}
       propertyPath: spriteSoundEnabled
       value: 
-      objectReference: {fileID: 21300000, guid: d0a367523edab1d4292a9fdb980d8193,
+      objectReference: {fileID: 21300000, guid: d066ab9f389712849a5bbcf67b77d675,
         type: 3}
     - target: {fileID: 2031630279684027726, guid: c582bb35b5f039e42827b7f0e89a81c7,
         type: 3}
       propertyPath: spriteSoundDisabled
       value: 
-      objectReference: {fileID: 21300000, guid: 7849017c32cf76c4f897d8ed90a68eaf,
+      objectReference: {fileID: 21300000, guid: d4d886ee60692094bbf6c0dc7b090133,
         type: 3}
     - target: {fileID: 6540119424516286032, guid: c582bb35b5f039e42827b7f0e89a81c7,
         type: 3}
