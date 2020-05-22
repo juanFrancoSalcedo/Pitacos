@@ -11,7 +11,6 @@ public class MisionController : MonoBehaviour
     public event System.Action<TypeEmotion, CharacterController> OnPlayerMisionFinished;
     [Tooltip("[0]Sum, [1]Pi")]
     public Sprite[] imagesMision;
-
     [Header("~~~~~~~~~~ Animation Outputs ~~~~~~~~~~~~")]
     public AnimationUIController popUpWin;
     public AnimationUIController failText;
@@ -19,7 +18,11 @@ public class MisionController : MonoBehaviour
     [ConditionalField(nameof(useSpecificArray), true)] public bool useSpecificPos;
     [ConditionalField(nameof(useSpecificPos))] public SpecificPos specificPos;
     [ConditionalField(nameof(useSpecificPos), true)] public bool useSpecificArray;
-    [ConditionalField(nameof(useSpecificArray),false)] [SerializeField] private List<SpecificPos> arraySpecificPos = new List<SpecificPos>();
+    public bool usePools;
+    [ConditionalField(nameof(useSpecificArray),true)] [SerializeField] private List<SpecificPos> arraySpecificPos = new List<SpecificPos>();
+    [ConditionalField(nameof(usePools), true)] [SerializeField] private List<SpecificPos> poolA = new List<SpecificPos>();
+    [ConditionalField(nameof(usePools), true)] [SerializeField] private List<SpecificPos> poolB = new List<SpecificPos>();
+    [ConditionalField(nameof(usePools), true)] [SerializeField] private List<SpecificPos> poolC = new List<SpecificPos>();
     int countArraySpecific =0;
 
 
@@ -28,8 +31,11 @@ public class MisionController : MonoBehaviour
         turnsManager.OnPlayerSelected += DistributeMision;
         turnsManager.player1.OnArrived += CompareArrive;
         turnsManager.player2.OnArrived += CompareArrive;
-
         tag = "MisionController";
+        if (usePools)
+        {
+            ChoosePool();
+        }
     }
 
     private void DistributeMision(CharacterController playerArg)
@@ -78,6 +84,28 @@ public class MisionController : MonoBehaviour
         }
 
         mision.transform.position = misionPos;
+    }
+
+    private void ChoosePool()
+    {
+        int cre = Random.Range(1,4);
+        arraySpecificPos.Clear();
+        switch (cre)
+        {
+            case 1:
+                arraySpecificPos = poolA;
+                break;
+
+            case 2:
+                arraySpecificPos = poolB;
+                break;
+
+            case 3:
+                arraySpecificPos = poolC;
+                break;
+        }
+        useSpecificPos = false;
+        useSpecificArray = true;
     }
 
     private void CompareArrive(CharacterController playerPosit)

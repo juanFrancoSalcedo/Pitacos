@@ -21,7 +21,6 @@ public static class DataSystem
     public static void  SaveSoundState(bool state)
     {
         PlayerPrefs.SetInt(KeySotrage.SOUNDSTATE_I, (state)?1:0);
-        Debug.Log("Espa");
     }
 
     public static bool LoadSoundState()

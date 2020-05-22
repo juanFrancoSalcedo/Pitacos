@@ -3025,6 +3025,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5278405607382256570, guid: ac4c86f410d8d0b4792aaf4286e61d49,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 2960
+      objectReference: {fileID: 0}
     - target: {fileID: 5278405607382256575, guid: ac4c86f410d8d0b4792aaf4286e61d49,
         type: 3}
       propertyPath: m_Name

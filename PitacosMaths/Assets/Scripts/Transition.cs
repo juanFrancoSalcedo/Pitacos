@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MyBox;
 
 public class Transition : MonoBehaviour
 {
@@ -26,11 +27,9 @@ public class Transition : MonoBehaviour
             Destroy(gameObject);
         }
 
-#if UNITY_EDITOR
+      #if UNITY_EDITOR
 
       # endif
-
-
     }
 
     public void Zoom()
