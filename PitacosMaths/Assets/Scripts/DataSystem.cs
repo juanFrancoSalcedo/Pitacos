@@ -7,9 +7,16 @@ public static class DataSystem
 {
     public static void SaveLevel(int _levelIndex)
     {
-        if (_levelIndex > 0 || SceneManager.sceneCount-2 >_levelIndex)
+        Debug.Log((_levelIndex));
+
+        if (_levelIndex !=0 && _levelIndex != 12)
         {
             PlayerPrefs.SetInt(KeySotrage.LASTLEVEL_I, _levelIndex);
+        }
+
+        if (_levelIndex == 11)
+        {
+            PlayerPrefs.SetInt(KeySotrage.LASTLEVEL_I,1);
         }
     }
 

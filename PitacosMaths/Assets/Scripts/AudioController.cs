@@ -43,6 +43,12 @@ public class AudioController : MonoBehaviour
             DataSystem.SaveSoundState(true);
         }
         Mute(DataSystem.LoadSoundState());
+
+    }
+    [ButtonMethod]
+    void DeleteData()
+    {
+        DataSystem.DeleteData();
     }
 
     public void PauseAudio()
