@@ -286,7 +286,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 3, y: 1.276}
+  m_SizeDelta: {x: 2.732, y: 1.276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4785099216147955908
 CanvasRenderer:
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2adbb775f7208a94092ec4f6867d049b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ed944bc351a65084b88db8cb8fc9ada5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2362,7 +2362,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 247ff0c485d43974dacfd1829901930a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6a854994e11f0b94cba34a74cf7ddb8e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2480,8 +2480,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00000011176, y: -3.77}
-  m_SizeDelta: {x: 2.409, y: 2.406}
+  m_AnchoredPosition: {x: 0.00000011176, y: -4.004}
+  m_SizeDelta: {x: 2.409, y: 2.874}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8911011658430225544
 CanvasRenderer:
@@ -2509,7 +2509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c0470599a06ea1348a12993af39ca530, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1526ef8469066dd48b91a2757f8e325d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2549,7 +2549,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 21300000, guid: bdaf6ba9232828f4e936bab901f6ff9d, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: c1f304b147661b249b7e2cbb0b909417, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -2746,7 +2746,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f3245e19b239d964ea0ced8599cc9971, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3aea1383efef37f47ae2a48f9c04e0f8, type: 3}
   m_Color: {r: 0.745283, g: 0.88312984, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
