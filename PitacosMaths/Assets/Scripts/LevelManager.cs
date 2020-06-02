@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using TMPro;
 
 
 public class LevelManager : MonoBehaviour
 {
-    public AudioMixerSnapshot pause;
+    [SerializeField] private TextMeshProUGUI textVelocity;
 
     public void Replay()
     {
@@ -59,6 +60,10 @@ public class LevelManager : MonoBehaviour
     public void SwitchSpeedsHigh()
     {
         Time.timeScale = (Time.timeScale == 1) ? 2 : 1;
+        if (textVelocity != null)
+        {
+            textVelocity.text = (Time.timeScale == 1) ? "Velocidad x1" : "Velocidad x2";
+        }
     }
 
     public void SetTimeScaleSpeed(int _speed)
