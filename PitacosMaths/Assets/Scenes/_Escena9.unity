@@ -5504,6 +5504,11 @@ PrefabInstance:
       propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6540119424516286035, guid: c582bb35b5f039e42827b7f0e89a81c7,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c582bb35b5f039e42827b7f0e89a81c7, type: 3}
 --- !u!1 &752198793
@@ -10726,6 +10731,7 @@ MonoBehaviour:
     _X: 0
     _Y: 0
   useSpecificArray: 1
+  usePools: 0
   arraySpecificPos:
   - _X: -4
     _Y: 1
@@ -10751,6 +10757,9 @@ MonoBehaviour:
     _Y: -4
   - _X: 7
     _Y: -4
+  poolA: []
+  poolB: []
+  poolC: []
 --- !u!4 &1432168986
 Transform:
   m_ObjectHideFlags: 0
