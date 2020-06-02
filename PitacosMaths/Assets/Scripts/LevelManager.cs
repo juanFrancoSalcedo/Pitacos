@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using TMPro;
 
-
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textVelocity;

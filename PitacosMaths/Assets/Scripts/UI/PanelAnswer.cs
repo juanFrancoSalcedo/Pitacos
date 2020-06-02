@@ -1,25 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PanelAnswer : MonoBehaviour
 {
-    private int incorrectCount = -1;
-    private int correctCount =-1;
-
-
-    [SerializeField] GameObject[] chulos;
-    [SerializeField] GameObject[] equis;
-
+    [SerializeField] TextMeshProUGUI textScore;
+    private int score = 0;
     public void SumCorrect()
     {
-        correctCount++;
-        chulos[correctCount].SetActive(true);
+        score += 100;
+        textScore.text =""+score;
     }
 
     public void SumIncorrect()
     {
-        incorrectCount++;
-        equis[incorrectCount].SetActive(true);
+        score -= 50;
+        textScore.text = "" + score;
     }
 }

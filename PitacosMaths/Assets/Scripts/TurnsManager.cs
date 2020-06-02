@@ -18,7 +18,6 @@ public class TurnsManager : MonoBehaviour
 
     public static TurnsManager Instance;
     public event System.Action<CharacterController> OnPlayerSelected;
-    public int successes { get; set; }
     public int mistakes { get; set; }
     private float bufferTime;
 
@@ -90,7 +89,6 @@ public class TurnsManager : MonoBehaviour
             if (isGoodAnswer)
             {
                 derquisPanel.SumCorrect();
-                successes++;
             }
             else
             {
@@ -104,7 +102,6 @@ public class TurnsManager : MonoBehaviour
             if (isGoodAnswer)
             {
                 feryiPanel.SumCorrect();
-                successes++;
             }
             else
             {

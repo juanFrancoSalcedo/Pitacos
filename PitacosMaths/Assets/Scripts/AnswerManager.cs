@@ -11,7 +11,7 @@ public class AnswerManager : MonoBehaviour
     public List<TypeAnswer> questionList = new List<TypeAnswer>();
     public int indexQuestion { get; set; } = 0;
 
-    [SerializeField] private int limitMistakes =2;
+    [SerializeField] private int limitMistakes = 100;
 
     [Header("~~~~~~~ UI Elements ~~~~~~~")]
     [SerializeField] private Canvas loseCanvas;

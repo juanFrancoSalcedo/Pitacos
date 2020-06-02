@@ -7,8 +7,6 @@ public static class DataSystem
 {
     public static void SaveLevel(int _levelIndex)
     {
-        Debug.Log((_levelIndex));
-
         if (_levelIndex !=0 && _levelIndex != 12)
         {
             PlayerPrefs.SetInt(KeySotrage.LASTLEVEL_I, _levelIndex);

@@ -14566,6 +14566,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4617325589988303684, guid: 992ab021a79d33f4bb6e5bde880809b2,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617325589988303684, guid: 992ab021a79d33f4bb6e5bde880809b2,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617325589988303684, guid: 992ab021a79d33f4bb6e5bde880809b2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617325589988303684, guid: 992ab021a79d33f4bb6e5bde880809b2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4752892627274600977, guid: 992ab021a79d33f4bb6e5bde880809b2,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -14622,6 +14642,26 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7642968251508980133, guid: 992ab021a79d33f4bb6e5bde880809b2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737604893898915023, guid: 992ab021a79d33f4bb6e5bde880809b2,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737604893898915023, guid: 992ab021a79d33f4bb6e5bde880809b2,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737604893898915023, guid: 992ab021a79d33f4bb6e5bde880809b2,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8737604893898915023, guid: 992ab021a79d33f4bb6e5bde880809b2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
@@ -14908,7 +14948,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 1.5
 --- !u!222 &2094596349
 CanvasRenderer:
   m_ObjectHideFlags: 0
