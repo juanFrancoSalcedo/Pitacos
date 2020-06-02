@@ -4083,7 +4083,11 @@ MonoBehaviour:
     _X: 0
     _Y: 0
   useSpecificArray: 0
+  usePools: 0
   arraySpecificPos: []
+  poolA: []
+  poolB: []
+  poolC: []
 --- !u!4 &1432168986
 Transform:
   m_ObjectHideFlags: 0
