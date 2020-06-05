@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 2
+  delayCompleted: 0.3
   control: {fileID: 1585274079}
   misionCompleted: 1
   misionTuto: 0
@@ -262,7 +262,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -282,16 +282,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 0.3
+  delayCompleted: 4
   control: {fileID: 1585274079}
-  misionCompleted: 1
-  misionTuto: 0
-  animatorControl: {fileID: 1502908423}
-  animationType: 0
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1614986839}
+  animationType: 7
   overrideTimeAnimation: 0
   timeAnimation: 0
-  targetTransform: {fileID: 0}
-  targetPos: {x: 300, y: 800, z: 0}
+  targetTransform: {fileID: 270199494}
+  targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 471862552}
   textToShow: Ahora nos falta operar
@@ -535,6 +535,118 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145245707}
   m_CullTransparentMesh: 0
+--- !u!1 &149473083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 149473085}
+  - component: {fileID: 149473084}
+  m_Layer: 0
+  m_Name: a20 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &149473084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149473083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 3
+  control: {fileID: 1585274079}
+  misionCompleted: 1
+  misionTuto: 0
+  animatorControl: {fileID: 0}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 0}
+  targetPos: {x: 0, y: 0, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 471862552}
+  textToShow: y el eje Y = 2
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 0}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 832890691}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1246896545}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 430788277}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1839326618}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!224 &149473085
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149473083}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1585274078}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &152544437
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,7 +684,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19916667, y: 0.15942189}
   m_AnchorMax: {x: 0.42477778, y: 0.23779689}
-  m_AnchoredPosition: {x: -2, y: 1.6899414}
+  m_AnchoredPosition: {x: -2, y: 1.9749756}
   m_SizeDelta: {x: -4, y: -3.9500122}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &152544439
@@ -1131,7 +1243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270199492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.9, y: 7.4, z: 0}
+  m_LocalPosition: {x: 2.6, y: 8.1, z: 0}
   m_LocalScale: {x: 3.003, y: 3.003, z: 3.003}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1174,8 +1286,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.60200006, y: 0.15200001}
   m_AnchorMax: {x: 0.84636116, y: 0.23779689}
-  m_AnchoredPosition: {x: 0, y: 11.3498535}
-  m_SizeDelta: {x: -12, y: -22.700012}
+  m_AnchoredPosition: {x: 6, y: 0}
+  m_SizeDelta: {x: -12, y: -0.000076294}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &272459328
 MonoBehaviour:
@@ -1254,17 +1366,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1246896545}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1614986837}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -1918,6 +2019,74 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &533917963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 533917964}
+  - component: {fileID: 533917965}
+  m_Layer: 0
+  m_Name: a28
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &533917964
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533917963}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1585274078}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &533917965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533917963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.2
+  control: {fileID: 1585274079}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1657777824}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1614986838}
+  targetPos: {x: -40, y: 17, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 471862552}
+  textToShow: Ahora nos falta operar
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 272459328}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &568402363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,7 +2333,7 @@ GameObject:
   - component: {fileID: 642210727}
   - component: {fileID: 642210728}
   m_Layer: 0
-  m_Name: a28
+  m_Name: a31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2182,7 +2351,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 27
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2202,16 +2371,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 1.5
+  delayCompleted: 1
   control: {fileID: 1585274079}
-  misionCompleted: 1
-  misionTuto: 0
-  animatorControl: {fileID: 1502908423}
-  animationType: 0
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 716386108}
+  animationType: 7
   overrideTimeAnimation: 0
   timeAnimation: 0
-  targetTransform: {fileID: 0}
-  targetPos: {x: 300, y: 800, z: 0}
+  targetTransform: {fileID: 270199494}
+  targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 471862552}
   textToShow: Ahora nos falta operar
@@ -2220,18 +2389,7 @@ MonoBehaviour:
   buttonMision: {fileID: 272459328}
   OnCompletedMission:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 716386106}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &681163899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2469,6 +2627,74 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &693007399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 693007401}
+  - component: {fileID: 693007400}
+  m_Layer: 0
+  m_Name: a26
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &693007400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693007399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.2
+  control: {fileID: 1585274079}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1614986839}
+  animationType: 0
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 270199494}
+  targetPos: {x: -40, y: 18, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 471862552}
+  textToShow: Ahora nos falta operar
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 272459328}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!224 &693007401
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693007399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1585274078}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &696187745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2498,7 +2724,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2653,7 +2879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &716386107
 Transform:
   m_ObjectHideFlags: 0
@@ -2662,8 +2888,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716386106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -55.85, y: 9.74, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: -37.7, y: 18, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 886588522}
   m_RootOrder: 14
@@ -2686,8 +2912,8 @@ MonoBehaviour:
   delay: 0
   coldTime: 0
   animationCurve: 0
-  playOnAwake: 1
-  animationType: 10
+  playOnAwake: 0
+  animationType: 0
   worldPoint: {fileID: 0}
   colorTarget: {r: 0, g: 0, b: 0, a: 0}
   OnCompletedCallBack:
@@ -3129,7 +3355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 2
+  delayCompleted: 0.2
   control: {fileID: 1585274079}
   misionCompleted: 0
   misionTuto: 2
@@ -3204,7 +3430,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4374,7 +4600,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4435,7 +4661,7 @@ GameObject:
   - component: {fileID: 1163429574}
   - component: {fileID: 1163429575}
   m_Layer: 0
-  m_Name: a27
+  m_Name: a29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4453,7 +4679,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 26
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4473,16 +4699,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 1.5
+  delayCompleted: 4
   control: {fileID: 1585274079}
-  misionCompleted: 1
-  misionTuto: 0
-  animatorControl: {fileID: 1502908423}
-  animationType: 0
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1758793458}
+  animationType: 7
   overrideTimeAnimation: 0
   timeAnimation: 0
-  targetTransform: {fileID: 0}
-  targetPos: {x: 300, y: 800, z: 0}
+  targetTransform: {fileID: 270199494}
+  targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 471862552}
   textToShow: Ahora nos falta operar
@@ -4491,18 +4717,7 @@ MonoBehaviour:
   buttonMision: {fileID: 272459328}
   OnCompletedMission:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1758793456}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1191172940
 GameObject:
   m_ObjectHideFlags: 0
@@ -5465,7 +5680,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5485,7 +5700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 0.3
+  delayCompleted: 2
   control: {fileID: 1585274079}
   misionCompleted: 0
   misionTuto: 2
@@ -5538,6 +5753,72 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1246896545}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1059181523}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1624521338}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1596212797}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1284201580}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1342854736}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2120706503}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -5955,16 +6236,20 @@ RectTransform:
   - {fileID: 1568248353}
   - {fileID: 2126049167}
   - {fileID: 1636794920}
-  - {fileID: 831960808}
   - {fileID: 1870879404}
+  - {fileID: 831960808}
   - {fileID: 31762951}
+  - {fileID: 149473085}
   - {fileID: 1508089353}
   - {fileID: 1151025954}
   - {fileID: 2146717292}
   - {fileID: 696187746}
   - {fileID: 45738572}
+  - {fileID: 693007401}
   - {fileID: 2028140320}
+  - {fileID: 533917964}
   - {fileID: 1163429574}
+  - {fileID: 2019741415}
   - {fileID: 642210727}
   - {fileID: 1763127772}
   m_Father: {fileID: 381159315}
@@ -6005,16 +6290,20 @@ MonoBehaviour:
   - {fileID: 1568248354}
   - {fileID: 2126049168}
   - {fileID: 1636794921}
-  - {fileID: 831960807}
   - {fileID: 1870879405}
+  - {fileID: 831960807}
   - {fileID: 31762952}
+  - {fileID: 149473084}
   - {fileID: 1508089354}
   - {fileID: 1151025955}
   - {fileID: 2146717293}
   - {fileID: 696187747}
   - {fileID: 45738573}
+  - {fileID: 693007400}
   - {fileID: 2028140321}
+  - {fileID: 533917965}
   - {fileID: 1163429575}
+  - {fileID: 2019741416}
   - {fileID: 642210728}
   - {fileID: 1763127773}
   skipeAnimations: []
@@ -6315,7 +6604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1614986838
 Transform:
   m_ObjectHideFlags: 0
@@ -6324,8 +6613,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614986837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -55.67, y: 18.32, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: -38, y: 18.1, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 886588522}
   m_RootOrder: 11
@@ -6348,8 +6637,8 @@ MonoBehaviour:
   delay: 0
   coldTime: 0
   animationCurve: 0
-  playOnAwake: 1
-  animationType: 10
+  playOnAwake: 0
+  animationType: 0
   worldPoint: {fileID: 0}
   colorTarget: {r: 0, g: 0, b: 0, a: 0}
   OnCompletedCallBack:
@@ -6637,7 +6926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1657777823
 Transform:
   m_ObjectHideFlags: 0
@@ -6646,8 +6935,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657777822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -55.67, y: 15.48, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: -37.52, y: 18, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 886588522}
   m_RootOrder: 12
@@ -6670,8 +6959,8 @@ MonoBehaviour:
   delay: 0
   coldTime: 0
   animationCurve: 0
-  playOnAwake: 1
-  animationType: 10
+  playOnAwake: 0
+  animationType: 0
   worldPoint: {fileID: 0}
   colorTarget: {r: 0, g: 0, b: 0, a: 0}
   OnCompletedCallBack:
@@ -6903,7 +7192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1758793457
 Transform:
   m_ObjectHideFlags: 0
@@ -6912,8 +7201,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758793456}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -55.85, y: 12.579999, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: -37.7, y: 17.939999, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 886588522}
   m_RootOrder: 13
@@ -6936,8 +7225,8 @@ MonoBehaviour:
   delay: 0
   coldTime: 0
   animationCurve: 0
-  playOnAwake: 1
-  animationType: 10
+  playOnAwake: 0
+  animationType: 0
   worldPoint: {fileID: 0}
   colorTarget: {r: 0, g: 0, b: 0, a: 0}
   OnCompletedCallBack:
@@ -7098,7 +7387,7 @@ GameObject:
   - component: {fileID: 1763127772}
   - component: {fileID: 1763127773}
   m_Layer: 0
-  m_Name: a29
+  m_Name: a32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7116,7 +7405,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 28
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7667,7 +7956,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7687,7 +7976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 3
+  delayCompleted: 4
   control: {fileID: 1585274079}
   misionCompleted: 1
   misionTuto: 0
@@ -8207,6 +8496,74 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac4c86f410d8d0b4792aaf4286e61d49, type: 3}
+--- !u!1 &2019741414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2019741415}
+  - component: {fileID: 2019741416}
+  m_Layer: 0
+  m_Name: a30
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2019741415
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019741414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1585274078}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2019741416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019741414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c11594b608ac7241a5c73a157a74245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forSkip: 0
+  delayCompleted: 0.2
+  control: {fileID: 1585274079}
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1758793458}
+  animationType: 7
+  overrideTimeAnimation: 0
+  timeAnimation: 0
+  targetTransform: {fileID: 1614986838}
+  targetPos: {x: -40, y: 17, z: 0}
+  targetScale: {x: 0, y: 0, z: 0}
+  typingObject: {fileID: 471862552}
+  textToShow: Ahora nos falta operar
+  fieldTextMision: {fileID: 0}
+  textEquivalent: 
+  buttonMision: {fileID: 272459328}
+  OnCompletedMission:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2028140319
 GameObject:
   m_ObjectHideFlags: 0
@@ -8218,7 +8575,7 @@ GameObject:
   - component: {fileID: 2028140320}
   - component: {fileID: 2028140321}
   m_Layer: 0
-  m_Name: a26
+  m_Name: a27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8236,7 +8593,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 25
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8256,16 +8613,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forSkip: 0
-  delayCompleted: 1.5
+  delayCompleted: 4
   control: {fileID: 1585274079}
-  misionCompleted: 1
-  misionTuto: 0
-  animatorControl: {fileID: 1502908423}
-  animationType: 0
+  misionCompleted: 0
+  misionTuto: 3
+  animatorControl: {fileID: 1657777824}
+  animationType: 7
   overrideTimeAnimation: 0
   timeAnimation: 0
-  targetTransform: {fileID: 0}
-  targetPos: {x: 300, y: 800, z: 0}
+  targetTransform: {fileID: 270199494}
+  targetPos: {x: 0, y: 0, z: 0}
   targetScale: {x: 0, y: 0, z: 0}
   typingObject: {fileID: 471862552}
   textToShow: Ahora nos falta operar
@@ -8274,18 +8631,7 @@ MonoBehaviour:
   buttonMision: {fileID: 272459328}
   OnCompletedMission:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1657777822}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &2038692159
 GameObject:
   m_ObjectHideFlags: 0
@@ -8827,7 +9173,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1585274078}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
